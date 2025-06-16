@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 export default function Landing() {
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-black min-h-screen px-12">
       <Header />
       <Hero />
       <Footer />

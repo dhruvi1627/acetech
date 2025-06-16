@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Grip, Menu, X } from "lucide-react";
 import aceTechLogo from "../assets/ace_tech.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-black shadow-md">
+    <header className="bg-black shadow-md text-white">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -61,6 +61,12 @@ export default function Header() {
               className="hover:text-gray-400 transition-colors duration-200"
             >
               CONTACT US
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              <Grip />
             </a>
           </div>
           <button
