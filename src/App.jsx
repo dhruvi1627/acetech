@@ -4,7 +4,7 @@ import Landing from "./components/Landing";
 function App() {
   return (
     <>
-      <div className="bg-black min-h-screen">
+      <div>
         <Landing />
       </div>
     </>
