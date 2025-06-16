@@ -19,7 +19,7 @@ export default function Header() {
 
         {/* Desktop Navigation with Mobile Button */}
         <nav className="flex items-center">
-          <div className="hidden md:flex space-x-6">
+          <div className="font-bebas hidden md:flex space-x-6">
             <a
               href="#"
               className="hover:text-gray-400 transition-colors duration-200"
