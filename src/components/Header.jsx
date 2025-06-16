@@ -10,62 +10,66 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={aceTechLogo} alt="Ace Tech Logo" className="rounded-full" />
+          <img
+            src={aceTechLogo}
+            alt="Ace Tech Logo"
+            className="w-32 h-auto" // Added width class, height will adjust automatically
+          />
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6">
-          <a
-            href="#"
-            className="hover:text-gray-400 transition-colors duration-200"
+        {/* Desktop Navigation with Mobile Button */}
+        <nav className="flex items-center">
+          <div className="hidden md:flex space-x-6">
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              HOME
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              ABOUT US
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              TALENT
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              SERVICES
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              BUSINESS SOLUTION
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              RESOURCES
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-400 transition-colors duration-200"
+            >
+              CONTACT US
+            </a>
+          </div>
+          <button
+            className="md:hidden text-white ml-4" // Added md:hidden to hide on medium and larger screens
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            HOME
-          </a>
-          <a
-            href="#"
-            className="hover:text-gray-400 transition-colors duration-200"
-          >
-            ABOUT US
-          </a>
-          <a
-            href="#"
-            className="hover:text-gray-400 transition-colors duration-200"
-          >
-            TALENT
-          </a>
-          <a
-            href="#"
-            className="hover:text-gray-400 transition-colors duration-200"
-          >
-            SERVICES
-          </a>
-          <a
-            href="#"
-            className="hover:text-gray-400 transition-colors duration-200"
-          >
-            BUSINESS SOLUTION
-          </a>
-          <a
-            href="#"
-            className="hover:text-gray-400 transition-colors duration-200"
-          >
-            RESOURCES
-          </a>
-          <a
-            href="#"
-            className="hover:text-gray-400 transition-colors duration-200"
-          >
-            CONTACT US
-          </a>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </nav>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="text-white p-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
       {/* Mobile Menu */}
