@@ -3,22 +3,26 @@ import aceTechimage from "../assets/acetech_image.png";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-6 pt-4 pb-8 max-w-7xl mx-auto">
+    <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-4 pb-8 mx-auto w-full">
       {/* Left: Text Content */}
-      <div className="md:w-1/2 text-center md:text-left space-y-6">
-        <p className="text-lg text-white">OPTIMIZE YOUR BUSINESS GROWTH</p>
-        <h1 className="text-7xl md:text-7xl font-bold leading-tight">
-          <span className="text-white">LAUNCHING YOUR STARTUP JOURNEY</span>
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-6">
+        <p className="text-xs md:text-sm text-white font-semibold tracking-wide uppercase">
+          OPTIMIZE YOUR BUSINESS GROWTH
+        </p>
+        <h1 className="text-6xl md:text-6xl font-bold leading-tight text-white">
+          LAUNCHING<br />YOUR STARTUP<br />JOURNEY
         </h1>
-        <button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 transition duration-300">
-          Get Started
+        <br></br>
+        <button className="bg-purple-500 hover:bg-purple-600 text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg">
+          GET STARTED
+          <span>→</span>
         </button>
       </div>
 
       {/* Right: Image */}
-      <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+      <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
         <img src={aceTechimage} alt="Ace Tech image" className="" />
       </div>
-    </section>
+    </div>
   );
 }
