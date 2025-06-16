@@ -6,14 +6,15 @@ export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-4 pb-8 mx-auto w-full">
       {/* Left: Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-6">
-        <p className="text-xs md:text-sm text-white font-semibold tracking-wide uppercase">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-6 font-bebas">
+        <p className="text-2xl md:text-xl text-white tracking-wide uppercase">
           OPTIMIZE YOUR BUSINESS GROWTH
         </p>
-        <h1 className="text-6xl md:text-6xl font-bold leading-tight text-white">
+        <h1 className="text-6xl md:text-6xl font-semibold leading-tight text-white">
           LAUNCHING<br />YOUR STARTUP<br />JOURNEY
         </h1>
-        <button className="bg-purple-500 hover:bg-purple-600 text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg">
+        <br></br>
+        <button className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg">
           GET STARTED
           <span>→</span>
         </button>
