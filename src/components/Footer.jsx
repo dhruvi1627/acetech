@@ -13,22 +13,22 @@ export default function Footer() {
 
           {/* Office Section */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">OFFICE</h3>
-            <p className="mb-2">63 rue Tolbiac</p>
-            <p className="mb-4">75013 Paris</p>
-            <p className="text-sm">INFO@ACETECHINSIDE.TECH</p>
+            <h3 className="font-bebas text-xl mb-4">OFFICE</h3>
+            <p className="font-roboto mb-2">63 rue Tolbiac</p>
+            <p className="font-roboto mb-4">75013 Paris</p>
+            <p className="font-bebas text-sm">INFO@ACETECHINSIDE.TECH</p>
           </div>
 
           {/* Links Section */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">LINKS</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bebas text-xl mb-4">LINKS</h3>
+            <ul className="font-roboto space-y-2">
               <li>
                 <a
                   href="/careers"
                   className="hover:text-gray-300 relative group inline-block"
                 >
-                  <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-2">
+                  <span className="font-bebasrelative inline-block transition-transform duration-300 group-hover:translate-x-2">
                     Careers
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></span>
                   </span>
@@ -83,8 +83,8 @@ export default function Footer() {
 
           {/* Newsletter Section */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">NEWSLETTER</h3>
-            <div className="mb-4">
+            <h3 className="font-bebas text-xl font-bold mb-4">NEWSLETTER</h3>
+            <div className="font-roboto mb-4">
               <div className="flex items-center border-b border-white">
                 <input
                   type="email"
@@ -121,8 +121,10 @@ export default function Footer() {
 
             {/* Social Links */}
             <div>
-              <h3 className="text-xl font-bold mb-4">SOCIAL LINKS</h3>
-              <div className="flex space-x-4">
+              <h3 className="font-bebas text-xl font-bold mb-4">
+                SOCIAL LINKS
+              </h3>
+              <div className="font-roboto flex space-x-4">
                 <a
                   href="#"
                   className="border border-white p-2 rounded-sm hover:bg-white hover:text-black"
@@ -153,7 +155,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright Section */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
+        <div className="font-roboto border-t border-gray-800 mt-8 pt-8">
           <p className="text-sm">
             Ace Tech Inside © 2025. All Rights Reserved.
           </p>
