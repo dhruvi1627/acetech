@@ -83,7 +83,7 @@ export default function Footer() {
 
           {/* Newsletter Section */}
           <div className="col-span-1">
-            <h3 className="font-bebas text-xl font-bold mb-4">NEWSLETTER</h3>
+            <h3 className="font-bebas text-xl mb-4">NEWSLETTER</h3>
             <div className="font-roboto mb-4">
               <div className="flex items-center border-b border-white">
                 <input
@@ -121,7 +121,7 @@ export default function Footer() {
 
             {/* Social Links */}
             <div>
-              <h3 className="font-bebas text-xl font-bold mb-4">
+              <h3 className="font-bebas text-xl mb-4">
                 SOCIAL LINKS
               </h3>
               <div className="font-roboto flex space-x-4">

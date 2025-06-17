@@ -69,9 +69,9 @@ export default function Blogs() {
   return (
     <>
       <div className="text-white min-h-screen">
-        <div className="text-center py-10 space-y-4">
-          <h1 className="text-xl font-bold">OUR BLOG</h1>
-          <h1 className="text-5xl font-bold">LATEST NEWS</h1>
+        <div className=" font-bebas text-center py-10 space-y-4">
+          <h1 className="text-xl">OUR BLOG</h1>
+          <h1 className="text-5xl">LATEST NEWS</h1>
         </div>
 
         <div className="container mx-auto px-4 relative">
@@ -99,14 +99,14 @@ export default function Blogs() {
             {blogs.slice(currentSlide, currentSlide + 3).map((blog) => (
               <div
                 key={blog.id}
-                className="bg-gray-800 rounded-lg overflow-hidden transition-transform duration-500 ease-in-out"
+                className="font-roboto bg-gray-800 rounded-lg overflow-hidden transition-transform duration-500 ease-in-out"
               >
                 <img
                   src={blog.image}
                   alt={blog.title}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-4">
+                <div className="font-bebas p-4">
                   <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
                   <p className="text-gray-300 mb-2">{blog.description}</p>
                   <span className="text-sm text-gray-400">{blog.date}</span>
