@@ -7,6 +7,7 @@ import Blogs from "./Blogs";
 import AboutUs from "./AboutUs";
 import Testimonials from "./Testimonials";
 import Benefits from "./Benefits";
+import Expertise from "./Expertise";
 
 export default function Landing() {
   return (
@@ -15,6 +16,7 @@ export default function Landing() {
       <Hero />
       <Work />
       <Benefits />
+      <Expertise />
       <Testimonials/>
       <AboutUs />
       <Blogs />

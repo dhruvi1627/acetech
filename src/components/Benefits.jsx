@@ -4,14 +4,14 @@ import decor2Startup from '../assets/images/decor_2_startup.webp';
 
 function Benefits() {
   return (
-    <div className="bg-black text-white py-20 relative overflow-hidden bg-right bg-no-repeat" style={{ backgroundImage: `url(${decor2Startup})`, backgroundPosition: 'right -400px top 50px' }}>
+    <div className="bg-black text-white py-20 relative overflow-hidden bg-right bg-no-repeat tracking-wider" style={{ backgroundImage: `url(${decor2Startup})`, backgroundPosition: 'right -400px top 50px' }}>
       <div className="bg-black text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-0">
           {/* Image */}
           <div className="md:w-4/5 w-full">
-            <img 
-              src={acetechBenefits} 
-              alt="Ace Tech Benefits" 
+            <img
+              src={acetechBenefits}
+              alt="Ace Tech Benefits"
               className="w-full h-auto max-w-lg mx-auto"
             />
           </div>
@@ -35,16 +35,16 @@ function Benefits() {
               </li>
             </ul>
             <button className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg font-roboto">
-            CONTACT US
-            <span>→</span>
-          </button>
-            <div className="text-center mb-8">
-              <h4 className="text-xl font-semibold font-roboto">WHO WE ARE</h4>
-              <h3 className="text-3xl font-bold mb-2 font-bebas">WE'VE HELPED HUNDREDS OF PARTNERS, RANGING</h3>
-              <h3 className="text-3xl font-bold mb-2 font-bebas">FROM STARTUPS TO MEDIUM-SIZED BUSINESSES</h3>
-              <h3 className="text-3xl font-bold font-bebas">WITH THEIR <span className="underline text-white">GOALS</span></h3>
-            </div>
+              CONTACT US
+              <span>→</span>
+            </button>
           </div>
+        </div>
+        <div className="text-center mb-8 mt-20">
+          <h4 className="text-xl font-semibold font-bebas">WHO WE ARE</h4>
+          <h3 className="text-3xl font-bold mb-2 font-bebas">WE'VE HELPED HUNDREDS OF PARTNERS, RANGING</h3>
+          <h3 className="text-3xl font-bold mb-2 font-bebas">FROM STARTUPS TO MEDIUM-SIZED BUSINESSES</h3>
+          <h3 className="text-3xl font-bold font-bebas">WITH THEIR <span className="underline text-white">GOALS</span></h3>
         </div>
       </div>
     </div>
