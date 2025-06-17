@@ -21,7 +21,7 @@ export default function Header() {
         <nav className="flex items-center">
           <div className="font-bebas hidden md:flex space-x-6">
             <a
-              href="#"
+              href="/"
               className="hover:text-gray-400 transition-colors duration-200"
             >
               HOME
