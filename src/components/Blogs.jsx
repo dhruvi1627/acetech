@@ -157,7 +157,7 @@ export default function Blogs() {
             </div>
           </div>
         )}
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 max-w-7xl relative">
           {blogs.length > 3 && (
             <button
               onClick={prevSlide}

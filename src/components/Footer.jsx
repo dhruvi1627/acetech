@@ -1,5 +1,6 @@
 import React from "react";
 import aceTechLogo from "../assets/images/ace_tech.png";
+import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -121,33 +122,35 @@ export default function Footer() {
 
             {/* Social Links */}
             <div>
-              <h3 className="font-bebas text-xl mb-4">
-                SOCIAL LINKS
-              </h3>
+              <h3 className="font-bebas text-xl mb-4">SOCIAL LINKS</h3>
               <div className="font-roboto flex space-x-4">
                 <a
                   href="#"
-                  className="border border-white p-2 rounded-sm hover:bg-white hover:text-black"
+                  className="border border-white p-2 rounded-sm hover:text-[#1d4b98]"
+                  aria-label="Facebook"
                 >
-                  <i className="fab fa-facebook-f"></i>
+                  <Facebook className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
-                  className="border border-white p-2 rounded-sm hover:bg-white hover:text-black"
+                  className="border border-white p-2 rounded-sm hover:text-[#c862dc]"
+                  aria-label="Instagram"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <Instagram className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
-                  className="border border-white p-2 rounded-sm hover:bg-white hover:text-black"
+                  className="border border-white p-2 rounded-sm  hover:text-[#1a99f2]"
+                  aria-label="Twitter"
                 >
-                  <i className="fab fa-twitter"></i>
+                  <Twitter className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
-                  className="border border-white p-2 rounded-sm hover:bg-white hover:text-black"
+                  className="border border-white p-2 rounded-sm hover:text-[#e156e6]"
+                  aria-label="LinkedIn"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <Linkedin className="h-5 w-5" />
                 </a>
               </div>
             </div>
