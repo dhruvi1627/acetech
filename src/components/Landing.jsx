@@ -11,13 +11,13 @@ import Expertise from "./Expertise";
 
 export default function Landing() {
   return (
-    <div className="bg-black min-h-screen px-12">
+    <div className="bg-black overflow-x-hidden">
       <Header />
       <Hero />
       <Work />
       <Benefits />
       <Expertise />
-      <Testimonials/>
+      <Testimonials />
       <AboutUs />
       <Blogs />
       <Footer />

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"; // Add useEffect import
 import testimonials from "../assets/images/testimonials.png";
 
 const testimonialData = [
@@ -27,6 +27,17 @@ const testimonialData = [
 
 export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Add auto-sliding effect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === testimonialData.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(timer); // Cleanup on unmount
+  }, []);
 
   return (
     <section className="bg-[#0a0a1a] text-white px-8 relative overflow-hidden font-roboto">

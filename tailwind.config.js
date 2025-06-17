@@ -7,6 +7,18 @@ module.exports = {
         bebas: ["Bebas Neue", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
       },
+      utilities: {
+        ".scrollbar-hide": {
+          /* IE and Edge */
+          "-ms-overflow-style": "none",
+          /* Firefox */
+          "scrollbar-width": "none",
+          /* Safari and Chrome */
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+        },
+      },
     },
   },
   plugins: [],

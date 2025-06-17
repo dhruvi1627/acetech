@@ -35,7 +35,7 @@ export default function AboutUs() {
       </div>
 
       {/* Services Grid - Positioned to overlap the image */}
-      <div className="mt-[-150px] mr-[-300px] relative z-10">
+      <div className="mt-[-150px] relative z-10">
         <div className="grid md:grid-cols-3 gap-8 bg-[#9752e5] p-8 font-roboto max-w-3xl mx-auto">
           {/* Talent Acquisition */}
           <div className="space-y-4">

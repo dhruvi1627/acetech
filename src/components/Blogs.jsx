@@ -107,6 +107,18 @@ export default function Blogs() {
     fetchBlogs();
   }, []);
 
+  // Add auto-sliding effect
+  useEffect(() => {
+    if (blogs.length > 3) {
+      // Only auto-slide if there are more than 3 blogs
+      const timer = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 3 >= blogs.length ? 0 : prev + 3));
+      }, 3000); // Change slide every 3 seconds
+
+      return () => clearInterval(timer); // Cleanup on unmount
+    }
+  }, [blogs.length]);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 3 >= blogs.length ? 0 : prev + 3));
   };

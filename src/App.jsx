@@ -5,9 +5,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
+      <div className="overflow-x-hidden overflow-y-auto scrollbar-hide">
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
