@@ -4,6 +4,8 @@ import Hero from "./Hero";
 import Work from "./Work";
 import Footer from "./Footer";
 import Blogs from "./Blogs";
+import AboutUs from "./AboutUs";
+import Testimonials from "./Testimonials";
 
 export default function Landing() {
   return (
@@ -11,6 +13,8 @@ export default function Landing() {
       <Header />
       <Hero />
       <Work />
+      <Testimonials/>
+      <AboutUs />
       <Blogs />
       <Footer />
     </div>
