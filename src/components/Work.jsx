@@ -6,7 +6,7 @@ import decor_1_startup from "../assets/decor_1_startup.webp";
 
 function Work() {
   return (
-    <div className="bg-black text-white py-20 relative overflow-hidden bg-left bg-no-repeat" style={{ backgroundImage: `url(${decor_1_startup})`, backgroundPosition: 'left -250px top 100px'  }}>
+    <div className="bg-black text-white py-20 relative overflow-hidden bg-left bg-no-repeat" style={{ backgroundImage: `url(${decor_1_startup})`, backgroundPosition: 'left -250px top 50px'  }}>
       <div className="container mx-auto text-center relative z-10">
         <h2 className="text-xl font-semibold font-roboto">WHAT WE DO</h2>
         <h3 className="text-5xl font-bold mb-4 font-bebas">TALENTS FOR STARTUPS</h3>

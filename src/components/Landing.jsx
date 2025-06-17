@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Blogs from "./Blogs";
 import AboutUs from "./AboutUs";
 import Testimonials from "./Testimonials";
+import Benefits from "./Benefits";
 
 export default function Landing() {
   return (
@@ -13,6 +14,7 @@ export default function Landing() {
       <Header />
       <Hero />
       <Work />
+      <Benefits />
       <Testimonials/>
       <AboutUs />
       <Blogs />
