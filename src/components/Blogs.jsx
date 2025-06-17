@@ -149,12 +149,13 @@ export default function Blogs() {
             )}
           </div>
         </div>
-
-        <img
-          src={footerbgstartup}
-          alt="footerbgstartup"
-          className="w-full mt-10"
-        />
+        <div className="mt-[-200px] -z-10">
+          <img
+            src={footerbgstartup}
+            alt="footerbgstartup"
+            className="w-full mt-10"
+          />
+        </div>
       </div>
     </>
   );

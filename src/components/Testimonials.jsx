@@ -5,23 +5,23 @@ const testimonialData = [
   {
     id: 1,
     quote:
-      "Ace Tech Inside has transformed our business operations with their innovative solutions. Their agile approach helped us scale quickly and stay ahead of the competition. We highly recommend their services!",
-    name: "Linda Miller",
-    position: "Startup Founder",
+      "ATI's dedicated team brought unparalleled expertise to project. Their focus on collaboration and efficiency delivered outstanding results on time and within budget.",
+    name: "Ronals May",
+    position: "Enthrepreneur",
   },
   {
     id: 2,
     quote:
-      "Working with Ace Tech has been a game-changer for our company. Their expertise and dedication to excellence are unmatched.",
-    name: "James Wilson",
-    position: "CEO, TechFlow",
+      "Working with ATI was seamless. Their deep understanding of cutting-edge technologies like Al and blockchain made a huge difference in our project. Exceptional support!",
+    name: "Michelle Smith",
+    position: "SME CEO",
   },
   {
     id: 3,
     quote:
-      "The team at Ace Tech Inside delivered beyond our expectations. Their solutions have greatly improved our efficiency.",
-    name: "Sarah Chen",
-    position: "Operations Director",
+      "Ace Tech Inside has transformed our business operations with their innovative solutions. Their agile approach helped us scale quickly and stay ahead of the competition. We highly recommend their services!",
+    name: "Linda Miller",
+    position: "Startup Founder",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <section className="bg-[#0a0a1a] text-white py-16 px-8 relative overflow-hidden font-roboto">
+    <section className="bg-[#0a0a1a] text-white px-8 relative overflow-hidden font-roboto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left side - Testimonials */}
         <div className="text-center lg:text-center flex flex-col items-center justify-center">
@@ -72,12 +72,8 @@ export default function Testimonials() {
         </div>
 
         {/* Right side - Image */}
-        <div className="relative h-full">
-          <img
-            src={testimonials}
-            alt="testimonials"
-            className="w-full h-full object-cover rounded-lg"
-          />
+        <div className="relative">
+          <img src={testimonials} alt="testimonials" className="rounded-lg" />
         </div>
       </div>
     </section>
