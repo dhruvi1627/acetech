@@ -25,7 +25,7 @@ export default function Hero() {
       </div>
 
       {/* Right: Image with Overlay */}
-      <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end overflow-hidden">
+      <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
         <div className="relative">
           {/* Main image */}
           <img
@@ -37,7 +37,7 @@ export default function Hero() {
           <img
             src={acetech_worldwide}
             alt="Overlay"
-            className="absolute left-0 md:left-[-80px] bottom-[100px] w-[200px] md:w-[300px] h-auto object-cover shadow-xl"
+            className="absolute left-[-80px] bottom-[100px] w-[300px] h-[300px] object-cover shadow-xl"
           />
         </div>
       </div>
