@@ -1,13 +1,14 @@
 import "./index.css";
 import Landing from "./components/Landing";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <div>
-        <Landing />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
+    </Router>
   );
 }
 
