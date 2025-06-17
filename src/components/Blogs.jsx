@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import footerbgstartup from "../assets/footer-bg-startup.png";
+import footerbgstartup from "../assets/images/footer-bg-startup.png";
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);

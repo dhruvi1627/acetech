@@ -1,6 +1,6 @@
 import React from 'react';
-import acetechBenefits from '../assets/acetech_benefits.png';
-import decor2Startup from '../assets/decor_2_startup.webp';
+import acetechBenefits from '../assets/images/acetech_benefits.png';
+import decor2Startup from '../assets/images/decor_2_startup.webp';
 
 function Benefits() {
   return (
@@ -38,6 +38,12 @@ function Benefits() {
             CONTACT US
             <span>→</span>
           </button>
+            <div className="text-center mb-8">
+              <h4 className="text-xl font-semibold font-roboto">WHO WE ARE</h4>
+              <h3 className="text-3xl font-bold mb-2 font-bebas">WE'VE HELPED HUNDREDS OF PARTNERS, RANGING</h3>
+              <h3 className="text-3xl font-bold mb-2 font-bebas">FROM STARTUPS TO MEDIUM-SIZED BUSINESSES</h3>
+              <h3 className="text-3xl font-bold font-bebas">WITH THEIR <span className="underline text-white">GOALS</span></h3>
+            </div>
           </div>
         </div>
       </div>

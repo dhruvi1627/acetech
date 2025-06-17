@@ -1,5 +1,5 @@
 import React from "react";
-import aboutUsImage from "../assets/Solving-Startup-Challenges-with-Expertise-and-Innovation-scaled.jpg";
+import aboutUsImage from "../assets/images/Solving-Startup-Challenges-with-Expertise-and-Innovation-scaled.jpg";
 
 export default function AboutUs() {
   return (

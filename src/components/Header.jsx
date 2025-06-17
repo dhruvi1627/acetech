@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grip, Menu, X } from "lucide-react";
-import aceTechLogo from "../assets/ace_tech.png";
+import aceTechLogo from "../assets/images/ace_tech.png"; // Adjust the path as necessary
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

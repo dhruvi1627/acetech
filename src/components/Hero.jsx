@@ -1,6 +1,6 @@
 import React from "react";
-import aceTechimage from "../assets/acetech_image.png";
-import acetech_worldwide from "../assets/acetech_worldwide.png";
+import aceTechimage from "../assets/images/acetech_image.png";
+import acetech_worldwide from "../assets/images/acetech_worldwide.png";
 
 export default function Hero() {
   return (

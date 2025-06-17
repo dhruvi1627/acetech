@@ -1,5 +1,5 @@
 import React from "react";
-import aceTechLogo from "../assets/ace_tech.png";
+import aceTechLogo from "../assets/images/ace_tech.png";
 
 export default function Footer() {
   return (
