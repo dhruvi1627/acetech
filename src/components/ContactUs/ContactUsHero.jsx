@@ -28,7 +28,7 @@ export default function ContactUsHero() {
   };
 
   return (
-    <div className="w-full text-white py-16 px-4 md:px-8 lg:px-16 font-roboto">
+    <div className="w-full text-white py-16 px-4 md:px-8 lg:px-16 font-roboto tracking-wider">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column */}

@@ -18,8 +18,8 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation with Mobile Button */}
-        <nav className="flex items-center">
-          <div className="font-bebas hidden md:flex space-x-6">
+        <nav className="flex items-center ">
+          <div className="font-bebas hidden md:flex space-x-6 text-xl tracking-wider">
             <a
               href="/"
               className="hover:text-gray-400 transition-colors duration-200"
@@ -45,7 +45,7 @@ export default function Header() {
               SERVICES
             </a>
             <a
-              href="#"
+              href="/business-solutions"
               className="hover:text-gray-400 transition-colors duration-200"
             >
               BUSINESS SOLUTION
@@ -81,10 +81,10 @@ export default function Header() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-black text-white px-6 py-4 space-y-2">
-          <a href="#" className="block hover:text-gray-400">
+          <a href="/" className="block hover:text-gray-400">
             HOME
           </a>
-          <a href="#" className="block hover:text-gray-400">
+          <a href="/about-us" className="block hover:text-gray-400">
             ABOUT US
           </a>
           <a href="#" className="block hover:text-gray-400">
@@ -93,13 +93,13 @@ export default function Header() {
           <a href="#" className="block hover:text-gray-400">
             SERVICES
           </a>
-          <a href="#" className="block hover:text-gray-400">
+          <a href="/business-solutions" className="block hover:text-gray-400">
             BUSINESS SOLUTION
           </a>
           <a href="#" className="block hover:text-gray-400">
             RESOURCES
           </a>
-          <a href="#" className="block hover:text-gray-400">
+          <a href="/contact-us" className="block hover:text-gray-400">
             CONTACT US
           </a>
         </div>
