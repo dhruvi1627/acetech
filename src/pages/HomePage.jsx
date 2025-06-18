@@ -7,7 +7,7 @@ import Testimonials from "../components/Testimonials";
 import Benefits from "../components/Benefits";
 import Expertise from "../components/Expertise";
 
-export default function Landing() {
+export default function HomePage() {
   return (
     <>
       <Hero />

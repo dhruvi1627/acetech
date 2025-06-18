@@ -2,7 +2,7 @@ import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Landing from "./pages/Landing";
+import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 
@@ -13,7 +13,7 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Landing />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
           </Routes>
