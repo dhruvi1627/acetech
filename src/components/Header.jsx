@@ -27,7 +27,7 @@ export default function Header() {
               HOME
             </a>
             <a
-              href="#"
+              href="/about-us"
               className="hover:text-gray-400 transition-colors duration-200"
             >
               ABOUT US
