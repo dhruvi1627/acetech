@@ -1,9 +1,12 @@
 import React from "react";
+import AboutUsHero from "../components/about_us/AboutUsHero";
+import Values from "../components/about_us/Values";
 
 export default function AboutUsPage() {
   return (
     <>
-      <div className="text-white">About us pages</div>
+      <AboutUsHero />
+      <Values/>
     </>
   );
 }
