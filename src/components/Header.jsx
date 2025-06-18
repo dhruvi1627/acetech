@@ -57,7 +57,7 @@ export default function Header() {
               RESOURCES
             </a>
             <a
-              href="#"
+              href="contact-us"
               className="hover:text-gray-400 transition-colors duration-200"
             >
               CONTACT US
