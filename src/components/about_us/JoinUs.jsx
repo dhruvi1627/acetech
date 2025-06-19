@@ -26,9 +26,9 @@ const JoinUs = () => {
         <div className="w-1/2 flex flex-col justify-center px-16 py-12">
           {/* Header */}
           <div className="mb-12">
-            <p className=" text-sm font-semibold tracking-wide uppercase mb-4 font-bebas">
+            <h1 className=" text-xl font-semibold tracking-wide uppercase mb-4 font-bebas">
               JOIN US
-            </p>
+            </h1>
             <h1 className="text-5xl font-semibold mb-8 font-bebas tracking-wider">
               OPPORTUNITIES FOR COLLABORATION
               <br />
