@@ -24,7 +24,9 @@ export default function CollaborativeTalent() {
               alt="Pair Programming"
               className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4"
             />
-            <h3 className="font-bebas text-xl md:text-2xl mb-4">Pair-to-Pair</h3>
+            <h3 className="font-bebas text-xl md:text-2xl mb-4">
+              Pair-to-Pair
+            </h3>
             <p className="text-sm mb-4">
               Two experts collaborating for quality and innovation.
             </p>
@@ -41,7 +43,9 @@ export default function CollaborativeTalent() {
               alt="Dedicated Team"
               className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4"
             />
-            <h3 className="font-bebas text-xl md:text-2xl mb-4">Dedicated Team</h3>
+            <h3 className="font-bebas text-xl md:text-2xl mb-4">
+              Dedicated Team
+            </h3>
             <p className="text-sm mb-4">
               A full team committed to comprehensive support.
             </p>
@@ -58,7 +62,9 @@ export default function CollaborativeTalent() {
               alt="Specialized Experts"
               className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4"
             />
-            <h3 className="font-bebas text-xl md:text-2xl mb-4">Specialized Experts</h3>
+            <h3 className="font-bebas text-xl md:text-2xl mb-4">
+              Specialized Experts
+            </h3>
             <p className="text-sm mb-4">
               Specialized experts for critical milestones and challenges.
             </p>
