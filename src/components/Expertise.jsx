@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import data_and_ai from '../assets/images/data_and_ai.png';
-import app_development from '../assets/images/app_development.png';
-import system_integration from '../assets/images/system_integration.png';
-import tech_innovation from '../assets/images/tech_innovation.png';
-import digital_transformation from '../assets/images/digital_transformation.png';
-import cyber_security from '../assets/images/cyber_security.png';
-import ar_and_mr from '../assets/images/ar_and_mr.png';
-import blockchain from '../assets/images/blockchain.png';
+import React, { useState, useEffect } from "react";
+import data_and_ai from "../assets/images/data_and_ai.png";
+import app_development from "../assets/images/app_development.png";
+import system_integration from "../assets/images/system_integration.png";
+import tech_innovation from "../assets/images/tech_innovation.png";
+import digital_transformation from "../assets/images/digital_transformation.png";
+import cyber_security from "../assets/images/cyber_security.png";
+import ar_and_mr from "../assets/images/ar_and_mr.png";
+import blockchain from "../assets/images/blockchain.png";
 
 const Expertise = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,7 +51,7 @@ const Expertise = () => {
       id: 8,
       title: "BLOCKCHAIN & WEB 3.0",
       image: blockchain,
-    }
+    },
   ];
 
   // Auto-carousel effect
@@ -77,7 +77,7 @@ const Expertise = () => {
   };
 
   return (
-    <section className="bg-black py-20 px-4">
+    <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-16 tracking-wider">
@@ -93,37 +93,38 @@ const Expertise = () => {
                 key={`${item.id}-${currentSlide}`}
                 className="group relative h-96 overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
                 style={{
-                  animationDelay: `${index * 0.1}s`
+                  animationDelay: `${index * 0.1}s`,
                 }}
               >
                 {/* Background Image */}
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                   style={{
-                    backgroundImage: `url(${item.image})`
+                    backgroundImage: `url(${item.image})`,
                   }}
                 />
 
                 {/* Gradient Overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-80 group-hover:opacity-0 transition-opacity duration-500`} />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-80 group-hover:opacity-0 transition-opacity duration-500`}
+                />
 
                 {/* Purple Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 opacity-0 group-hover:opacity-80 transition-opacity duration-500" />
 
                 {/* Futuristic Grid Overlay */}
                 <div className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity duration-500">
-                  <div className="w-full h-full"
+                  <div
+                    className="w-full h-full"
                     style={{
                       backgroundImage: `
                            linear-gradient(rgba(0,255,255,0.1) 1px, transparent 1px),
                            linear-gradient(90deg, rgba(0,255,255,0.1) 1px, transparent 1px)
                          `,
-                      backgroundSize: '20px 20px'
+                      backgroundSize: "20px 20px",
                     }}
                   />
                 </div>
-
-
 
                 {/* Content */}
                 <div className="absolute inset-0 flex items-end p-6">
