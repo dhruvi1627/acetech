@@ -5,6 +5,7 @@ import AboutUs from "../components/AboutUs";
 import Ati from "../components/about_us/Ati";
 import AboutUsExpertise from "../components/about_us/AboutUsExpertise";
 import Journey from "../components/about_us/Journey";
+import JoinUs from "../components/about_us/JoinUs";
 
 export default function AboutUsPage() {
   return (
@@ -15,6 +16,7 @@ export default function AboutUsPage() {
       <Ati/>
       <AboutUsExpertise/>
       <Journey/>
+      <JoinUs/>
     </>
   );
 }
