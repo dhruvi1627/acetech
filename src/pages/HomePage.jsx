@@ -7,6 +7,9 @@ import Testimonials from "../components/Testimonials";
 import Benefits from "../components/Benefits";
 import Expertise from "../components/Expertise";
 import WhoWeAre from "../components/WhoWeAre";
+import footerbgstartup from "../assets/images/footer-bg-startup.png";
+import decor2Startup from "../assets/images/decor_2_startup.webp";
+import colorBg from "../assets/images/bg-gr-1-startup.png";
 
 export default function HomePage() {
   return (
@@ -14,11 +17,36 @@ export default function HomePage() {
       <Hero />
       <Work />
       <Benefits />
-      <WhoWeAre/>
+      <WhoWeAre />
       <Expertise />
       <Testimonials />
       <AboutUs />
-      <Blogs />
+      <div className="bg-transparent relative">
+        <div
+          className=""
+          style={{
+            backgroundImage: `
+            url(${decor2Startup}),
+            url(${colorBg})
+          `,
+            backgroundPosition: `
+            right -400px top 50px,
+            right center
+          `,
+            backgroundSize: "auto, cover",
+            backgroundRepeat: "no-repeat, no-repeat",
+          }}
+        >
+          <Blogs />
+          <div className="mt-[-400px] -z-10">
+            <img
+              src={footerbgstartup}
+              alt="footerbgstartup"
+              className="w-full mt-10"
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

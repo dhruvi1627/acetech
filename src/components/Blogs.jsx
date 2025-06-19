@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import decor2Startup from "../assets/images/decor_2_startup.webp";
-import footerbgstartup from "../assets/images/footer-bg-startup.png";
-import colorBg from "../assets/images/bg-gr-1-startup.png";
+
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
@@ -133,18 +131,7 @@ export default function Blogs() {
     <>
       <div
         className="text-white min-h-screen bg-right bg-no-repeat relative"
-        style={{
-          backgroundImage: `
-            url(${decor2Startup}),
-            url(${colorBg})
-          `,
-          backgroundPosition: `
-            right -400px top 50px,
-            right center
-          `,
-          backgroundSize: "auto, cover",
-          backgroundRepeat: "no-repeat, no-repeat",
-        }}
+
       >
         <div className="font-bebas text-center py-10 space-y-4">
           <h1 className="text-xl">OUR BLOG</h1>
@@ -286,13 +273,6 @@ export default function Blogs() {
               <p className="text-xl text-gray-400">No blogs found.</p>
             </div>
           )}
-        </div>
-        <div className="mt-[-200px] -z-10">
-          <img
-            src={footerbgstartup}
-            alt="footerbgstartup"
-            className="w-full mt-10"
-          />
         </div>
       </div>
     </>
