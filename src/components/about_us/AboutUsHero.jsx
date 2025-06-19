@@ -61,7 +61,7 @@ const AboutUsHero = () => {
         </div>
 
         {/* Mission and Vision Cards - Positioned below main content */}
-        <div className="grid md:grid-cols-2 mt-20 pb-20 font-roboto h-full w-full ">
+        <div className="grid md:grid-cols-2 mt-20 pb-20 font-roboto h-[500px] w-full ">
           <div className="p-10 border border-gray-700 space-y-4 ">
             <div className="text-pink-400">
               <Brain size={48} />
@@ -70,7 +70,13 @@ const AboutUsHero = () => {
               Our Mission - Empowering Innovation
             </h2>
             <p className="text-gray-300">
-              Our mission is to enable businesses to achieve their full potential by delivering agile, lean, and innovative technology solutions. We strive to be the trusted partner that organizations turn to when they need to navigate digital transformation, optimize their operations, and achieve sustainable growth.
+              Our mission is to enable businesses to achieve their full potential by 
+              <br />
+              delivering agile, lean, and innovative technology solutions. We strive to be
+              <br />
+              the trusted partner that organizations turn to when they need to navigate
+              <br />
+              digital transformation, optimize their operations, and achieve sustainable growth.
             </p>
           </div>
           <div className="p-10 border border-gray-700 space-y-4">
@@ -81,7 +87,15 @@ const AboutUsHero = () => {
               Our Vision - Shaping the Future
             </h2>
             <p className="text-gray-300">
-              We envision a future where businesses of all sizes can leverage advanced technologies to drive innovation, efficiency, and growth. By staying at the forefront of technological advancements and maintaining a customer-centric approach, ATI aims to lead the way in transforming industries and improving lives through technology.
+              We envision a future where businesses of all sizes can leverage advanced
+              <br />
+              technologies to drive innovation, efficiency, and growth. By staying at the 
+              <br /> 
+              forefront of technological advancements and maintaining a customer-
+              <br />
+              centric approach, ATI aims to lead the way in transforming industries and
+              <br />
+              improving lives through technology.
             </p>
           </div>
         </div>
