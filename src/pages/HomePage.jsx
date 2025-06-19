@@ -6,6 +6,7 @@ import AboutUs from "../components/AboutUs";
 import Testimonials from "../components/Testimonials";
 import Benefits from "../components/Benefits";
 import Expertise from "../components/Expertise";
+import WhoWeAre from "../components/WhoWeAre";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Hero />
       <Work />
       <Benefits />
+      <WhoWeAre/>
       <Expertise />
       <Testimonials />
       <AboutUs />
