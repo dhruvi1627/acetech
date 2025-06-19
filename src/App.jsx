@@ -12,7 +12,7 @@ import ServicePage from "./pages/ServicePage";
 function App() {
   return (
     <Router>
-      <div className="overflow-x-hidden overflow-y-auto scrollbar-hide bg-[#030308]">
+      <div className="overflow-x-hidden overflow-y-auto bg-[#030308]">
         <Header />
         <main>
           <Routes>
