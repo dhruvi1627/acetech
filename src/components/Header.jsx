@@ -39,7 +39,7 @@ export default function Header() {
               TALENT
             </a>
             <a
-              href="#"
+              href="/service"
               className="hover:text-gray-400 transition-colors duration-200"
             >
               SERVICES
@@ -90,7 +90,7 @@ export default function Header() {
           <a href="/talent" className="block hover:text-gray-400">
             TALENT
           </a>
-          <a href="#" className="block hover:text-gray-400">
+          <a href="/service" className="block hover:text-gray-400">
             SERVICES
           </a>
           <a href="/business-solutions" className="block hover:text-gray-400">
