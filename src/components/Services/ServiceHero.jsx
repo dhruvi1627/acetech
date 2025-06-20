@@ -42,18 +42,6 @@ const ServiceHero = () => {
                 CONTACT US
                 <span>→</span>
             </button>
-            {/* <div
-                className="text-white py-20 relative overflow-hidden bg-right bg-no-repeat tracking-wider"
-                style={{
-                    backgroundImage: `
-                    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                    url(${defaultImg})
-                    `,
-                    backgroundPosition: 'right -100px top 10px, right center',
-                    backgroundBlendMode: 'overlay', // Optional for blend effect
-                }}
-                >
-                </div> */}
           </div>
           
           {/* Right side - Services Grid */}

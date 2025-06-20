@@ -12,6 +12,7 @@ import ResourcesPage from "./pages/ResourcesPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import CareerPage from "./pages/CareerPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
+import Gdpr from "./pages/Gdpr";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/careers" element={<CareerPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/gdpr" element={<Gdpr />} />
             <Route
               path="/terms-and-conditions"
               element={<TermsAndConditionsPage />}
