@@ -34,6 +34,7 @@ export default function HomePage() {
         `,
           backgroundPosition: `
           right -400px top 350px,
+          right center
         `,
         }}
       >
