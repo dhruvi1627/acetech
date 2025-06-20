@@ -32,6 +32,7 @@ const getKeywords = (post) => {
 export default function Resources() {
   const [blogs, setBlogs] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [tags, setTags] = useState([]);
   const [error, setError] = useState(null);
 
   // Fetch blogs
@@ -77,7 +78,7 @@ export default function Resources() {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          "https://acetechinside.tech/wp-json/wp/v2/categories"
+          "https://acetechinside.tech/wp-json/wp/v2/categories?per_page=100"
         );
         if (!response.ok) throw new Error("Failed to fetch categories");
         const data = await response.json();
@@ -87,6 +88,23 @@ export default function Resources() {
       }
     };
     fetchCategories();
+  }, []);
+
+  // Fetch tags
+  useEffect(() => {
+    const fetchTags = async () => {
+      try {
+        const response = await fetch(
+          "https://acetechinside.tech/wp-json/wp/v2/tags?per_page=100"
+        );
+        if (!response.ok) throw new Error("Failed to fetch tags");
+        const data = await response.json();
+        setTags(data);
+      } catch {
+        setError("Failed to load tags.");
+      }
+    };
+    fetchTags();
   }, []);
 
   return (
@@ -145,14 +163,14 @@ export default function Resources() {
           ))}
         </div>
         {/* Right: Categories */}
-        <div className="w-full md:w-1/3 p-8 rounded-lg">
+        <div className="w-full md:w-1/3 p-8 bg-[#242222]">
           <h2 className="text-xl font-bold mb-4 font-bebas tracking-wider">
             CATEGORIES
           </h2>
           {categories.length === 0 && !error && (
             <div>Loading categories...</div>
           )}
-          <ul className="space-y-2">
+          <ul className="space-y-2 mb-8">
             {categories.map((cat) => (
               <li
                 key={cat.id}
@@ -163,6 +181,20 @@ export default function Resources() {
               </li>
             ))}
           </ul>
+          <h2 className="text-xl font-bold mb-4 font-bebas tracking-wider">
+            TAGS
+          </h2>
+          {tags.length === 0 && !error && <div>Loading tags...</div>}
+          <div className="flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <span
+                key={tag.id}
+                className="border border-gray-400 px-3 py-1 text-xs font-bebas uppercase tracking-wide text-gray-200 hover:text-[#de60ca] hover:border-[#de60ca] transition-colors duration-200"
+              >
+                {tag.name}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
