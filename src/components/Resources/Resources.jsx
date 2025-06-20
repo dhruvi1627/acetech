@@ -40,7 +40,7 @@ export default function Resources() {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(
-          "https://acetechinside.tech/wp-json/wp/v2/posts?per_page=6&_embed"
+          "https://acetechinside.tech/wp-json/wp/v2/posts?per_page=10&_embed"
         );
         if (!response.ok) throw new Error("Failed to fetch blogs");
         const data = await response.json();
