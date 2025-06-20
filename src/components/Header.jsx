@@ -9,15 +9,15 @@ export default function Header() {
     <header className="bg-black shadow-md text-white">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-      <div className="flex items-center space-x-2">
-        <a href="/">
-          <img
-            src={aceTechLogo}
-            alt="Ace Tech Logo"
-            className="w-32 h-auto"
-          />
-        </a>
-      </div>
+        <div className="flex items-center space-x-2">
+          <a href="/">
+            <img
+              src={aceTechLogo}
+              alt="Ace Tech Logo"
+              className="w-32 h-auto"
+            />
+          </a>
+        </div>
 
         {/* Desktop Navigation with Mobile Button */}
         <nav className="flex items-center ">
@@ -53,7 +53,7 @@ export default function Header() {
               BUSINESS SOLUTION
             </a>
             <a
-              href="#"
+              href="/resources"
               className="hover:text-gray-400 transition-colors duration-200"
             >
               RESOURCES
@@ -98,7 +98,7 @@ export default function Header() {
           <a href="/business-solutions" className="block hover:text-gray-400">
             BUSINESS SOLUTION
           </a>
-          <a href="#" className="block hover:text-gray-400">
+          <a href="/resources" className="block hover:text-gray-400">
             RESOURCES
           </a>
           <a href="/contact-us" className="block hover:text-gray-400">
