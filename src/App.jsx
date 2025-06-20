@@ -11,6 +11,7 @@ import ServicePage from "./pages/ServicePage";
 import ResourcesPage from "./pages/ResourcesPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import CareerPage from "./pages/CareerPage";
+import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/careers" element={<CareerPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndConditionsPage />}
+            />
           </Routes>
         </main>
         <Footer />
