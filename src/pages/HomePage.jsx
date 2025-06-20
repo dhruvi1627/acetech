@@ -34,13 +34,12 @@ export default function HomePage() {
         `,
           backgroundPosition: `
           right -400px top 350px,
-          right center
         `,
         }}
       >
         <Benefits />
+        <WhoWeAre />
       </div>
-      <WhoWeAre />
       <Expertise />
       <Testimonials />
       <AboutUs />
@@ -53,7 +52,7 @@ export default function HomePage() {
             url(${colorBg})
           `,
             backgroundPosition: `
-            right -400px top 50px,
+            right -450px top 50px,
             right center
           `,
             backgroundSize: "auto, cover",
