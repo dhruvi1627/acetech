@@ -56,7 +56,7 @@ const Approach = () => {
 
             {/* CTA Button */}
             <div className="pt-6">
-              <button className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg font-bebas tracking-wider text-xl">
+              <button className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg font-bebas tracking-wider">
                 ABOUT US
                 <span>→</span>
             </button>

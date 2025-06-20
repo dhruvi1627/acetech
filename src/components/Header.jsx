@@ -9,13 +9,15 @@ export default function Header() {
     <header className="bg-black shadow-md text-white">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2">
+        <a href="/">
           <img
             src={aceTechLogo}
             alt="Ace Tech Logo"
-            className="w-32 h-auto" // Added width class, height will adjust automatically
+            className="w-32 h-auto"
           />
-        </div>
+        </a>
+      </div>
 
         {/* Desktop Navigation with Mobile Button */}
         <nav className="flex items-center ">
