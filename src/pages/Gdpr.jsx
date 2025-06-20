@@ -28,8 +28,7 @@ const Gdpr = () => {
             2. Data Controller
           </h2>
           <p className="text-gray-300 leading-relaxed font-roboto tracking-wider">
-            The data controller for the Site is AceTechInside, 63 rue Tolbiac,75013 Paris. 
-            <span className="text-purple-400 ml-1">info@acetechinside.tech</span>
+            The data controller for the Site is AceTechInside, 63 rue Tolbiac,75013 Paris.info@acetechinside.tech
           </p>
         </section>
 
