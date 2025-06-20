@@ -10,6 +10,7 @@ import TalentPage from "./pages/TalentPage";
 import ServicePage from "./pages/ServicePage";
 import ResourcesPage from "./pages/ResourcesPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import CareerPage from "./pages/CareerPage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
+            <Route path="/careers" element={<CareerPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
         </main>

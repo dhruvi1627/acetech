@@ -37,7 +37,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="/contact-us"
                   className="hover:text-gray-300 relative group inline-block"
                 >
                   <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-2">
@@ -59,7 +59,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/privacy"
+                  href="/privacy-policy"
                   className="hover:text-gray-300 relative group inline-block"
                 >
                   <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-2">
@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/terms"
+                  href="/terms-and-conditions"
                   className="hover:text-gray-300 relative group inline-block"
                 >
                   <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-2">
