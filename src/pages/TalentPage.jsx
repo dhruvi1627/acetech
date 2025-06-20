@@ -40,7 +40,7 @@ export default function TalentPage() {
         />
       </div>
       <div
-        className="bg-no-repeat bg-transparent w-full h-auto flex justify-center items-center hidden md:flex"
+        className="bg-no-repeat bg-transparent w-full h-auto justify-center items-center hidden md:flex"
         style={{
           backgroundImage: `url(${bgCapsule}), url(${colorBgLeft})`,
           backgroundPosition: "left -300px top 100px, left center",

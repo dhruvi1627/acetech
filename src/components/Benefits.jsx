@@ -1,23 +1,8 @@
 import acetechBenefits from "../assets/images/acetech_benefits.png";
-import decor2Startup from "../assets/images/decor_2_startup.webp";
-import colorBg from "../assets/images/bg-gr-1-startup.png";
 
 function Benefits() {
-
   return (
-    <div
-      className="text-white py-20 relative overflow-hidden bg-right bg-no-repeat tracking-wider"
-      style={{
-        backgroundImage: `
-          url(${decor2Startup}),
-          url(${colorBg})
-        `,
-        backgroundPosition: `
-          right -400px top 350px,
-          right center
-        `,
-      }}
-    >
+    <div className="text-white py-20 relative overflow-hidden tracking-wider">
       <div className=" text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-0">
           {/* Image */}

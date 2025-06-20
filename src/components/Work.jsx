@@ -2,20 +2,23 @@ import React, { useState, useEffect } from "react";
 import Mask_groupHome_page from "../assets/images/Mask_groupHome_page.png";
 import Mask_groupHome_page_1 from "../assets/images/Mask_groupHome_page_1.png";
 import Mask_groupHome_page_2 from "../assets/images/Mask_groupHome_page_2.png";
-import decor_1_startup from "../assets/images/decor_1_startup.webp";
+
 
 function Work() {
   const [talentType, setTalentType] = useState("");
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [hoveredCard, setHoveredCard] = useState(null);
-  
-  const talents = [
-    "STARTUPS",
-    "ENTREPRENEURS",
-    "SMES",
-    "INVENTORS ND PARTNERS",
-  ];
+
+  const talents = React.useMemo(
+    () => [
+      "STARTUPS",
+      "ENTREPRENEURS",
+      "SMES",
+      "INVENTORS ND PARTNERS",
+    ],
+    []
+  );
 
   useEffect(() => {
     let timeout;
@@ -43,22 +46,24 @@ function Work() {
   }, [charIndex, textIndex, talents, talentType]);
 
   return (
-    <div
-      className=" text-white py-20 relative overflow-hidden bg-left bg-no-repeat"
-      style={{
-        backgroundImage: `url(${decor_1_startup})`,
-        backgroundPosition: "left -250px top 30px",
-      }}
-    >
+    <div className=" text-white py-20 relative overflow-hidden">
       <div className="container mx-auto text-center relative z-10">
         <h2 className="text-xl font-semibold font-roboto">WHAT WE DO</h2>
         <h3 className="text-5xl font-bold mb-4 font-bebas">
           TALENTS FOR <span className="underline">{talentType}</span>
         </h3>
         <div className="flex flex-col md:flex-row justify-center gap-15 mt-8">
-          <div className="w-80" onMouseEnter={() => setHoveredCard(1)} onMouseLeave={() => setHoveredCard(null)}>
+          <div
+            className="w-80"
+            onMouseEnter={() => setHoveredCard(1)}
+            onMouseLeave={() => setHoveredCard(null)}
+          >
             {/* Icon */}
-            <div className={`rounded-full w-40 h-40 mx-auto mb-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${hoveredCard === 1 ? 'bg-blue-500' : 'bg-gray-800'}`}>
+            <div
+              className={`rounded-full w-40 h-40 mx-auto mb-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                hoveredCard === 1 ? "bg-blue-500" : "bg-gray-800"
+              }`}
+            >
               <img
                 src={Mask_groupHome_page}
                 alt="Pair-to-Pair Icon"
@@ -80,9 +85,17 @@ function Work() {
               <p className="text-3xl">+</p>
             </div>
           </div>
-          <div className="w-80" onMouseEnter={() => setHoveredCard(2)} onMouseLeave={() => setHoveredCard(null)}>
+          <div
+            className="w-80"
+            onMouseEnter={() => setHoveredCard(2)}
+            onMouseLeave={() => setHoveredCard(null)}
+          >
             {/* Icon */}
-            <div className={`rounded-full w-40 h-40 mx-auto mb-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${hoveredCard === 2 ? 'bg-blue-500' : 'bg-gray-800'}`}>
+            <div
+              className={`rounded-full w-40 h-40 mx-auto mb-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                hoveredCard === 2 ? "bg-blue-500" : "bg-gray-800"
+              }`}
+            >
               <img
                 src={Mask_groupHome_page_1}
                 alt="Dedicated Team Icon"
@@ -104,9 +117,17 @@ function Work() {
               <p className="text-3xl">+</p>
             </div>
           </div>
-          <div className="w-80" onMouseEnter={() => setHoveredCard(3)} onMouseLeave={() => setHoveredCard(null)}>
+          <div
+            className="w-80"
+            onMouseEnter={() => setHoveredCard(3)}
+            onMouseLeave={() => setHoveredCard(null)}
+          >
             {/* Icon */}
-            <div className={`rounded-full w-40 h-40 mx-auto mb-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${hoveredCard === 3 ? 'bg-blue-500' : 'bg-gray-800'}`}>
+            <div
+              className={`rounded-full w-40 h-40 mx-auto mb-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                hoveredCard === 3 ? "bg-blue-500" : "bg-gray-800"
+              }`}
+            >
               <img
                 src={Mask_groupHome_page_2}
                 alt="Task Force Icon"
@@ -130,12 +151,12 @@ function Work() {
           </div>
         </div>
       </div>
-      
+
       <style jsx>{`
         .animate-fadeIn {
           animation: fadeIn 0.3s ease-in-out forwards;
         }
-        
+
         @keyframes fadeIn {
           from {
             opacity: 0;

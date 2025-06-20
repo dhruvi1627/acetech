@@ -5,7 +5,7 @@ export default function WhoWeAre() {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  const goals = ["GOALS", "GROWTH", "RESULT"];
+  const goals = React.useMemo(() => ["GOALS", "GROWTH", "RESULT"], []);
 
   useEffect(() => {
     let timeout;
@@ -30,7 +30,7 @@ export default function WhoWeAre() {
       }, 500);
     }
     return () => clearTimeout(timeout);
-  }, [charIndex, textIndex, goals, goalType]);
+  }, [charIndex, textIndex, goalType, goals]);
 
   return (
     <div className="text-center mb-16 mt-32 text-white w-full h-auto tracking-wider">
