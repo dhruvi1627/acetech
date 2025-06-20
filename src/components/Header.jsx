@@ -21,17 +21,11 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <a href="/">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full flex items-center justify-center">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-4 h-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
-                  </div>
-                </div>
-                <div>
-                  <h1 className="text-2xl font-bold text-white">ATI</h1>
-                  <p className="text-xs text-gray-300">Ace Tech Inside</p>
-                </div>
-              </div>
+              <img
+                src={acetech}
+                alt="Ace Tech Logo"
+                className="w-32 h-auto"
+              />
             </a>
           </div>
 
@@ -140,7 +134,7 @@ export default function Header() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-80 bg-gray-900 text-white transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`fixed top-0 right-0 h-full w-80 bg-[#0f0f1c] text-white transform transition-transform duration-300 ease-in-out z-50 ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -157,11 +151,11 @@ export default function Header() {
 
           {/* Logo Section */}
           <div className="flex items-center justify-center mb-12">
-            <img src={acetech} alt="ATI Logo" className="w-[50] h-auto" />
+            <img src={acetech} alt="ATI Logo" className="w-[200px] h-auto " />
           </div>
 
           {/* Social Media Links */}
-          <div class="space-y-6 mb-12">
+          <div class="space-y-6 mb-12 font-bebas text-xl tracking-wider">
             <a
               href="https://facebook.com"
               class="flex items-center space-x-4 text-lg font-medium hover:text-blue-400 transition-colors duration-200"
@@ -182,7 +176,7 @@ export default function Header() {
                 alt="Twitter"
                 class="w-6 h-6 filter brightness-0 invert"
               />
-              <span>TWITTER-X</span>
+              <span>TWITTER</span>
             </a>
             <a
               href="https://dribbble.com"
@@ -208,26 +202,16 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-gray-700 my-8"></div>
-
+      
           {/* Mail Us Section */}
-          <div className="mt-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">MAIL US</h3>
-            <a
-              href="mailto:info@acetechinside.com"
-              className="text-gray-300 hover:text-white transition-colors duration-200"
-            >
-              info@acetechinside.com
-            </a>
+          <div className="mt-auto border-t-2 border-[#3e3e3e]">
+            <h3 className="text-2xl mt-10 font-bebas text-white mb-4">MAIL US</h3>
           </div>
         </div>
       </div>
     </>
   );
 }
-
-
 
 // import React, { useState } from "react";
 // import { Grip, Menu, X } from "lucide-react";
@@ -240,15 +224,15 @@ export default function Header() {
 //     <header className="bg-black shadow-md text-white">
 //       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
 //         {/* Logo */}
-//         <div className="flex items-center space-x-2">
-//           <a href="/">
-//             <img
-//               src={aceTechLogo}
-//               alt="Ace Tech Logo"
-//               className="w-32 h-auto"
-//             />
-//           </a>
-//         </div>
+// <div className="flex items-center space-x-2">
+//   <a href="/">
+//     <img
+//       src={aceTechLogo}
+//       alt="Ace Tech Logo"
+//       className="w-32 h-auto"
+//     />
+//   </a>
+// </div>
 
 //         {/* Desktop Navigation with Mobile Button */}
 //         <nav className="flex items-center ">
