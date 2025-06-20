@@ -9,6 +9,7 @@ import BusinessSolutionsPage from "./pages/BusinessSolutionsPage";
 import TalentPage from "./pages/TalentPage";
 import ServicePage from "./pages/ServicePage";
 import ResourcesPage from "./pages/ResourcesPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
         </main>
         <Footer />
