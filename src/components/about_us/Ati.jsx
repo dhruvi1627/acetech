@@ -45,7 +45,7 @@ const ATI = () => {
   }, [isHoveringMainContent]);
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-black text-white px-20">
+    <div ref={containerRef} className="min-h-screen text-white px-20">
       {/* Header */}
       <div className="text-center py-8">
         <h1 className="text-4xl md:text-6xl font-bold tracking-wider font-bebas">

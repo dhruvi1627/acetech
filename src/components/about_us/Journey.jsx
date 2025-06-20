@@ -4,7 +4,7 @@ import thumbnail from '../../assets/images/about_us/video-thumbnails.jpg';
 
 const Journey = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen text-white">
       {/* Hero Image Section */}
       <div className="relative h-96 overflow-hidden">
         <img 

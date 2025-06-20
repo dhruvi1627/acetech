@@ -26,7 +26,7 @@ const Values = () => {
   ];
 
   return (
-    <div className="bg-black min-h-screen py-16 px-8">
+    <div className="min-h-screen py-16 px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

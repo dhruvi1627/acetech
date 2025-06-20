@@ -5,7 +5,7 @@ import { Brain, Disc } from 'lucide-react';
 
 const AboutUsHero = () => {
   return (
-    <section className="bg-black text-white min-h-screen flex items-center px-12 mx-8">
+    <section className=" text-white min-h-screen flex items-center px-12 mx-8">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-20 items-center pt-20">
           {/* Left Side Content */}

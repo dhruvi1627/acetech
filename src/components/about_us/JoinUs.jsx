@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-import about from '../../assets/images/about_us/about-s.jpg';
+import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
+import about from "../../assets/images/about_us/about-s.jpg";
 
 const JoinUs = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -10,16 +10,16 @@ const JoinUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen text-white">
       {/* Main Content Container */}
       <div className="flex min-h-screen">
         {/* Left Side - Image */}
         <div className="w-1/3 ml-auto relative">
-          <img 
-            src={about} 
+          <img
+            src={about}
             alt="Professional business meeting with handshake"
             className="w-full h-full object-cover"
-          />  
+          />
         </div>
 
         {/* Right Side - Content */}
@@ -40,25 +40,27 @@ const JoinUs = () => {
           <div className="space-y-0">
             {/* Careers at ATI */}
             <div className="border-b border-gray-700">
-              <div 
+              <div
                 className="flex items-center justify-between cursor-pointer py-6 transition-colors"
-                onClick={() => toggleSection('careers')}
+                onClick={() => toggleSection("careers")}
               >
                 <h2 className="text-2xl font-bold font-bebas tracking-wider">
                   CAREERS AT ATI
                 </h2>
-                <ArrowRight 
+                <ArrowRight
                   className={`w-6 h-6 transition-transform ${
-                    openSection === 'careers' ? 'rotate-90' : ''
-                  }`} 
+                    openSection === "careers" ? "rotate-90" : ""
+                  }`}
                 />
               </div>
-              {openSection === 'careers' && (
+              {openSection === "careers" && (
                 <div className="pb-6 -mt-2 hover:text-purple-400">
                   <p className="text-lg leading-relaxed font-bebas">
-                    WE ARE ALWAYS LOOKING FOR PASSIONATE, TALENTED INDIVIDUALS TO JOIN OUR TEAM. IF YOU'RE READY 
+                    WE ARE ALWAYS LOOKING FOR PASSIONATE, TALENTED INDIVIDUALS
+                    TO JOIN OUR TEAM. IF YOU'RE READY
                     <br />
-                    TO MAKE A DIFFERENCE AND WORK ON EXCITING PROJECTS THAT SHAPE THE FUTURE, EXPLORE OUR 
+                    TO MAKE A DIFFERENCE AND WORK ON EXCITING PROJECTS THAT
+                    SHAPE THE FUTURE, EXPLORE OUR
                     <br />
                     CAREER OPPORTUNITIES AND BECOME A PART OF THE ATI FAMILY.
                   </p>
@@ -68,25 +70,27 @@ const JoinUs = () => {
 
             {/* Partner with Us */}
             <div className="border-b border-gray-700">
-              <div 
+              <div
                 className="flex items-center justify-between cursor-pointer py-6 transition-colors"
-                onClick={() => toggleSection('partner')}
+                onClick={() => toggleSection("partner")}
               >
                 <h2 className="text-2xl font-bold font-bebas tracking-wider">
                   PARTNER WITH US
                 </h2>
-                <ArrowRight 
+                <ArrowRight
                   className={`w-6 h-6 transition-transform ${
-                    openSection === 'partner' ? 'rotate-90' : ''
-                  }`} 
+                    openSection === "partner" ? "rotate-90" : ""
+                  }`}
                 />
               </div>
-              {openSection === 'partner' && (
+              {openSection === "partner" && (
                 <div className="pb-6 -mt-2 hover:text-purple-400 ">
                   <p className="text-lg leading-relaxed font-bebas tracking-wider">
-                    At ATI, we believe in the power of collaboration. If you’re interested in partnering with us 
+                    At ATI, we believe in the power of collaboration. If you’re
+                    interested in partnering with us
                     <br />
-                    to deliver innovative solutions to businesses worldwide, we’d love to hear from you.
+                    to deliver innovative solutions to businesses worldwide,
+                    we’d love to hear from you.
                   </p>
                 </div>
               )}
@@ -94,25 +98,27 @@ const JoinUs = () => {
 
             {/* Contact Us */}
             <div className="border-b border-gray-700">
-              <div 
+              <div
                 className="flex items-center justify-between cursor-pointer py-6 transition-colors"
-                onClick={() => toggleSection('contact')}
+                onClick={() => toggleSection("contact")}
               >
                 <h2 className="text-2xl font-bold font-bebas tracking-wider">
                   CONTACT US
                 </h2>
-                <ArrowRight 
+                <ArrowRight
                   className={`w-6 h-6 transition-transform ${
-                    openSection === 'contact' ? 'rotate-90' : ''
-                  }`} 
+                    openSection === "contact" ? "rotate-90" : ""
+                  }`}
                 />
               </div>
-              {openSection === 'contact' && (
+              {openSection === "contact" && (
                 <div className="pb-6 -mt-2 hover:text-purple-400">
                   <p className="text-lg leading-relaxed font-bebas tracking-wider">
-                    Whether you’re a business looking for cutting-edge solutions or a professional seeking new
+                    Whether you’re a business looking for cutting-edge solutions
+                    or a professional seeking new
                     <br />
-                    opportunities, ATI is here to help. Reach out to us today and discover how we can work 
+                    opportunities, ATI is here to help. Reach out to us today
+                    and discover how we can work
                     <br />
                     together to achieve your goals.
                   </p>

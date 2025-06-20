@@ -11,12 +11,13 @@ export default function AboutUsPage() {
   return (
     <>
       <AboutUsHero />
-      <Values/>
-      <AboutUs/>
-      <Ati/>
-      <AboutUsExpertise/>
-      <Journey/>
-      <JoinUs/>
+      <Values />
+      <AboutUs />
+      <Ati />
+      <AboutUsExpertise />
+      <Journey />
+      <JoinUs />
+      <div className="w-full bg-[#e156e6] h-64 mt-20"></div>
     </>
   );
 }
