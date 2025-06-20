@@ -1,26 +1,25 @@
 import React, { useState, useEffect } from "react";
 
-
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [error, setError] = useState(null);
 
   // Function to extract text content from HTML string
-  const stripHtml = (html) => {
+  const stripHtml = React.useCallback((html) => {
     const temp = document.createElement("div");
     temp.innerHTML = html;
     return temp.textContent || temp.innerText || "";
-  };
+  }, []);
 
   // Function to format date
-  const formatDate = (dateString) => {
+  const formatDate = React.useCallback((dateString) => {
     const options = { year: "numeric", month: "long", day: "numeric" };
     return new Date(dateString).toLocaleDateString("en-US", options);
-  };
+  }, []);
 
   // Function to get keywords from tags or categories
-  const getKeywords = (post) => {
+  const getKeywords = React.useCallback((post) => {
     const keywords = [];
 
     // Extract from categories if available
@@ -55,10 +54,10 @@ export default function Blogs() {
     }
 
     return keywords.slice(0, 1); // Limit to 1 keyword for better display
-  };
+  }, []);
 
   // Fetch blogs from WordPress API
-  const fetchBlogs = async () => {
+  const fetchBlogs = React.useCallback(async () => {
     try {
       const response = await fetch(
         "https://acetechinside.tech/wp-json/wp/v2/posts?per_page=12&_embed"
@@ -99,11 +98,11 @@ export default function Blogs() {
       console.error("Error fetching blogs:", error);
       setError("Failed to load blogs. Please try again later.");
     }
-  };
+  }, [stripHtml, formatDate, getKeywords]);
 
   useEffect(() => {
     fetchBlogs();
-  }, []);
+  }, [fetchBlogs]);
 
   // Add auto-sliding effect
   useEffect(() => {
@@ -129,10 +128,7 @@ export default function Blogs() {
 
   return (
     <>
-      <div
-        className="text-white min-h-screen bg-right bg-no-repeat relative"
-
-      >
+      <div className="text-white min-h-screen bg-right bg-no-repeat relative">
         <div className="font-bebas text-center py-10 space-y-4">
           <h1 className="text-xl">OUR BLOG</h1>
           <h1 className="text-5xl">LATEST NEWS</h1>
@@ -172,13 +168,13 @@ export default function Blogs() {
             {blogs.slice(currentSlide, currentSlide + 3).map((blog) => (
               <div
                 key={blog.id}
-                className="font-roboto bg-gray-800 rounded-lg overflow-hidden transition-all duration-500 ease-in-out hover:transform hover:scale-105 hover:shadow-xl cursor-pointer"
+                className="group font-roboto bg-gray-800 overflow-hidden transition-all duration-500 ease-in-out cursor-pointer flex flex-col"
               >
                 <div className="relative overflow-hidden">
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                     onError={(e) => {
                       e.target.src = "https://placeholder.com/300x200";
                     }}
