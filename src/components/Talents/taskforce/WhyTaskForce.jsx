@@ -12,6 +12,12 @@ export default function WhyTaskForce() {
     "Proven Success: ATI’s task forces have a track record of successfully addressing critical business challenges, helping companies like yours achieve their goals under tight deadlines and high pressure.",
   ];
 
+  const ctaFeatures = [
+     "Tailored Talent Needs: We customize each task force to match the specific requirements of your project, ensuring that you get the right skills and expertise at the right time.",
+        "End-to-End Management:  From rapid deployment to project completion, ATI manages the entire process, providing you with a seamless, stress-free experience that delivers outstanding results.",
+  ];
+
+
   return (
     <TalentServiceSection
       title="Why Choose ATI’s Talents Pair-to-Pair Service?"
@@ -22,10 +28,7 @@ export default function WhyTaskForce() {
       features={features}
       imagePosition="right"
       ctamain="Unique Value Proposition"
-      ctaquote={[
-        "Tailored Talent Needs: We customize each task force to match the specific requirements of your project, ensuring that you get the right skills and expertise at the right time.",
-        "End-to-End Management:  From rapid deployment to project completion, ATI manages the entire process, providing you with a seamless, stress-free experience that delivers outstanding results."
-      ]}
+      ctaFeatures={ctaFeatures}
       ctaText="GET TAILORED TALENT & STRESS-FREE MANAGMENT"
       onCtaClick={() => navigate("/contact-us")}
     />

@@ -12,6 +12,11 @@ export default function WhyAti() {
     "Proven Success: ATI has a track record of successfully pairing businesses with the right professionals, leading to enhanced project outcomes and business growth.",
   ];
 
+  const ctaFeatures = [
+    "Tailored Talent Solutions: We provide talent that is not only skilled but also fits your company culture and project requirements, ensuring a seamless working relationship.",
+    "End-to-End Support: From initial consultation to project completion, ATI is with you every step of the way, ensuring that the talent we pair with your team delivers exceptional results.",
+  ];
+
   return (
     <TalentServiceSection
       title="Why Choose ATI’s Talents Pair-to-Pair Service?"
@@ -22,10 +27,7 @@ export default function WhyAti() {
       features={features}
       imagePosition="right"
       ctamain="Unique Value Proposition"
-      ctaquote={[
-        "Tailored Talent Solutions: We provide talent that is not only skilled but also fits your company culture and project requirements, ensuring a seamless working relationship.",
-        "End-to-End Support: From initial consultation to project completion, ATI is with you every step of the way, ensuring that the talent we pair with your team delivers exceptional results."
-      ]}
+      ctaFeatures={ctaFeatures}
       ctaText="ENHANCE YOUR PROJECT WITH EXPERT TALENT"
       onCtaClick={() => navigate("/contact-us")}
     />

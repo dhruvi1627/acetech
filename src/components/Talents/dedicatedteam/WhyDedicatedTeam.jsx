@@ -13,6 +13,11 @@ export default function WhyDedicatedTeam() {
     "Proven Track Record: ATI’s dedicated teams have successfully driven numerous projects to completion, helping businesses like yours achieve their goals and maintain a competitive edge.",
   ];
 
+  const ctaFeatures = [
+    "Tailored Talent Solutions: We customize the composition and expertise of your dedicated team to match your specific project needs, ensuring that you have the right skills at the right time.",
+        "End-to-End Management: From team formation to project completion, ATI provides full management and support, ensuring that your dedicated team delivers exceptional value and results.",
+  ];
+
   return (
     <TalentServiceSection
       title="Why Choose ATI’s Talents Dedicated Team Service?"
@@ -23,10 +28,7 @@ export default function WhyDedicatedTeam() {
       features={features}
       imagePosition="right"
       ctamain="Unique Value Proposition"
-      ctaquote={[
-        "Tailored Talent Solutions: We customize the composition and expertise of your dedicated team to match your specific project needs, ensuring that you have the right skills at the right time.",
-        "End-to-End Management: From team formation to project completion, ATI provides full management and support, ensuring that your dedicated team delivers exceptional value and results."
-      ]}
+      ctaFeatures={ctaFeatures}
       ctaText="CUSTOMIZE AND MANAGE YOUR TEAM EFFORTLENSSLY"
       onCtaClick={() => navigate("/contact-us")}
     />
