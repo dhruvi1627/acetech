@@ -14,6 +14,8 @@ import CareerPage from "./pages/CareerPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 import Gdpr from "./pages/Gdpr";
 import PairToPairPage from "./pages/talent/PairToPairPage";
+import DedicatedTeamPage from "./pages/talent/DedicatedTeamPage";
+import TaskForcePage from "./pages/talent/TaskForcePage";
 
 function App() {
   return (
@@ -43,6 +45,14 @@ function App() {
             <Route
               path="/talent/pair-to-pair"
               element={<PairToPairPage />}
+            />
+            <Route
+              path="/talent/dedicated-team"
+              element={<DedicatedTeamPage />}
+            />
+            <Route
+              path="/talent/task-force"
+              element={<TaskForcePage />}
             />
           </Routes>
         </main>
