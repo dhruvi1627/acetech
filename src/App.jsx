@@ -16,6 +16,8 @@ import Gdpr from "./pages/Gdpr";
 import PairToPairPage from "./pages/talent/PairToPairPage";
 import DedicatedTeamPage from "./pages/talent/DedicatedTeamPage";
 import TaskForcePage from "./pages/talent/TaskForcePage";
+import EndToEndPage from "./pages/Services/EndToEndPage";
+import AgileDevelopmentSprint from "./pages/Services/AgileDevelopmentSprint";
 
 function App() {
   return (
@@ -28,7 +30,18 @@ function App() {
             <Route path="/about-us" element={<AboutUsPage />} />
 
             <Route path="/talent" element={<TalentPage />} />
+            {/* Services */}
             <Route path="/service" element={<ServicePage />} />
+
+            <Route
+              path="/end-to-end-startup-support"
+              element={<EndToEndPage />}
+            />
+            <Route
+              path="/agile-development-sprint-package"
+              element={<AgileDevelopmentSprint />}
+            />
+
             <Route
               path="/business-solutions"
               element={<BusinessSolutionsPage />}
@@ -42,18 +55,12 @@ function App() {
               path="/terms-and-conditions"
               element={<TermsAndConditionsPage />}
             />
-            <Route
-              path="/talent/pair-to-pair"
-              element={<PairToPairPage />}
-            />
+            <Route path="/talent/pair-to-pair" element={<PairToPairPage />} />
             <Route
               path="/talent/dedicated-team"
               element={<DedicatedTeamPage />}
             />
-            <Route
-              path="/talent/task-force"
-              element={<TaskForcePage />}
-            />
+            <Route path="/talent/task-force" element={<TaskForcePage />} />
           </Routes>
         </main>
         <Footer />
