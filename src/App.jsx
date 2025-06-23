@@ -13,6 +13,7 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import CareerPage from "./pages/CareerPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 import Gdpr from "./pages/Gdpr";
+import PairToPairPage from "./pages/talent/PairToPairPage";
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
             <Route
               path="/terms-and-conditions"
               element={<TermsAndConditionsPage />}
+            />
+            <Route
+              path="/talent/pair-to-pair"
+              element={<PairToPairPage />}
             />
           </Routes>
         </main>
