@@ -56,37 +56,39 @@ const Expertise = () => {
                   style={{ backgroundImage: `url(${item.image})` }}
                 />
 
-                {/* Purple Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 opacity-60 group-hover:opacity-0 transition-opacity duration-500" />
+                {/* Purple Overlay on Hover */}
+                <div className="absolute inset-0 bg-[#7f62e4] opacity-0 group-hover:opacity-60 transition-opacity duration-500 z-10" />
 
-                {/* Grid Overlay */}
-                <div className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity duration-500">
+                {/* Grid Overlay */}  
+                <div className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity duration-500 z-20">
                   <div
                     className="w-full h-full"
                     style={{
                       backgroundImage: `
-                        linear-gradient(rgba(0,255,255,0.1) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(0,255,255,0.1) 1px, transparent 1px)
-                      `,
+                      linear-gradient(rgba(0,255,255,0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0,255,255,0.1) 1px, transparent 1px)
+                    `,
                       backgroundSize: "20px 20px",
                     }}
                   />
                 </div>
 
                 {/* Title */}
-                <div className="absolute inset-0 flex items-end p-6">
+                <div className="absolute inset-0 flex items-end p-6 z-30">
                   <h3 className="text-white text-xl md:text-2xl font-bold tracking-wider transform transition-transform duration-500 group-hover:translate-y-[-10px]">
                     {item.title}
                   </h3>
                 </div>
 
                 {/* Number */}
-                <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <span className="text-white text-2xl font-bold">{item.id}.</span>
+                <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                  <span className="text-white text-2xl font-bold">
+                    {item.id}.
+                  </span>
                 </div>
 
                 {/* Particle */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-30">
                   <div className="absolute bottom-20 left-4 w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse delay-300" />
                 </div>
               </div>
