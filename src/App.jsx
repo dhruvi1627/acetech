@@ -18,6 +18,7 @@ import DedicatedTeamPage from "./pages/talent/DedicatedTeamPage";
 import TaskForcePage from "./pages/talent/TaskForcePage";
 import EndToEndPage from "./pages/Services/EndToEndPage";
 import AgileDevelopmentSprint from "./pages/Services/AgileDevelopmentSprint";
+import NextGenTech from "./pages/Services/NextGenTech";
 
 function App() {
   return (
@@ -34,12 +35,16 @@ function App() {
             <Route path="/service" element={<ServicePage />} />
 
             <Route
-              path="/end-to-end-startup-support"
+              path="/services/end-to-end-startup-support"
               element={<EndToEndPage />}
             />
             <Route
-              path="/agile-development-sprint-package"
+              path="/services/agile-development-sprint-package"
               element={<AgileDevelopmentSprint />}
+            />
+            <Route
+              path="/services/next-gen-tech-integration"
+              element={<NextGenTech />}
             />
 
             <Route

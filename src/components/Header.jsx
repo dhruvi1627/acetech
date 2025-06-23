@@ -21,11 +21,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <a href="/">
-              <img
-                src={acetech}
-                alt="Ace Tech Logo"
-                className="w-32 h-auto"
-              />
+              <img src={acetech} alt="Ace Tech Logo" className="w-32 h-auto" />
             </a>
           </div>
 
@@ -44,7 +40,7 @@ export default function Header() {
               >
                 ABOUT US
               </a>
-              
+
               {/* TALENT with Dropdown */}
               <div className="relative group">
                 <a
@@ -53,7 +49,7 @@ export default function Header() {
                 >
                   TALENT
                 </a>
-                
+
                 {/* Dropdown Menu */}
                 <div className="absolute top-full left-0 mt-2 w-48 bg-[#1a1a2e] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
                   <div className="py-3">
@@ -78,25 +74,97 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              
-              <a
-                href="/service"
-                className="hover:text-gray-400 transition-colors duration-200"
-              >
-                SERVICES
-              </a>
-              <a
-                href="/business-solutions"
-                className="hover:text-gray-400 transition-colors duration-200"
-              >
-                BUSINESS SOLUTION
-              </a>
-              <a
-                href="/resources"
-                className="hover:text-gray-400 transition-colors duration-200"
-              >
-                RESOURCES
-              </a>
+
+              {/* SERVICES with Dropdown */}
+              <div className="relative group">
+                <a
+                  href="/service"
+                  className="hover:text-gray-400 transition-colors duration-200 cursor-pointer"
+                >
+                  SERVICES
+                </a>
+                <div className="absolute top-full left-0 mt-2 w-48 bg-[#1a1a2e] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+                  <div className="py-3">
+                    <a
+                      href="/services/end-to-end-startup-support"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      End To End Startup Support
+                    </a>
+                    <a
+                      href="/services/agile-development-sprint-package"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      Agile Development Sprint Package
+                    </a>
+                    <a
+                      href="/services/next-gen-tech-integration"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      Next Gen Tech Integration
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* BUSINESS SOLUTION with Dropdown */}
+              <div className="relative group">
+                <a
+                  href="/business-solutions"
+                  className="hover:text-gray-400 transition-colors duration-200 cursor-pointer"
+                >
+                  BUSINESS SOLUTION
+                </a>
+                <div className="absolute top-full left-0 mt-2 w-48 bg-[#1a1a2e] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+                  <div className="py-3">
+                    <a
+                      href="/business-solutions/startups"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      Startups
+                    </a>
+                    <a
+                      href="/business-solutions/entrepreneurs"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      Entrepreneurs
+                    </a>
+                    <a
+                      href="/business-solutions/smes"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      SMEs
+                    </a>
+                    <a
+                      href="/business-solutions/investor-and-partners"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      Investors and Partners
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* RESOURCES with Dropdown */}
+              <div className="relative group">
+                <a
+                  href="/resources"
+                  className="hover:text-gray-400 transition-colors duration-200 cursor-pointer"
+                >
+                  RESOURCES
+                </a>
+                <div className="absolute top-full left-0 mt-2 w-48 bg-[#1a1a2e] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+                  <div className="py-3">
+                    <a
+                      href="/blog"
+                      className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                    >
+                      Blogs
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               <a
                 href="/contact-us"
                 className="hover:text-gray-400 transition-colors duration-200"
@@ -231,27 +299,17 @@ export default function Header() {
             </a>
           </div>
 
-      
           {/* Mail Us Section */}
           <div className="mt-auto border-t-2 border-[#3e3e3e]">
-            <h3 className="text-2xl mt-10 font-bebas text-white mb-4">MAIL US</h3>
+            <h3 className="text-2xl mt-10 font-bebas text-white mb-4">
+              MAIL US
+            </h3>
           </div>
         </div>
       </div>
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState } from "react";
 // import { Grip, Menu, X, Facebook, Twitter, Instagram } from "lucide-react";
@@ -457,7 +515,6 @@ export default function Header() {
 //             </a>
 //           </div>
 
-      
 //           {/* Mail Us Section */}
 //           <div className="mt-auto border-t-2 border-[#3e3e3e]">
 //             <h3 className="text-2xl mt-10 font-bebas text-white mb-4">MAIL US</h3>
