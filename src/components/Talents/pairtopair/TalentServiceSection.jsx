@@ -11,7 +11,8 @@ export default function TalentServiceSection({
   ctamain,
   ctaquote,
   ctaText,
-  onCtaClick
+  onCtaClick,
+  ctaFeatures = [],
 }) {
   const ImageComponent = () => (
     <div className="relative">
@@ -101,6 +102,14 @@ export default function TalentServiceSection({
           </div>
           <div className="text-sm font-roboto w-full flex items-center justify-center ">
             {ctaquote}
+          </div>
+          <div className="space-y-3 ">
+            {ctaFeatures.map((feature, idx) => (
+              <div key={idx} className="flex items-start space-x-3">
+                <span className="text-[#de60ca] text-lg mt-1">✓</span>
+                <span className="text-white font-roboto">{feature}</span>
+              </div>
+            ))}
           </div>
           <div className="font-bebas text-xl">
             <button
