@@ -14,7 +14,7 @@ export default function AgileDevelopmentSprint() {
   return (
     <>
       <div
-        className="hide-bg-sm"
+        className="realative"
         style={{
           backgroundImage: `
             url(${leftBg1}),

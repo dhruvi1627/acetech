@@ -10,11 +10,12 @@ import bggrmarketing from "../../assets/images/services/end-to-end/bg-gr-1-marke
 import leftBg1 from "../../assets/images/services/end-to-end/ATI-services-1.png";
 import leftBg2 from "../../assets/images/services/end-to-end/bg-gr-2-marketing-410x756.png";
 
-
 export default function NextGenTech() {
   return (
     <>
-      <div className=""         style={{
+      <div
+        className="realative"
+        style={{
           backgroundImage: `
             url(${leftBg1}),
             url(${leftBg2}),
@@ -34,7 +35,8 @@ export default function NextGenTech() {
             auto ,
             auto 150%
           `,
-        }}>
+        }}
+      >
         <NextGenTechHero />
         <NextGenAbout />
       </div>

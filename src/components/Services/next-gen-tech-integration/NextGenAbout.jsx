@@ -28,8 +28,8 @@ export default function NextGenAbout() {
   };
 
   return (
-    <div className="text-white font-roboto px-4 md:px-12 lg:px-48 tracking-wider">
-      <h1 className="text-lg font-bebas">
+    <div className="text-white font-roboto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 tracking-wider">
+      <h1 className="text-sm sm:text-base md:text-lg font-roboto leading-relaxed">
         In today’s rapidly evolving digital landscape, staying ahead means
         leveraging the latest technologies to drive innovation, efficiency, and
         growth. ATI’s Next-Gen Tech Integration services are designed to
@@ -40,19 +40,21 @@ export default function NextGenAbout() {
         deliver measurable results.
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 md:mt-12">
         {cards.map((card, index) => (
-          <div key={index} className="bg-[#242222] p-4">
-            <h2 className="font-bebas text-xl mb-2">{card.title}</h2>
-            <p className="mb-6 text-sm text-[#cccccc]">{card.desc}</p>
+          <div key={index} className="bg-[#242222] p-3 sm:p-4">
+            <h2 className="font-bebas text-lg sm:text-xl mb-2">{card.title}</h2>
+            <p className="mb-4 sm:mb-6 text-xs sm:text-sm text-[#cccccc]">
+              {card.desc}
+            </p>
             <button
-              className="text-sm font-bebas"
+              className="text-xs sm:text-sm font-bebas"
               onClick={() => handlePlusClick(card.title)}
               aria-label="Expand"
             >
               <span className="flex items-center gap-2">
                 <span>Click Here</span>
-                <span className="text-xl">+</span>
+                <span className="text-lg sm:text-xl">+</span>
               </span>
             </button>
           </div>

@@ -31,7 +31,7 @@ export default function AboutEndToEnd() {
 
   return (
     <div className="text-white font-roboto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 tracking-wider">
-      <h1 className="text-sm sm:text-base md:text-lg font-bebas leading-relaxed">
+      <h1 className="text-sm sm:text-base md:text-lg font-roboto leading-relaxed">
         At ATI, we understand the unique challenges startups face in today's
         fast-paced market. Whether you're at the idea stage or ready to scale,
         our End-to-End Startup Support provides the expertise and resources you
