@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 // Utility functions
@@ -26,11 +26,50 @@ export default function BlogDetails() {
   const { slug } = useParams();
   const navigate = useNavigate();
 
+  const leftContentRef = useRef(null);
+  const mainContentRef = useRef(null);
+  const [isHoveringMainContent, setIsHoveringMainContent] = useState(false);
+
   const [post, setPost] = useState(null);
   const [categories, setCategories] = useState([]);
   const [tags, setTags] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      const leftContent = leftContentRef.current;
+      const mainContent = mainContentRef.current;
+
+      if (!leftContent || !mainContent || !isHoveringMainContent) return;
+
+      const mainRect = mainContent.getBoundingClientRect();
+      const isInView = mainRect.top < window.innerHeight && mainRect.bottom > 0;
+
+      if (isInView) {
+        const { scrollTop, scrollHeight, clientHeight } = leftContent;
+        const isAtTop = scrollTop === 0;
+        const isAtBottom = scrollTop + clientHeight >= scrollHeight - 1;
+
+        // If scrolling down and not at bottom, scroll content
+        if (e.deltaY > 0 && !isAtBottom) {
+          e.preventDefault();
+          leftContent.scrollTop += 60;
+        }
+        // If scrolling up and not at top, scroll content
+        else if (e.deltaY < 0 && !isAtTop) {
+          e.preventDefault();
+          leftContent.scrollTop -= 60;
+        }
+      }
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: false });
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+    };
+  }, [isHoveringMainContent]);
 
   // Fetch blog post
   useEffect(() => {
@@ -142,7 +181,12 @@ export default function BlogDetails() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-black text-white py-12">
+    <div
+      ref={mainContentRef}
+      className="w-full min-h-screen text-white py-12"
+      onMouseEnter={() => setIsHoveringMainContent(true)}
+      onMouseLeave={() => setIsHoveringMainContent(false)}
+    >
       <div className="max-w-7xl mx-auto px-4">
         {/* Blog Title Header */}
         <div className=" mb-12 w-4/5">
@@ -161,7 +205,19 @@ export default function BlogDetails() {
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left: Blog Content */}
-          <div className="flex-1 lg:w-2/3">
+          <div
+            ref={leftContentRef}
+            className="flex-1 lg:w-2/3 overflow-y-auto h-[1500px]"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}
+          >
+            <style jsx>{`
+              div::-webkit-scrollbar {
+                display: none;
+              }
+            `}</style>
             {/* Featured Image */}
             {post.image && (
               <div className="mb-8 overflow-hidden">
