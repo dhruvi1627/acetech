@@ -19,6 +19,7 @@ import TaskForcePage from "./pages/talent/TaskForcePage";
 import EndToEndPage from "./pages/Services/EndToEndPage";
 import AgileDevelopmentSprint from "./pages/Services/AgileDevelopmentSprint";
 import NextGenTech from "./pages/Services/NextGenTech";
+import StartUpsPage from "./pages/business_solution/StartUpsPage";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
               element={<DedicatedTeamPage />}
             />
             <Route path="/talent/task-force" element={<TaskForcePage />} />
+            <Route path="/business-solutions/startups" element={<StartUpsPage />} />
           </Routes>
         </main>
         <Footer />

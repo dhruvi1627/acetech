@@ -1,16 +1,18 @@
 import React from "react";
-import PairToPair from "../../components/Talents/pairtopair/PairToPair";
-import PairToPairContent from "../../components/Talents/pairtopair/PairToPairContent";
-import WhatIsPairToPair from "../../components/Talents/pairtopair/WhatIsPairToPair";
-import AtiWorks from "../../components/Talents/pairtopair/AtiWorks";
-import Benefits from "../../components/Talents/pairtopair/BenefitsTalent";
-import Ati from "../../components/Talents/pairtopair/WhyAti";
 import ATIservices2 from "../../assets/images/services/end-to-end/ATI-services-2.png";
 import bggrmarketing from "../../assets/images/services/end-to-end/bg-gr-1-marketing-410x547.png";
 import leftBg1 from "../../assets/images/services/end-to-end/ATI-services-1.png";
 import leftBg2 from "../../assets/images/services/end-to-end/bg-gr-2-marketing-410x756.png";
+import StartupsHero from "../../components/BusinessSolutions/startups/StartupsHero";
+import StartUpContent from "../../components/BusinessSolutions/startups/StartUpContent";
+import StartUpLaunch from "../../components/BusinessSolutions/startups/StartUpLaunch";
+import StartUpTalent from "../../components/BusinessSolutions/startups/StartUpTalent";
+import StartUpInfra from "../../components/BusinessSolutions/startups/StartUpInfra";
+import StartUpPartnership from "../../components/BusinessSolutions/startups/StartUpPartnership";
+import StartUpDev from "../../components/BusinessSolutions/startups/StartUpDev";
+import WhyAcetech from "../../components/BusinessSolutions/startups/WhyAcetech";
 
-export default function PairToPairPage() {
+export default function AgileDevelopmentSprint() {
   return (
     <>
       <div
@@ -37,13 +39,15 @@ export default function PairToPairPage() {
               `,
         }}
       >
-        <PairToPair />
-        <PairToPairContent />
+        <StartupsHero />
+        <StartUpContent/>
       </div>
-      <WhatIsPairToPair />
-      <AtiWorks />
-      <Benefits />
-      <Ati />
+      <StartUpLaunch />
+      <StartUpTalent/>
+      <StartUpInfra/>
+      <StartUpPartnership/>
+      <StartUpDev/>
+      <WhyAcetech/>
     </>
   );
 }

@@ -4,7 +4,9 @@ export default function TalentServiceSection({
   title,
   image,
   imageAlt,
+  problemtitle,
   problem,
+  solutiontitle,
   solution,
   features = [],
   imagePosition = "left", // "left" or "right"
@@ -29,7 +31,7 @@ export default function TalentServiceSection({
       {/* Challenge Section */}
       <div>
         <h2 className="text-3xl font-bebas mb-4 text-white uppercase">
-          PROBLEM
+          {problemtitle}
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed font-roboto">
           {problem}
@@ -39,7 +41,7 @@ export default function TalentServiceSection({
       {/* Solution Section */}
       <div>
         <h2 className="text-3xl font-bebas mb-4 text-white uppercase">
-          ATI'S SOLUTION
+          {solutiontitle}
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed mb-6 font-roboto">
           {solution}
