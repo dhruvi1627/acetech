@@ -20,6 +20,10 @@ import EndToEndPage from "./pages/Services/EndToEndPage";
 import AgileDevelopmentSprint from "./pages/Services/AgileDevelopmentSprint";
 import NextGenTech from "./pages/Services/NextGenTech";
 import StartUpsPage from "./pages/business_solution/StartUpsPage";
+import Blog from "./components/Resources/Blog/Blog";
+import CategoryBlogs from "./components/Resources/Blog/CategoryBlogs";
+import TagBlogs from "./components/Resources/Blog/TagBlogs";
+import BlogDetails from "./components/Resources/Blog/BlogDetails";
 
 function App() {
   return (
@@ -53,6 +57,12 @@ function App() {
               element={<BusinessSolutionsPage />}
             />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/category/:categorySlug" element={<CategoryBlogs />} />
+            <Route path="/tag/:tagSlug" element={<TagBlogs />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/page/:page" element={<Blog />} />
+            <Route path="/:slug" element={<BlogDetails />} />
+
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/careers" element={<CareerPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
@@ -67,7 +77,10 @@ function App() {
               element={<DedicatedTeamPage />}
             />
             <Route path="/talent/task-force" element={<TaskForcePage />} />
-            <Route path="/business-solutions/startups" element={<StartUpsPage />} />
+            <Route
+              path="/business-solutions/startups"
+              element={<StartUpsPage />}
+            />
           </Routes>
         </main>
         <Footer />
