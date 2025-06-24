@@ -24,6 +24,7 @@ import Blog from "./components/Resources/Blog/Blog";
 import CategoryBlogs from "./components/Resources/Blog/CategoryBlogs";
 import TagBlogs from "./components/Resources/Blog/TagBlogs";
 import BlogDetails from "./components/Resources/Blog/BlogDetails";
+import EntrepreneursPage from "./pages/business_solution/EntrepreneursPage";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
               path="/business-solutions/startups"
               element={<StartUpsPage />}
             />
+            <Route path="/business-solutions/entrepreneurs" element={<EntrepreneursPage />} />
           </Routes>
         </main>
         <Footer />

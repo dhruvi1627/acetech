@@ -1,7 +1,7 @@
 import React from "react";
 import AtiService from "../../../assets/images/talents/pairtopair/ATI-services-1.png";
 
-const DedicatedTeam = () => {
+const StartupsHero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Main content */}
@@ -43,4 +43,4 @@ const DedicatedTeam = () => {
   );
 };
 
-export default DedicatedTeam;
+export default StartupsHero;

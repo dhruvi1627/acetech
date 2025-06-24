@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import TalentServiceSection from "../../Talents/pairtopair/TalentServiceSection"; 
 import startup from "../../../assets/images/BussinessSolutions/startup/Ethical-Sustainable-Tech-Development-1.jpg";
 
-export default function StartUpLaunch() {
+export default function StartUpDev() {
   const navigate = useNavigate();
 
   const features = [

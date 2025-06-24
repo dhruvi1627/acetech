@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import TalentServiceSection from "../../Talents/pairtopair/TalentServiceSection"; 
 import startup from "../../../assets/images/BussinessSolutions/startup/square-Team-of-talented-individual.jpg";
 
-export default function StartUpLaunch() {
+export default function StartUpTalent() {
   const navigate = useNavigate();
 
   const features = [

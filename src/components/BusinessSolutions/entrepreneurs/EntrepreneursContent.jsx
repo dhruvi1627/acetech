@@ -2,24 +2,20 @@ import React from "react";
 
 const cards = [
   {
-    title: "TECH STARTUP LAUNCHPAD",
-    desc: "From Idea to Market-Ready Product",
+    title: "ENTREPRENEURIAL ROADMAP",
+    desc: "From Idea to Thriving Business",
   },
   {
-    title: "PREMIUM TALENT SERVICE",
-    desc: "Access the Best Tech Talent ",
+    title: "STRATEGIC ADVISORY SERVICES",
+    desc: "Expert Guidance for Every Stage",
   },
   {
-    title: "SCALABLE TECH INFRASTRUCTURE",
-    desc: "Build With Confidence",
+    title: "GROWTH ACCELERATION",
+    desc: "Scaling Your Business for Long-term Succeess",
   },
   {
-    title: "STRATEGIC PARTNERSHIP & GROWTH ACCELERATION",
-    desc: "Collaborate to Propel Your Business Forward",
-  },
-  {
-    title: "ETHICAL & SUSTAINABLE TECH DEVELOPMENT",
-    desc: "Innovate Responsibility for a Better Tomorrow",
+    title: "ENTREPRENEURIAL RESILENCE & SUSTAINABILITY",
+    desc: "Build a Robust Business Model that Thrives in Changing Environments",
   },
 ];
 
@@ -32,12 +28,10 @@ export default function StartUpContent() {
   return (
     <div className="text-white font-roboto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 tracking-wider">
       <h1 className="text-sm sm:text-base md:text-lg font-roboto leading-relaxed">
-        Starting and scaling a tech company is a challenging journey. At AceTechInside, we understand the unique hurdles you face, from finding the right
-        talent to building a scalable product. We offer targeted solutions designed to solve these problems, backed by the combined expertise of
-        seasoned tech entrepreneurs.
+        As an entrepreneur, you face unique challenges in turning your vision into a successful business. At AceTechInside, we specialize in providing the support, expertise, and resources you need to overcome these challenges. Backed by the combined insights of experienced entrepreneurs, our offerings are designed to help you achieve sustainable growth and long-term success.
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 md:mt-12 font-roboto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mt-8 md:mt-12 font-roboto">
         {cards.map((card, index) => (
           <div key={index} className="bg-[#242222] p-3 sm:p-4">
             <h2 className="font-bebas text-lg sm:text-xl mb-2">{card.title}</h2>
