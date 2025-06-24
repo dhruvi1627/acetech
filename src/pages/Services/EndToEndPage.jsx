@@ -15,7 +15,7 @@ export default function EndToEndPage() {
   return (
     <>
       <div
-        className=""
+        className="realative"
         style={{
           backgroundImage: `
             url(${leftBg1}),

@@ -17,46 +17,48 @@ export default function ServiceSection({
   ctaFeatures = [],
 }) {
   const ImageComponent = () => (
-    <div className="relative">
+    <div className="relative flex justify-center">
       <img
         src={image}
         alt={imageAlt}
-        className="w-[600px] h-[600px] border border-white shadow-2xl"
+        className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto aspect-square object-cover border border-white shadow-2xl"
       />
     </div>
   );
 
   const ContentComponent = () => (
-    <div className="space-y-8">
+    <div className="space-y-6 md:space-y-8">
       {/* Challenge Section */}
       <div>
-        <h2 className="text-3xl font-bebas mb-4 text-white uppercase">
+        <h2 className="text-2xl sm:text-3xl font-bebas mb-3 md:mb-4 text-white uppercase">
           {challengeTitle}
         </h2>
-        <p className="text-gray-300 text-lg leading-relaxed font-roboto">
+        <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed font-roboto">
           {challenge}
         </p>
       </div>
 
       {/* Solution Section */}
       <div>
-        <h2 className="text-3xl font-bebas mb-4 text-white uppercase">
+        <h2 className="text-2xl sm:text-3xl font-bebas mb-3 md:mb-4 text-white uppercase">
           {solutionTitle}
         </h2>
-        <p className="text-gray-300 text-lg leading-relaxed mb-6 font-roboto">
+        <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 md:mb-6 font-roboto">
           {solution}
         </p>
 
         {/* Features */}
         {features.length > 0 && (
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start space-x-3">
-                <div className="w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 md:w-6 md:h-6 flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-[#de60ca] text-sm">✓</span>
                 </div>
                 <div>
-                  <span className="text-gray-300 font-roboto">{feature}</span>
+                  <span className="text-gray-300 font-roboto text-sm sm:text-base">
+                    {feature}
+                  </span>
                 </div>
               </div>
             ))}
@@ -69,16 +71,16 @@ export default function ServiceSection({
   return (
     <>
       {/* Title Section */}
-      <div className="text-white font-roboto flex items-center justify-center tracking-wider mt-48">
-        <div className="text-5xl font-bebas uppercase bg-[#383b19] w-full py-6 flex items-center justify-center">
+      <div className="text-white font-roboto flex items-center justify-center tracking-wider mt-24 sm:mt-32 md:mt-40 lg:mt-48">
+        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bebas uppercase bg-[#383b19] w-full py-4 sm:py-6 flex items-center justify-center text-center px-4">
           {title}
         </div>
       </div>
 
       {/* Main Content Section */}
-      <div className="min-h-screen text-white px-48 mt-16">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="min-h-screen text-white px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 mt-8 sm:mt-12 md:mt-16">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {imagePosition === "left" ? (
               <>
                 <ImageComponent />
@@ -96,25 +98,29 @@ export default function ServiceSection({
 
       {/* CTA Section */}
       {ctaText && onCtaClick && (
-        <div className="text-white flex flex-col items-center justify-center tracking-wider space-y-6">
-          <div className="text-5xl font-bebas uppercase w-full flex items-center justify-center">
+        <div className="text-white flex flex-col items-center justify-center tracking-wider space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-12 mt-12 sm:mt-16 md:mt-20">
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bebas uppercase w-full flex items-center justify-center text-center">
             {ctaMain}
           </div>
-          <div className="text-sm font-roboto w-full flex items-center justify-center ">
+          <div className="text-xs sm:text-sm font-roboto w-full flex items-center justify-center text-center max-w-4xl">
             {ctaQuote}
           </div>
-          <div className="space-y-3 ">
+          <div className="space-y-2 sm:space-y-3 max-w-4xl">
             {ctaFeatures.map((feature, idx) => (
               <div key={idx} className="flex items-start space-x-3">
-                <span className="text-[#de60ca] text-lg mt-1">✓</span>
-                <span className="text-white font-roboto">{feature}</span>
+                <span className="text-[#de60ca] text-base sm:text-lg mt-1 flex-shrink-0">
+                  ✓
+                </span>
+                <span className="text-white font-roboto text-sm sm:text-base">
+                  {feature}
+                </span>
               </div>
             ))}
           </div>
-          <div className="font-bebas text-xl">
+          <div className="font-bebas text-base sm:text-lg md:text-xl">
             <button
               onClick={onCtaClick}
-              className="hover:bg-[#de60ca] py-4 px-10 hover:text-black border-4 border-[#de60ca] text-[#de60ca] tracking-wider"
+              className="hover:bg-[#de60ca] py-3 sm:py-4 px-6 sm:px-8 md:px-10 hover:text-black border-2 sm:border-4 border-[#de60ca] text-[#de60ca] tracking-wider transition-colors duration-300"
             >
               {ctaText}
             </button>
