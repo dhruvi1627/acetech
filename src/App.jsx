@@ -30,6 +30,7 @@ import CategoryBlogs from "./components/Resources/Blog/CategoryBlogs";
 import TagBlogs from "./components/Resources/Blog/TagBlogs";
 import BlogDetails from "./components/Resources/Blog/BlogDetails";
 import EntrepreneursPage from "./pages/business_solution/EntrepreneursPage";
+import DataAiPage from "./pages/our_expertise/DataAiPage";
 import SmesPage from "./pages/business_solution/SmesPage";
 
 function AppContent() {
@@ -90,6 +91,7 @@ function AppContent() {
             path="/business-solutions/entrepreneurs"
             element={<EntrepreneursPage />}
           />
+          <Route path="/our-expertise/data-ai" element={<DataAiPage />} />
           <Route
             path="/business-solutions/smes"
             element={<SmesPage />}

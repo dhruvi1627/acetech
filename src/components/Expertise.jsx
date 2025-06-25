@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import data_and_ai from "../assets/images/data_and_ai.png";
 import app_development from "../assets/images/app_development.png";
 import system_integration from "../assets/images/system_integration.png";
@@ -9,15 +10,46 @@ import ar_and_mr from "../assets/images/ar_and_mr.png";
 import blockchain from "../assets/images/blockchain.png";
 
 const Expertise = () => {
+  const navigate = useNavigate();
   const expertiseData = [
-    { id: 1, title: "DATA & AI", image: data_and_ai },
-    { id: 2, title: "APP DEVELOPMENT", image: app_development },
-    { id: 3, title: "SYSTEM INTEGRATION", image: system_integration },
-    { id: 4, title: "TECH INNOVATION", image: tech_innovation },
-    { id: 5, title: "DIGITAL TRANSFORMATION", image: digital_transformation },
-    { id: 6, title: "CYBERSECURITY", image: cyber_security },
-    { id: 7, title: "AR & MR", image: ar_and_mr },
-    { id: 8, title: "BLOCKCHAIN & WEB 3.0", image: blockchain },
+    { id: 1, title: "DATA & AI", image: data_and_ai, slug: "data-ai" },
+    {
+      id: 2,
+      title: "APP DEVELOPMENT",
+      image: app_development,
+      slug: "app-development",
+    },
+    {
+      id: 3,
+      title: "SYSTEM INTEGRATION",
+      image: system_integration,
+      slug: "system-integration",
+    },
+    {
+      id: 4,
+      title: "TECH INNOVATION",
+      image: tech_innovation,
+      slug: "tech-innovation",
+    },
+    {
+      id: 5,
+      title: "DIGITAL TRANSFORMATION",
+      image: digital_transformation,
+      slug: "digital-transformation",
+    },
+    {
+      id: 6,
+      title: "CYBERSECURITY",
+      image: cyber_security,
+      slug: "cybersecurity",
+    },
+    { id: 7, title: "AR & MR", image: ar_and_mr, slug: "ar-mr" },
+    {
+      id: 8,
+      title: "BLOCKCHAIN & WEB 3.0",
+      image: blockchain,
+      slug: "blockchain-web3",
+    },
   ];
 
   return (
@@ -49,6 +81,10 @@ const Expertise = () => {
               <div
                 key={item.id}
                 className="min-w-[250px] md:min-w-[300px] h-96 flex-shrink-0 group relative overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+                onClick={() => navigate(`/our-expertise/${item.slug}`)}
+                tabIndex={0}
+                role="button"
+                aria-label={`Go to ${item.title}`}
               >
                 {/* Background Image */}
                 <div
@@ -59,7 +95,7 @@ const Expertise = () => {
                 {/* Purple Overlay on Hover */}
                 <div className="absolute inset-0 bg-[#7f62e4] opacity-0 group-hover:opacity-60 transition-opacity duration-500 z-10" />
 
-                {/* Grid Overlay */}  
+                {/* Grid Overlay */}
                 <div className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity duration-500 z-20">
                   <div
                     className="w-full h-full"
