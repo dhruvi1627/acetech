@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Mask_groupHome_page from "../assets/images/Mask_groupHome_page.png";
 import Mask_groupHome_page_1 from "../assets/images/Mask_groupHome_page_1.png";
 import Mask_groupHome_page_2 from "../assets/images/Mask_groupHome_page_2.png";
-
 
 function Work() {
   const [talentType, setTalentType] = useState("");
@@ -10,13 +10,10 @@ function Work() {
   const [charIndex, setCharIndex] = useState(0);
   const [hoveredCard, setHoveredCard] = useState(null);
 
+  const navigate = useNavigate();
+
   const talents = React.useMemo(
-    () => [
-      "STARTUPS",
-      "ENTREPRENEURS",
-      "SMES",
-      "INVENTORS ND PARTNERS",
-    ],
+    () => ["STARTUPS", "ENTREPRENEURS", "SMES", "INVENTORS ND PARTNERS"],
     []
   );
 
@@ -76,7 +73,10 @@ function Work() {
             <p className="text-gray-500 text-sm mb-4 font-roboto">
               Two experts collaborating for quality and innovation.
             </p>
-            <div className="flex items-center justify-center gap-2">
+            <div
+              className="flex items-center justify-center gap-2 cursor-pointer"
+              onClick={() => navigate("/talent/pair-to-pair")}
+            >
               {hoveredCard === 1 && (
                 <span className="font-bebas text-sm tracking-wider opacity-0 animate-fadeIn">
                   READ MORE
@@ -108,7 +108,10 @@ function Work() {
             <p className="text-gray-400 mb-4 font-roboto">
               A full team committed to comprehensive support.
             </p>
-            <div className="flex items-center justify-center gap-2">
+            <div
+              className="flex items-center justify-center gap-2 cursor-pointer"
+              onClick={() => navigate("/talent/dedicated-team")}
+            >
               {hoveredCard === 2 && (
                 <span className="font-bebas text-sm tracking-wider opacity-0 animate-fadeIn">
                   READ MORE
@@ -140,7 +143,10 @@ function Work() {
             <p className="text-gray-400 mb-4 font-roboto">
               Specialized experts for critical milestones and challenges.
             </p>
-            <div className="flex items-center justify-center gap-2">
+            <div
+              className="flex items-center justify-center gap-2 cursor-pointer"
+              onClick={() => navigate("/talent/task-force")}
+            >
               {hoveredCard === 3 && (
                 <span className="font-bebas text-sm tracking-wider opacity-0 animate-fadeIn">
                   READ MORE
