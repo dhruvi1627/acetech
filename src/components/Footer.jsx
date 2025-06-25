@@ -1,10 +1,14 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import aceTechLogo from "../assets/images/ace_tech.png";
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
-export default function Footer() {
+export default function Footer({ className = "" }) {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className={`text-white pt-20 pb-12 mt-10 ${className}`}>
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo Section */}
@@ -46,17 +50,19 @@ export default function Footer() {
                   </span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="/gdpr"
-                  className="hover:text-gray-300 relative group inline-block"
-                >
-                  <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-2">
-                    GDPR
-                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></span>
-                  </span>
-                </a>
-              </li>
+              {isHome && (
+                <li>
+                  <a
+                    href="/gdpr"
+                    className="hover:text-gray-300 relative group inline-block"
+                  >
+                    <span className="relative inline-block transition-transform duration-300 group-hover:translate-x-2">
+                      GDPR
+                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></span>
+                    </span>
+                  </a>
+                </li>
+              )}
               <li>
                 <a
                   href="/privacy-policy"
