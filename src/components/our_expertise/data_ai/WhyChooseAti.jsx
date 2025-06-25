@@ -1,6 +1,6 @@
 import React from "react";
-import WhyChooseSection from "./common/WhyChooseSection";
-import whyUsDataAi from "../../assets/images/our-expertise/why-us-data-ai-soliution.jpg";
+import WhyChooseSection from "../common/WhyChooseSection";
+import whyUsDataAi from "../../../assets/images/our-expertise/data_ai/why-us-data-ai-soliution.jpg";
 
 const WhyChooseAti = () => {
   const accordionData = [
@@ -50,3 +50,4 @@ const WhyChooseAti = () => {
 };
 
 export default WhyChooseAti;
+ 

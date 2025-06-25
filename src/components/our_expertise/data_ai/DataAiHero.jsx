@@ -1,8 +1,8 @@
 import React from "react";
 
-import dataDrivenInnovation from "../../assets/images/our-expertise/Data-Driven-Innovation.jpg";
-import dataDrivenInnovation2 from "../../assets/images/our-expertise/Data-Driven-Innovation-2.jpg";
-import HeroSection from "./common/HeroSection";
+import dataDrivenInnovation from "../../../assets/images/our-expertise/data_ai/Data-Driven-Innovation.jpg";
+import dataDrivenInnovation2 from "../../../assets/images/our-expertise/data_ai/Data-Driven-Innovation-2.jpg";
+import HeroSection from "../common/HeroSection";
 
 const DataAiHero = () => (
   <HeroSection

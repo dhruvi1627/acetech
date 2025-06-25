@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import dataDrivenInnovation1 from "../../assets/images/our-expertise/Data-Driven-Innovation-1.jpg";
-import FeatureSection from "./common/FeatureSection";
+import genAi from "../../../assets/images/our-expertise/data_ai/Gen-Ai.jpg";
+import FeatureSection from "../common/FeatureSection";
 
-const DataDrivenDecisions = () => {
-  const [openAccordion, setOpenAccordion] = useState("custom-dashboards");
+const InnovationWithGenAi = () => {
+  const [openAccordion, setOpenAccordion] = useState("content-generation");
   const [displayText, setDisplayText] = useState("");
-  const fullText = "DECISION MAKING";
+  const fullText = "WITH GENERATIVE AI";
   const [isTyping] = useState(true);
   const [isDeleting, setIsDeleting] = useState(false);
 
@@ -44,22 +44,22 @@ const DataDrivenDecisions = () => {
 
   const accordionData = [
     {
-      id: "real-time",
-      title: "REAL-TIME ANALYTICS",
+      id: "content-generation",
+      title: "CONTENT GENERATION",
       content:
-        "Gain insights in real time, enabling you to respond quickly to market changes and emerging opportunities.",
+        "Leverage GenAI to create high-quality content, including text, images, and videos, tailored to your brand and audience.",
     },
     {
-      id: "predictive",
-      title: "PREDICTIVE ANALYTICS",
+      id: "product-design",
+      title: "PRODUCT DESIGN",
       content:
-        "Anticipate future trends and behaviors with predictive models, allowing you to make proactive decisions.",
+        "Use AI to generate innovative product designs, prototypes, and concepts, accelerating your product development cycle.",
     },
     {
-      id: "custom-dashboards",
-      title: "CUSTOM DASHBOARDS",
+      id: "creative-problem-solving",
+      title: "CREATIVE PROBLEM-SOLVING",
       content:
-        "Visualize key metrics and data in custom dashboards that provide a clear, actionable view of your business performance.",
+        "Apply GenAI to complex problem-solving scenarios, generating unique solutions and strategies that drive innovation and efficiency.",
     },
   ];
 
@@ -69,27 +69,27 @@ const DataDrivenDecisions = () => {
 
   return (
     <FeatureSection
-      title="DATA-DRIVEN"
+      title="INNOVATION"
       animatedText={displayText}
-      image={dataDrivenInnovation1}
-      imageAlt="Data-driven innovation visualization with global network"
-      imageLeft={true}
+      image={genAi}
+      imageAlt="Innovation with Generative AI visualization"
+      imageLeft={false}
       sections={[
         {
           heading: "CHALLENGE",
-          text: "Many businesses struggle to make informed decisions due to the overwhelming amount of data available and the difficulty of extracting actionable insights.",
+          text: "Staying ahead of the competition requires continuous innovation, but traditional methods can be time-consuming and resource-intensive.",
         },
         {
           heading: "ATI'S SOLUTION",
-          text: "Our data analytics and AI solutions empower you to make data-driven decisions with confidence. By transforming raw data into meaningful insights, we help you identify trends, predict outcomes, and optimize strategies, leading to better business performance.",
+          text: "Generative AI (GenAI) offers a revolutionary approach to innovation by automating creative processes and generating new ideas, content, and designs. ATI's GenAI solutions help businesses explore new possibilities, optimize creative workflows, and bring innovative products and services to market faster.",
         },
       ]}
       accordionData={accordionData}
       openAccordion={openAccordion}
       toggleAccordion={toggleAccordion}
-      buttonText="UNLOCK POWERFUL INSIGHTS NOW"
+      buttonText="INNOVATE FASTER WITH GENAI"
     />
   );
 };
 
-export default DataDrivenDecisions;
+export default InnovationWithGenAi; 

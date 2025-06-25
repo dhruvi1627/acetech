@@ -1,5 +1,5 @@
 import React from "react";
-import SectionBlock from "./common/SectionBlock";
+import SectionBlock from "../common/SectionBlock";
 
 const DataAiExpertise = () => (
   <SectionBlock
