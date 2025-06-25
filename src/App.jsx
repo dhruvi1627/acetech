@@ -31,6 +31,8 @@ import TagBlogs from "./components/Resources/Blog/TagBlogs";
 import BlogDetails from "./components/Resources/Blog/BlogDetails";
 import EntrepreneursPage from "./pages/business_solution/EntrepreneursPage";
 import DataAiPage from "./pages/our_expertise/DataAiPage";
+import AppDevelopmentPage from "./pages/our_expertise/AppDevelopmentPage";
+import SystemIntegrationPage from "./pages/our_expertise/SystemIntegrationPage";
 import SmesPage from "./pages/business_solution/SmesPage";
 import InvestorsAndPartnersPage from "./pages/business_solution/InvestorsAndPartnersPage";
 import DigitalTransformationPage from "./pages/our_expertise/DigitalTransformationPage";
@@ -97,7 +99,8 @@ function AppContent() {
             element={<EntrepreneursPage />}
           />
           <Route path="/our-expertise/data-ai" element={<DataAiPage />} />
-
+          <Route path="/our-expertise/app-development" element={<AppDevelopmentPage />} />
+          <Route path="/our-expertise/system-integration" element={<SystemIntegrationPage />} />
           <Route
             path="/our-expertise/digital-transformation"
             element={<DigitalTransformationPage />}
