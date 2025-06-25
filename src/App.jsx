@@ -35,6 +35,8 @@ import SmesPage from "./pages/business_solution/SmesPage";
 import InvestorsAndPartnersPage from "./pages/business_solution/InvestorsAndPartnersPage";
 import DigitalTransformationPage from "./pages/our_expertise/DigitalTransformationPage";
 import CybersecurityPage from "./pages/our_expertise/CybersecurityPage";
+import ArMrPage from "./pages/our_expertise/ArMrPage";
+import BlockchainPage from "./pages/our_expertise/BlockchainPage";
 
 function AppContent() {
   const location = useLocation();
@@ -103,6 +105,11 @@ function AppContent() {
           <Route
             path="/our-expertise/cybersecurity"
             element={<CybersecurityPage />}
+          />
+          <Route path="/our-expertise/ar-mr" element={<ArMrPage />} />
+          <Route
+            path="/our-expertise/blockchain-web3"
+            element={<BlockchainPage />}
           />
           <Route path="/business-solutions/smes" element={<SmesPage />} />
           <Route
