@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   // Function to extract text content from HTML string
   const stripHtml = React.useCallback((html) => {
@@ -104,6 +106,11 @@ export default function Blogs() {
     fetchBlogs();
   }, [fetchBlogs]);
 
+  const handleBlogClick = (blog) => {
+    // Navigate to blog detail page using the slug
+    navigate(`/${blog.slug}`);
+  };
+
   // Add auto-sliding effect
   useEffect(() => {
     if (blogs.length > 3) {
@@ -168,6 +175,7 @@ export default function Blogs() {
             {blogs.slice(currentSlide, currentSlide + 3).map((blog) => (
               <div
                 key={blog.id}
+                onClick={() => handleBlogClick(blog)}
                 className="group font-roboto bg-gray-800 overflow-hidden transition-all duration-500 ease-in-out cursor-pointer flex flex-col"
               >
                 <div className="relative overflow-hidden">
