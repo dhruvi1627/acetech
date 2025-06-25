@@ -33,6 +33,8 @@ import EntrepreneursPage from "./pages/business_solution/EntrepreneursPage";
 import DataAiPage from "./pages/our_expertise/DataAiPage";
 import SmesPage from "./pages/business_solution/SmesPage";
 import InvestorsAndPartnersPage from "./pages/business_solution/InvestorsAndPartnersPage";
+import DigitalTransformationPage from "./pages/our_expertise/DigitalTransformationPage";
+import CybersecurityPage from "./pages/our_expertise/CybersecurityPage";
 
 function AppContent() {
   const location = useLocation();
@@ -93,10 +95,16 @@ function AppContent() {
             element={<EntrepreneursPage />}
           />
           <Route path="/our-expertise/data-ai" element={<DataAiPage />} />
+
           <Route
-            path="/business-solutions/smes"
-            element={<SmesPage />}
+            path="/our-expertise/digital-transformation"
+            element={<DigitalTransformationPage />}
           />
+          <Route
+            path="/our-expertise/cybersecurity"
+            element={<CybersecurityPage />}
+          />
+          <Route path="/business-solutions/smes" element={<SmesPage />} />
           <Route
             path="/business-solutions/investor-and-partners"
             element={<InvestorsAndPartnersPage />}

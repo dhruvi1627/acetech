@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const ServicesSection = ({ title, image, imageAlt, services }) => {
+const ServicesSection = ({ image, imageAlt, services }) => {
   const rightContentRef = useRef(null);
   const containerRef = useRef(null);
   const mainContentRef = useRef(null);
