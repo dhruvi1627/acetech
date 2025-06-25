@@ -33,6 +33,7 @@ import EntrepreneursPage from "./pages/business_solution/EntrepreneursPage";
 import DataAiPage from "./pages/our_expertise/DataAiPage";
 import AppDevelopmentPage from "./pages/our_expertise/AppDevelopmentPage";
 import SystemIntegrationPage from "./pages/our_expertise/SystemIntegrationPage";
+import TechInnovationPage from "./pages/our_expertise/TechInnovationPage";
 import SmesPage from "./pages/business_solution/SmesPage";
 import InvestorsAndPartnersPage from "./pages/business_solution/InvestorsAndPartnersPage";
 import DigitalTransformationPage from "./pages/our_expertise/DigitalTransformationPage";
@@ -101,6 +102,7 @@ function AppContent() {
           <Route path="/our-expertise/data-ai" element={<DataAiPage />} />
           <Route path="/our-expertise/app-development" element={<AppDevelopmentPage />} />
           <Route path="/our-expertise/system-integration" element={<SystemIntegrationPage />} />
+          <Route path="/our-expertise/tech-innovation" element={<TechInnovationPage />} />
           <Route
             path="/our-expertise/digital-transformation"
             element={<DigitalTransformationPage />}
