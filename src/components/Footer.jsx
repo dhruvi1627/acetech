@@ -8,7 +8,9 @@ export default function Footer({ className = "" }) {
   const isHome = location.pathname === "/";
 
   return (
-    <footer className={`text-white pt-20 pb-12 mt-10 ${className}`}>
+    <footer
+      className={`text-white pt-20 pb-12 mt-10 tracking-wider ${className}`}
+    >
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo Section */}
@@ -21,7 +23,7 @@ export default function Footer({ className = "" }) {
             <h3 className="font-bebas text-xl mb-4">OFFICE</h3>
             <p className="font-roboto mb-2">63 rue Tolbiac</p>
             <p className="font-roboto mb-4">75013 Paris</p>
-            <p className="font-bebas text-sm">INFO@ACETECHINSIDE.TECH</p>
+            <p className="font-bebas text-sm ">INFO@ACETECHINSIDE.TECH</p>
           </div>
 
           {/* Links Section */}
