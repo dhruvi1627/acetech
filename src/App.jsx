@@ -31,6 +31,7 @@ import TagBlogs from "./components/Resources/Blog/TagBlogs";
 import BlogDetails from "./components/Resources/Blog/BlogDetails";
 import EntrepreneursPage from "./pages/business_solution/EntrepreneursPage";
 import DataAiPage from "./pages/our_expertise/DataAiPage";
+import SmesPage from "./pages/business_solution/SmesPage";
 
 function AppContent() {
   const location = useLocation();
@@ -91,6 +92,10 @@ function AppContent() {
             element={<EntrepreneursPage />}
           />
           <Route path="/our-expertise/data-ai" element={<DataAiPage />} />
+          <Route
+            path="/business-solutions/smes"
+            element={<SmesPage />}
+          />
         </Routes>
       </main>
       <Footer className={isHome ? "bg-black" : "bg-[#242222]"} />

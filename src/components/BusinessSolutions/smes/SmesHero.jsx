@@ -1,6 +1,6 @@
 import React from "react";
 
-const StartupsHero = () => {
+const SmesHero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Main content */}
@@ -9,24 +9,24 @@ const StartupsHero = () => {
           {/* First line with STARTUP WITH inline */}
           <div className="flex items-start gap-8">
             <div className="text-white text-6xl md:text-8xl lg:text-9xl tracking-tight leading-none">
-              EMPOWER YOUR TECH
+              EMPOWER YOUR  
             </div>
-            <div className="text-white text-sm md:text-base font-normal tracking-widest mt-2">
-              STARTUP WITH
+            <div className="text-white text-lg md:text-6xl font-normal tracking-widest mt-2">
+              SME WITH 
             </div>
           </div>
 
           {/* Second line - right aligned */}
           <div className="flex justify-end mt-4">
             <div className="text-white text-6xl md:text-8xl lg:text-9xl tracking-tight leading-none">
-              EXPERT TALENT &
+              TOP TALENT AND 
             </div>
           </div>
 
           {/* Third line - left aligned with purple color */}
           <div className="text-6xl md:text-8xl lg:text-9xl tracking-tight leading-none mt-4 mb-20">
             <div className="bg-[#e156e6] bg-clip-text text-transparent">
-              TAILORED SOLUTIONS
+              ADVANCED TECH
             </div>
           </div>
         </div>
@@ -42,4 +42,4 @@ const StartupsHero = () => {
   );
 };
 
-export default StartupsHero;
+export default SmesHero;
