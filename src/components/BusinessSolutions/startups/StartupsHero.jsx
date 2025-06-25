@@ -26,7 +26,7 @@ const StartupsHero = () => {
 
           {/* Third line - left aligned with purple color */}
           <div className="text-6xl md:text-8xl lg:text-9xl tracking-tight leading-none mt-4 mb-20">
-            <div className="text-[#e156e6] bg-clip-text text-transparent">
+            <div className="bg-[#e156e6] bg-clip-text text-transparent">
               TAILORED SOLUTIONS
             </div>
           </div>
