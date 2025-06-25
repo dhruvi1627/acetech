@@ -32,6 +32,7 @@ import BlogDetails from "./components/Resources/Blog/BlogDetails";
 import EntrepreneursPage from "./pages/business_solution/EntrepreneursPage";
 import DataAiPage from "./pages/our_expertise/DataAiPage";
 import SmesPage from "./pages/business_solution/SmesPage";
+import InvestorsAndPartnersPage from "./pages/business_solution/InvestorsAndPartnersPage";
 
 function AppContent() {
   const location = useLocation();
@@ -95,6 +96,10 @@ function AppContent() {
           <Route
             path="/business-solutions/smes"
             element={<SmesPage />}
+          />
+          <Route
+            path="/business-solutions/investor-and-partners"
+            element={<InvestorsAndPartnersPage />}
           />
         </Routes>
       </main>
