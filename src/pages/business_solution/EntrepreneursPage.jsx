@@ -6,6 +6,10 @@ import leftBg2 from "../../assets/images/services/end-to-end/bg-gr-2-marketing-4
 import EntrepreneursHero from "../../components/BusinessSolutions/entrepreneurs/EntrepreneursHero";
 import EntrepreneursContent from "../../components/BusinessSolutions/entrepreneurs/EntrepreneursContent";
 import EntrepreneursRoadmap from "../../components/BusinessSolutions/entrepreneurs/EntrepreneursRoadmap";
+import Advisor from "../../components/BusinessSolutions/entrepreneurs/Advisor";
+import Growth from "../../components/BusinessSolutions/entrepreneurs/Growth";
+import Sustainability from "../../components/BusinessSolutions/entrepreneurs/Sustainability";
+import WhyEntrepreneurs from "../../components/BusinessSolutions/entrepreneurs/WhyEntrepreneurs";
 
 export default function EntrepreneursPage() {
   return (
@@ -38,6 +42,10 @@ export default function EntrepreneursPage() {
         <EntrepreneursContent/>
       </div>
       <EntrepreneursRoadmap/>
+      <Advisor/>
+      <Growth/>
+      <Sustainability/>
+      <WhyEntrepreneurs/>
     </>
   );
 }
