@@ -7,7 +7,7 @@ import EntrepreneursHero from "../../components/BusinessSolutions/entrepreneurs/
 import EntrepreneursContent from "../../components/BusinessSolutions/entrepreneurs/EntrepreneursContent";
 import EntrepreneursRoadmap from "../../components/BusinessSolutions/entrepreneurs/EntrepreneursRoadmap";
 
-export default function AgileDevelopmentSprint() {
+export default function EntrepreneursPage() {
   return (
     <>
       <div
@@ -36,8 +36,8 @@ export default function AgileDevelopmentSprint() {
       >
         <EntrepreneursHero />
         <EntrepreneursContent/>
-        <EntrepreneursRoadmap/>
       </div>
+      <EntrepreneursRoadmap/>
     </>
   );
 }
