@@ -37,6 +37,7 @@ import DigitalTransformationPage from "./pages/our_expertise/DigitalTransformati
 import CybersecurityPage from "./pages/our_expertise/CybersecurityPage";
 import ArMrPage from "./pages/our_expertise/ArMrPage";
 import BlockchainPage from "./pages/our_expertise/BlockchainPage";
+import TechInnovationPage from "./pages/our_expertise/TechInnovationPage";
 
 function AppContent() {
   const location = useLocation();
@@ -110,6 +111,10 @@ function AppContent() {
           <Route
             path="/our-expertise/blockchain-web3"
             element={<BlockchainPage />}
+          />
+          <Route
+            path="/our-expertise/tech-innovation"
+            element={<TechInnovationPage />}
           />
           <Route path="/business-solutions/smes" element={<SmesPage />} />
           <Route
