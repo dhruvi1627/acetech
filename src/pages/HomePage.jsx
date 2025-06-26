@@ -33,7 +33,7 @@ export default function HomePage() {
           url(${colorBg})
         `,
           backgroundPosition: `
-          right -400px top 350px,
+          right -400px top 200px,
           right center
         `,
         }}
