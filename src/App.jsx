@@ -38,6 +38,8 @@ import CybersecurityPage from "./pages/our_expertise/CybersecurityPage";
 import ArMrPage from "./pages/our_expertise/ArMrPage";
 import BlockchainPage from "./pages/our_expertise/BlockchainPage";
 import TechInnovationPage from "./pages/our_expertise/TechInnovationPage";
+import AppDevelopmentPage from "./pages/our_expertise/AppDevelopmentPage";
+import SystemIntegrationPage from "./pages/our_expertise/SystemIntegrationPage";
 
 function AppContent() {
   const location = useLocation();
@@ -111,6 +113,14 @@ function AppContent() {
           <Route
             path="/our-expertise/blockchain-web3"
             element={<BlockchainPage />}
+          />
+          <Route
+            path="/our-expertise/app-development"
+            element={<AppDevelopmentPage />}
+          />
+          <Route
+            path="/our-expertise/system-integration"
+            element={<SystemIntegrationPage />}
           />
           <Route
             path="/our-expertise/tech-innovation"
