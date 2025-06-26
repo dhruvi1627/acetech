@@ -3,7 +3,7 @@ import React from "react";
 export default function CollaborativeTalent() {
   return (
     <>
-      <section className="text-white mt-10 md:mt-20 py-8 md:py-12 px-4">
+      <section className="text-white mt-10 py-8 md:py-12 px-4">
         <div className="justify-center tracking-wider font-roboto text-center">
           <div>
             <h1 className="uppercase font-bebas text-lg md:text-xl">Talents</h1>

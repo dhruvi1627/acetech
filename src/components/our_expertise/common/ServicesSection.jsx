@@ -43,7 +43,7 @@ const ServicesSection = ({ image, imageAlt, services }) => {
   }, [isHoveringMainContent]);
 
   return (
-    <div ref={containerRef} className="min-h-screen text-white pb-20 px-20">
+    <div ref={containerRef} className="min-h-screen text-white pb-20">
 
       {/* Main Content */}
       <div

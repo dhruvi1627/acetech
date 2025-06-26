@@ -11,7 +11,7 @@ const HeroSection = ({
   showDecor = false,
 }) => {
   return (
-    <section className="text-white min-h-screen flex items-center px-12 mx-8">
+    <section className="text-white min-h-screen flex items-center w-full">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-20 items-start pt-20">
           {/* Left Side Content */}

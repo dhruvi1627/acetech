@@ -9,7 +9,7 @@ const SectionBlock = ({
   onButtonClick,
   children,
 }) => (
-  <section className={" py-20 px-12 mx-8 text-white tracking-wider"}>
+  <section className={" py-20 text-white tracking-wider"}>
     <div className="container mx-auto px-6 lg:px-8">
       {subtitle && (
         <div className="max-w-5xl mx-auto text-center mb-8">

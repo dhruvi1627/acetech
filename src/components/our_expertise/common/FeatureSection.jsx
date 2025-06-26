@@ -14,7 +14,7 @@ const FeatureSection = ({
   buttonText,
   onButtonClick,
 }) => (
-  <section className="text-white pb-20 px-12 mb-8">
+  <section className="text-white pb-20 mb-8">
     <div className="container mx-auto px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold font-bebas tracking-wider text-center mb-8">
@@ -61,7 +61,7 @@ const FeatureSection = ({
                       <ArrowRight
                         className={`w-5 h-5 transform transition-transform duration-300 ${
                           openAccordion === item.id
-                            ? "rotate-90"
+                            ? "rotate-45"
                             : "group-hover:translate-x-2"
                         }`}
                       />

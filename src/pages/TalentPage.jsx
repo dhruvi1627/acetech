@@ -18,8 +18,8 @@ export default function TalentPage() {
         className="bg-no-repeat bg-transparent"
         style={{
           backgroundImage: `url(${talentBg}), url(${colorBg})`,
-          backgroundPosition: "right -200px top -50px, right center",
-          backgroundSize: "300px auto, cover", // Adjust sizes for responsiveness
+          backgroundPosition: "right -230px top 10px, right center",
+          backgroundSize: "500px auto, cover",
         }}
       >
         <TalentHero />
@@ -34,33 +34,41 @@ export default function TalentPage() {
         />
       </div>
 
-      {/* COLLABORATIVE TALENT SECTION */}
+      {/* SECTION: COLLABORATIVE TALENT + WHO WE ARE with colorBgLeft */}
       <div
-        className="bg-no-repeat bg-transparent w-full h-auto justify-center items-center flex"
+        className="bg-no-repeat bg-transparent w-full h-auto flex flex-col items-center"
         style={{
           backgroundImage: `url(${bgCapsule}), url(${colorBgLeft})`,
-          backgroundPosition: "left -200px top 80px, left center",
-          backgroundSize: "250px auto, cover",
+          backgroundPosition: `left -250px top 150px, left center`,
+          backgroundSize: `400px auto, 200 cover`,
         }}
       >
+        {/* COLLABORATIVE TALENT */}
         <CollaborativeTalent />
-      </div>
 
-      {/* WHO WE ARE */}
-      <div className="bg-transparent">
-        <WhoWeAre />
-      </div>
+        {/* WHO WE ARE + colorBg (shared with Expertise) */}
+        <div
+          className="w-full bg-no-repeat bg-transparent"
+          style={{
+            backgroundImage: `url(${colorBg})`,
+            backgroundPosition: "right center",
+            backgroundSize: "cover",
+          }}
+        >
+          <WhoWeAre />
 
-      {/* EXPERTISE SECTION */}
-      <div
-        className="bg-no-repeat bg-transparent"
-        style={{
-          backgroundImage: `url(${decor2Startup}), url(${colorBg})`,
-          backgroundPosition: "right -300px top 10px, right center",
-          backgroundSize: "200px auto, cover",
-        }}
-      >
-        <Expertise />
+          {/* EXPERTISE with additional decor2Startup */}
+          <div
+            className="w-full bg-no-repeat bg-transparent"
+            style={{
+              backgroundImage: `url(${decor2Startup})`,
+              backgroundPosition: "right -350px top 10px",
+              backgroundSize: "auto",
+            }}
+          >
+            <Expertise />
+          </div>
+        </div>
       </div>
     </>
   );
