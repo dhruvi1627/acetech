@@ -7,10 +7,10 @@ import Ati from "../components/about_us/Ati";
 export default function TalentPage() {
   return (
     <>
-    <ServiceHero />
-    <Expertise />
-    <Approach />
-    <Ati />
+      <ServiceHero />
+      <Expertise />
+      <Approach />
+      <Ati />
     </>
   );
 }
