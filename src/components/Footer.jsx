@@ -9,7 +9,7 @@ export default function Footer({ className = "" }) {
 
   return (
     <footer
-      className={`text-white pt-20 pb-12 mt-10 tracking-wider ${className}`}
+      className={`text-white pt-20 pb-12 tracking-wider ${className}`}
     >
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

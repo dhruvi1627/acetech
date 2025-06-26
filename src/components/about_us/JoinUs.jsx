@@ -12,9 +12,9 @@ const JoinUs = () => {
   return (
     <div className="min-h-screen text-white">
       {/* Main Content Container */}
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen justify-center">
         {/* Left Side - Image */}
-        <div className="w-1/3 ml-auto relative">
+        <div className="w-1/3 relative">
           <img
             src={about}
             alt="Professional business meeting with handshake"
@@ -23,7 +23,7 @@ const JoinUs = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-1/2 flex flex-col justify-center px-16 py-12">
+        <div className="w-1/2 flex flex-col px-16">
           {/* Header */}
           <div className="mb-12">
             <h1 className=" text-xl font-semibold tracking-wide uppercase mb-4 font-bebas">
