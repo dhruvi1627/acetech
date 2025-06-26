@@ -47,17 +47,15 @@ const Values = () => {
               className="border border-gray-700 p-6 sm:p-8 bg-black/30 rounded-lg flex flex-col h-full transition-colors duration-300"
             >
               {/* Icon */}
-              <div className="mb-4 sm:mb-6 flex justify-center">
-                {value.icon}
-              </div>
+              <div className="mb-4 sm:mb-6 flex">{value.icon}</div>
 
               {/* Title */}
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 uppercase tracking-wide text-center">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 uppercase tracking-wide">
                 {value.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-300 leading-relaxed text-sm sm:text-base text-center">
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                 {value.description}
               </p>
             </div>

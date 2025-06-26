@@ -11,30 +11,17 @@ const AboutUsHero = () => {
           {/* Left Side Content */}
           <div className="max-h-[70vh] md:max-h-screen overflow-y-auto pr-0 md:pr-2 mt-10 md:mt-20 hide-scrollbar space-y-6 md:space-y-8 tracking-wider">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-semibold leading-tight font-bebas">
-              ATI - DRIVING INNOVATION
-              <br />
-              <span>THROUGH AGILE</span> AND LEAN
-              <br />
-              SOLUTIONS
+              ATI - DRIVING INNOVATION THROUGH AGILE AND LEANSOLUTIONS
             </h1>
 
             <p className="text-gray-300 leading-relaxed max-w-full md:max-w-2xl font-roboto text-base md:text-lg">
               At ATI, we believe in empowering businesses to drive innovation
-              and
-              <br />
-              create transformative solutions. As a leading tech company
-              specializing in
-              <br />
-              agile methodologies and lean principles, we are constantly helping
-              <br />
-              startups, enterprises, and organizations navigate the complexities
-              of the
-              <br />
-              digital landscape. Our mission is to empower businesses with the
-              tools,
-              <br />
-              talent, and technology they need to thrive in a rapidly evolving
-              world.
+              and create transformative solutions. As a leading tech company
+              specializing in agile methodologies and lean principles, we are
+              constantly helping startups, enterprises, and organizations
+              navigate the complexities of the digital landscape. Our mission is
+              to empower businesses with the tools, talent, and technology they
+              need to thrive in a rapidly evolving world.
             </p>
 
             {/* Right-aligned image inside left content */}
@@ -66,49 +53,35 @@ const AboutUsHero = () => {
         </div>
 
         {/* Mission and Vision Cards - Positioned below main content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-10 md:mt-20 pb-10 md:pb-20 font-roboto w-full">
-          <div className="p-6 md:p-10 border border-gray-700 space-y-4 bg-black/30 rounded-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 pb-10 md:pb-20 font-roboto w-full">
+          <div className="p-6 md:p-10 border border-gray-700 space-y-4 bg-black/30">
             <div className="text-pink-400">
-              <Brain size={40} className="md:size-48" />
+              <Brain size={40} className="size-20" />
             </div>
             <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wider">
               Our Mission - Empowering Innovation
             </h2>
             <p className="text-gray-300 text-base md:text-lg">
               Our mission is to enable businesses to achieve their full
-              potential by
-              <br />
-              delivering agile, lean, and innovative technology solutions. We
-              strive to be
-              <br />
-              the trusted partner that organizations turn to when they need to
-              navigate
-              <br />
-              digital transformation, optimize their operations, and achieve
-              sustainable growth.
+              potential by delivering agile, lean, and innovative technology
+              solutions. We strive to be the trusted partner that organizations
+              turn to when they need to navigate digital transformation,
+              optimize their operations, and achieve sustainable growth.
             </p>
           </div>
-          <div className="p-6 md:p-10 border border-gray-700 space-y-4 bg-black/30 rounded-lg mt-6 md:mt-0">
+          <div className="p-6 md:p-10 border border-gray-700 space-y-4 bg-black/30">
             <div className="text-pink-400">
-              <Disc size={40} className="md:size-48" />
+              <Disc size={40} className="size-20" />
             </div>
             <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wider">
               Our Vision - Shaping the Future
             </h2>
             <p className="text-gray-300 text-base md:text-lg">
               We envision a future where businesses of all sizes can leverage
-              advanced
-              <br />
-              technologies to drive innovation, efficiency, and growth. By
-              staying at the
-              <br />
-              forefront of technological advancements and maintaining a
-              customer-
-              <br />
-              centric approach, ATI aims to lead the way in transforming
-              industries and
-              <br />
-              improving lives through technology.
+              advanced technologies to drive innovation, efficiency, and growth.
+              By staying at the 11forefront of technological advancements and
+              maintaining a customer-centric approach, ATI aims to lead the way
+              in transforming industries and improving lives through technology.
             </p>
           </div>
         </div>

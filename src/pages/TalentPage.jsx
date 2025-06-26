@@ -13,25 +13,19 @@ import bgCapsule from "../assets/images/Talents/ai-bg-capsule-300x300.webp";
 export default function TalentPage() {
   return (
     <>
+      {/* HERO SECTION WITH RESPONSIVE BACKGROUND */}
       <div
-        className="bg-no-repeat bg-transparent hidden md:block"
+        className="bg-no-repeat bg-transparent"
         style={{
-          backgroundImage: `
-                    url(${talentBg}),
-                    url(${colorBg})
-                  `,
-          backgroundPosition: `
-                          right -300px top -100px,
-                          right center
-                        `,
+          backgroundImage: `url(${talentBg}), url(${colorBg})`,
+          backgroundPosition: "right -200px top -50px, right center",
+          backgroundSize: "300px auto, cover", // Adjust sizes for responsiveness
         }}
       >
         <TalentHero />
       </div>
-      <div className="md:hidden">
-        <TalentHero />
-      </div>
 
+      {/* ACE TECH IMAGE */}
       <div className="w-full flex justify-center items-center bg-transparent">
         <img
           src={talentAceImage}
@@ -39,38 +33,33 @@ export default function TalentPage() {
           className="w-full h-auto"
         />
       </div>
+
+      {/* COLLABORATIVE TALENT SECTION */}
       <div
-        className="bg-no-repeat bg-transparent w-full h-auto justify-center items-center hidden md:flex"
+        className="bg-no-repeat bg-transparent w-full h-auto justify-center items-center flex"
         style={{
           backgroundImage: `url(${bgCapsule}), url(${colorBgLeft})`,
-          backgroundPosition: "left -300px top 100px, left center",
-          backgroundSize: "500px auto, cover",
+          backgroundPosition: "left -200px top 80px, left center",
+          backgroundSize: "250px auto, cover",
         }}
       >
         <CollaborativeTalent />
       </div>
-      <div className="md:hidden">
-        <CollaborativeTalent />
-      </div>
+
+      {/* WHO WE ARE */}
       <div className="bg-transparent">
         <WhoWeAre />
       </div>
+
+      {/* EXPERTISE SECTION */}
       <div
-        className="bg-no-repeat bg-transparent hidden md:block"
+        className="bg-no-repeat bg-transparent"
         style={{
-          backgroundImage: `
-          url(${decor2Startup}),
-          url(${colorBg})
-        `,
-          backgroundPosition: `
-          right -400px top 10px,
-          right center
-        `,
+          backgroundImage: `url(${decor2Startup}), url(${colorBg})`,
+          backgroundPosition: "right -300px top 10px, right center",
+          backgroundSize: "200px auto, cover",
         }}
       >
-        <Expertise />
-      </div>
-      <div className="md:hidden">
         <Expertise />
       </div>
     </>
