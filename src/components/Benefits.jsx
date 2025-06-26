@@ -4,8 +4,16 @@ function Benefits() {
   return (
     <div className="text-white py-12 sm:py-16 md:py-20 relative overflow-hidden tracking-wider">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 md:gap-0 px-4 sm:px-8">
+        {/* Image */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+          <img
+            src={acetechBenefits}
+            alt="Ace Tech Benefits"
+            className="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto mx-auto"
+          />
+        </div>
         {/* Content */}
-        <div className="w-full md:w-1/2 text-center md:text-left md:pl-8 bg-transparent mb-8 md:mb-0">
+        <div className="w-full md:w-1/2 md:text-left md:pl-8 bg-transparent mb-8 md:mb-0">
           <h2 className="text-lg sm:text-xl font-semibold font-roboto">
             OUR BENEFITS
           </h2>
@@ -17,16 +25,16 @@ function Benefits() {
             efficiency and rapid delivery of projects.
           </p>
           <ul className="mb-8">
-            <li className="flex items-center justify-center md:justify-start mb-2 font-roboto gap-2">
-              <span>✓</span>
+            <li className="flex md:justify-start mb-2 font-roboto gap-2">
+              <span className="text-[#c14ac7]">✓</span>
               <span>Excellence</span>
             </li>
-            <li className="flex items-center justify-center md:justify-start mb-2 font-roboto gap-2">
-              <span>✓</span>
+            <li className="flex  md:justify-start mb-2 font-roboto gap-2">
+              <span className="text-[#c14ac7]">✓</span>
               <span>Innovation</span>
             </li>
-            <li className="flex items-center justify-center md:justify-start mb-6 font-roboto gap-2">
-              <span>✓</span>
+            <li className="flex md:justify-start mb-6 font-roboto gap-2">
+              <span className="text-[#c14ac7]">✓</span>
               <span>Ethics and Respect</span>
             </li>
           </ul>
@@ -34,14 +42,6 @@ function Benefits() {
             CONTACT US
             <span>→</span>
           </button>
-        </div>
-        {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <img
-            src={acetechBenefits}
-            alt="Ace Tech Benefits"
-            className="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto mx-auto"
-          />
         </div>
       </div>
     </div>

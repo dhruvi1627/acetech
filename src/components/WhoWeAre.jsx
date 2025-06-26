@@ -33,17 +33,16 @@ export default function WhoWeAre() {
   }, [charIndex, textIndex, goalType, goals]);
 
   return (
-    <div className="text-center mb-16 mt-32 text-white w-full h-auto tracking-wider">
-      <h4 className="text-2xl font-semibold font-bebas mb-4">WHO WE ARE</h4>
-      <h3 className="text-5xl  mb-4 font-bebas">
-        WE'VE HELPED HUNDREDS OF PARTNERS, RANGING
+    <div className="text-center my-16 text-white w-full h-auto tracking-wider">
+      <h4 className="text-lg sm:text-xl md:text-2xl font-semibold font-bebas mb-4">
+        WHO WE ARE
+      </h4>
+      <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 font-bebas">
+        WE'VE HELPED HUNDREDS OF PARTNERS, RANGING FROM STARTUPS TO MEDIUM-SIZED
+        BUSINESSES WITH THEIR{" "}
+        <span className="underline text-white">{goalType}</span>
       </h3>
-      <h3 className="text-5xl mb-4 font-bebas">
-        FROM STARTUPS TO MEDIUM-SIZED BUSINESSES
-      </h3>
-      <h3 className="text-6xl font-bebas">
-        WITH THEIR <span className="underline text-white">{goalType}</span>
-      </h3>
+      <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bebas"></h3>
     </div>
   );
 }
