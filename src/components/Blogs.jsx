@@ -6,6 +6,22 @@ export default function Blogs() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const [blogsPerSlide, setBlogsPerSlide] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setBlogsPerSlide(1);
+      } else if (window.innerWidth < 1024) {
+        setBlogsPerSlide(2);
+      } else {
+        setBlogsPerSlide(3);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Function to extract text content from HTML string
   const stripHtml = React.useCallback((html) => {
@@ -113,23 +129,29 @@ export default function Blogs() {
 
   // Add auto-sliding effect
   useEffect(() => {
-    if (blogs.length > 3) {
-      // Only auto-slide if there are more than 3 blogs
+    if (blogs.length > blogsPerSlide) {
+      // Only auto-slide if there are more blogs than blogsPerSlide
       const timer = setInterval(() => {
-        setCurrentSlide((prev) => (prev + 3 >= blogs.length ? 0 : prev + 3));
+        setCurrentSlide((prev) =>
+          prev + blogsPerSlide >= blogs.length ? 0 : prev + blogsPerSlide
+        );
       }, 3000); // Change slide every 3 seconds
 
       return () => clearInterval(timer); // Cleanup on unmount
     }
-  }, [blogs.length]);
+  }, [blogs.length, blogsPerSlide]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 3 >= blogs.length ? 0 : prev + 3));
+    setCurrentSlide((prev) =>
+      prev + blogsPerSlide >= blogs.length ? 0 : prev + blogsPerSlide
+    );
   };
 
   const prevSlide = () => {
     setCurrentSlide((prev) =>
-      prev - 3 < 0 ? Math.max(blogs.length - 3, 0) : prev - 3
+      prev - blogsPerSlide < 0
+        ? Math.max(blogs.length - blogsPerSlide, 0)
+        : prev - blogsPerSlide
     );
   };
 
@@ -148,7 +170,7 @@ export default function Blogs() {
           </div>
         )}
         <div className="container mx-auto px-4 max-w-7xl relative">
-          {blogs.length > 3 && (
+          {blogs.length > blogsPerSlide && (
             <button
               onClick={prevSlide}
               className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 hover:bg-gray-700 p-2 rounded-full transition-colors duration-200"
@@ -171,60 +193,66 @@ export default function Blogs() {
             </button>
           )}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogs.slice(currentSlide, currentSlide + 3).map((blog) => (
-              <div
-                key={blog.id}
-                onClick={() => handleBlogClick(blog)}
-                className="group font-roboto bg-gray-800 overflow-hidden transition-all duration-500 ease-in-out cursor-pointer flex flex-col"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={blog.image}
-                    alt={blog.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                    onError={(e) => {
-                      e.target.src = "https://placeholder.com/300x200";
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300"></div>
-                </div>
+          <div
+            className={`grid grid-cols-1 ${
+              blogsPerSlide > 1 ? `md:grid-cols-${blogsPerSlide}` : ""
+            } gap-6`}
+          >
+            {blogs
+              .slice(currentSlide, currentSlide + blogsPerSlide)
+              .map((blog) => (
+                <div
+                  key={blog.id}
+                  onClick={() => handleBlogClick(blog)}
+                  className="group font-roboto bg-gray-800 overflow-hidden transition-all duration-500 ease-in-out cursor-pointer flex flex-col"
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={blog.image}
+                      alt={blog.title}
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      onError={(e) => {
+                        e.target.src = "https://placeholder.com/300x200";
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300"></div>
+                  </div>
 
-                {/* Content section with keywords, date, and title */}
-                <div className="p-4">
-                  {/* Keywords and Date */}
-                  <div className="mb-3 font-bebas">
-                    <div className="flex items-center gap-2 mb-2 tracking-wider">
-                      <div className="w-8 h-0.5 bg-white"></div>
-                      {blog.keywords.map((keyword, index) => (
-                        <span
-                          key={index}
-                          className="text-white px-2 py-1 rounded uppercase tracking-wide"
-                        >
-                          {keyword}
+                  {/* Content section with keywords, date, and title */}
+                  <div className="p-4">
+                    {/* Keywords and Date */}
+                    <div className="mb-3 font-bebas">
+                      <div className="flex items-center gap-2 mb-2 tracking-wider">
+                        <div className="w-8 h-0.5 bg-white"></div>
+                        {blog.keywords.map((keyword, index) => (
+                          <span
+                            key={index}
+                            className="text-white px-2 py-1 rounded uppercase tracking-wide"
+                          >
+                            {keyword}
+                          </span>
+                        ))}
+                        {blog.keywords.length > 0 && (
+                          <span className="text-gray-400 text-sm">•</span>
+                        )}
+                        <span className="text-gray-400 text-sm ">
+                          {blog.date}
                         </span>
-                      ))}
-                      {blog.keywords.length > 0 && (
-                        <span className="text-gray-400 text-sm">•</span>
-                      )}
-                      <span className="text-gray-400 text-sm ">
-                        {blog.date}
-                      </span>
+                      </div>
+                    </div>
+
+                    {/* Title */}
+                    <div className="font-bebas tracking-wider">
+                      <h2 className="text-xl mb-2 line-clamp-2 hover:text-blue-400 transition-colors duration-200">
+                        {blog.title}
+                      </h2>
                     </div>
                   </div>
-
-                  {/* Title */}
-                  <div className="font-bebas tracking-wider">
-                    <h2 className="text-xl mb-2 line-clamp-2 hover:text-blue-400 transition-colors duration-200">
-                      {blog.title}
-                    </h2>
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
 
-          {blogs.length > 3 && (
+          {blogs.length > blogsPerSlide && (
             <button
               onClick={nextSlide}
               className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 hover:bg-gray-700 p-2 rounded-full transition-colors duration-200"
@@ -247,22 +275,22 @@ export default function Blogs() {
             </button>
           )}
 
-          {blogs.length > 3 && (
+          {blogs.length > blogsPerSlide && (
             <div className="flex justify-center mt-6 space-x-2">
-              {Array.from({ length: Math.ceil(blogs.length / 3) }).map(
-                (_, index) => (
-                  <button
-                    key={index}
-                    className={`h-2 w-2 rounded-full transition-all duration-200 ${
-                      currentSlide / 3 === index
-                        ? "bg-white w-6"
-                        : "bg-gray-500 hover:bg-gray-400"
-                    }`}
-                    onClick={() => setCurrentSlide(index * 3)}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                )
-              )}
+              {Array.from({
+                length: Math.ceil(blogs.length / blogsPerSlide),
+              }).map((_, index) => (
+                <button
+                  key={index}
+                  className={`h-2 w-2 rounded-full transition-all duration-200 ${
+                    currentSlide / blogsPerSlide === index
+                      ? "bg-white w-6"
+                      : "bg-gray-500 hover:bg-gray-400"
+                  }`}
+                  onClick={() => setCurrentSlide(index * blogsPerSlide)}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
             </div>
           )}
 
