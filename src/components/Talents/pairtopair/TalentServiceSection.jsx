@@ -98,7 +98,7 @@ export default function TalentServiceSection({
 
       {/* CTA Section */}
       {ctaText && onCtaClick && (
-        <div className="text-white flex flex-col items-center justify-center tracking-wider space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-12 mt-12 sm:mt-16 md:mt-6">
+        <div className="text-white flex flex-col items-center justify-center tracking-wider space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-12 mt-12 sm:mt-16 md:mt-6 mb-10">
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bebas uppercase w-full flex items-center justify-center text-center">
             {ctamain}
           </div>
