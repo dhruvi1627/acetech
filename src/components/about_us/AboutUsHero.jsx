@@ -10,11 +10,11 @@ const AboutUsHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 lg:gap-20 items-center pt-10 md:pt-16 lg:pt-20">
           {/* Left Side Content */}
           <div className="max-h-[70vh] md:max-h-screen overflow-y-auto pr-0 md:pr-2 mt-10 md:mt-20 hide-scrollbar space-y-6 md:space-y-8 tracking-wider">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-semibold leading-tight font-bebas">
-              ATI - DRIVING INNOVATION THROUGH AGILE AND LEANSOLUTIONS
+            <h1 className="text-3xl sm:text-[26px] lg:text-5xl xl:text-[57px] font-semibold leading-tight font-bebas sm:w-full">
+              ATI - DRIVING INNOVATION THROUGH AGILE AND LEAN SOLUTIONS
             </h1>
 
-            <p className="text-gray-300 leading-relaxed max-w-full md:max-w-2xl font-roboto text-base md:text-lg">
+            <p className="text-gray-300 leading-relaxed max-w-full md:max-w-2xl sm:text-[15px] font-roboto text-base md:text-lg">
               At ATI, we believe in empowering businesses to drive innovation
               and create transformative solutions. As a leading tech company
               specializing in agile methodologies and lean principles, we are
@@ -58,7 +58,7 @@ const AboutUsHero = () => {
             <div className="text-pink-400">
               <Brain size={40} className="size-20" />
             </div>
-            <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wider">
+            <h2 className="text-xl md:text-2xl xm:text-[15px] xl:text-[17px] font-bold uppercase tracking-wider">
               Our Mission - Empowering Innovation
             </h2>
             <p className="text-gray-300 text-base md:text-lg">

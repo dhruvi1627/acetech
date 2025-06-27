@@ -33,7 +33,7 @@ const Values = () => {
     <div className="min-h-screen py-10 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-16">
+        <div className="text-center mb-10 md:mb-16 ">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white uppercase tracking-wide font-bebas tracking-wider">
             Our Values
           </h2>
