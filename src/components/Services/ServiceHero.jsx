@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const ServiceHero = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen text-white relative overflow-hidden mt-36">
       <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
@@ -26,7 +28,7 @@ const ServiceHero = () => {
                 we're here to help you achieve your goals at every stage.
               </p>
             </div>
-            <button className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2.5 sm:py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg rounded">
+            <button onClick={() => navigate(`/contact-us`)} className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2.5 sm:py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg rounded">
               CONTACT US
               <span>→</span>
             </button>

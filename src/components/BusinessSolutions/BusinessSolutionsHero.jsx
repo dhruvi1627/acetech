@@ -1,7 +1,9 @@
 import { BookOpenText, House, IdCard, Users } from "lucide-react";
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function BusinessSolutionsHero() {
+  const navigate = useNavigate();
   return (
     <div className="w-full min-h-[120vh] text-white py-16 px-4 md:px-8 lg:px-16 font-roboto tracking-wider relative">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -24,7 +26,7 @@ export default function BusinessSolutionsHero() {
             committed to providing the support you need to thrive in today's
             competitive landscape.
           </p>
-          <button className="bg-[#de60ca] hover:bg-white hover:text-black px-8 py-3 transition-colors duration-300">
+          <button onClick={() => navigate(`/contact-us`)} className="bg-[#de60ca] hover:bg-white hover:text-black px-8 py-3 transition-colors duration-300">
             CONTACT US →
           </button>
         </div>

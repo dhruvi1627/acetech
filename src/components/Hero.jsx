@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import aceTechimage from "../assets/images/acetech_image.png";
 import acetech_worldwide from "../assets/images/acetech_worldwide.png";
 import bgstartup from "../assets/images/bg-gr-4-startup.png";
 
 export default function Hero() {
+  const navigate = useNavigate();
   return (
     <div
       className="text-white py-16 sm:py-20 relative overflow-hidden bg-no-repeat tracking-wider"
@@ -27,7 +29,7 @@ export default function Hero() {
             JOURNEY
           </h1>
 
-          <button className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base transition duration-300 inline-flex items-center gap-2 shadow-lg">
+          <button onClick={() => navigate(`/contact-us`)} className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base transition duration-300 inline-flex items-center gap-2 shadow-lg">
             GET STARTED
             <span>→</span>
           </button>

@@ -1,6 +1,8 @@
 import acetechBenefits from "../assets/images/acetech_benefits.png";
+import { useNavigate } from 'react-router-dom';
 
 function Benefits() {
+  const navigate = useNavigate();
   return (
     <div className="text-white py-12 sm:py-16 md:py-20 relative overflow-hidden tracking-wider">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 md:gap-0 px-4 sm:px-8">
@@ -38,7 +40,7 @@ function Benefits() {
               <span>Ethics and Respect</span>
             </li>
           </ul>
-          <button className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg font-roboto">
+          <button onClick={() => navigate(`/contact-us`)} className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-8 py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg font-roboto">
             CONTACT US
             <span>→</span>
           </button>
