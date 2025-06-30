@@ -4,7 +4,7 @@ import Approach from "../components/Services/Approach";
 import Expertise from "../components/Expertise";
 import Ati from "../components/about_us/Ati";
 
-export default function TalentPage() {
+export default function ServicePage() {
   return (
     <>
       <ServiceHero />

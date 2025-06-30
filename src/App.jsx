@@ -54,7 +54,7 @@ function AppContent() {
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/talent" element={<TalentPage />} />
           {/* Services */}
-          <Route path="/service" element={<ServicePage />} />
+          <Route path="/services" element={<ServicePage />} />
           <Route
             path="/services/end-to-end-startup-support"
             element={<EndToEndPage />}
