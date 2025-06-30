@@ -89,7 +89,13 @@ function Work() {
                 >
                   {/* SVG Decoration with hover fill change */}
                   <svg
-                    className="absolute w-full h-full top-0 left-0 pointer-events-none transition-all duration-300 "
+                    className={`absolute w-full h-full top-0 left-0 pointer-events-none transition-all duration-300 ${
+                      id === 1
+                        ? "rotate-[-10deg]"
+                        : id === 2
+                        ? "rotate-[15deg]"
+                        : "rotate-[5deg]"
+                    }`}
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 112.77 111.59"
                   >
