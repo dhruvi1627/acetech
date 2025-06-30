@@ -1,7 +1,8 @@
 import React from "react";
 import aboutUsImage from "../../assets/images/about_us/aboutus_1.jpg";
 import aboutUs from "../../assets/images/about_us/aboutus_2.jpg";
-import { Brain, Disc } from "lucide-react";
+import brain from "../../assets/images/about_us/brain.png";
+import eye from "../../assets/images/about_us/eye.png";
 
 const AboutUsHero = () => {
   return (
@@ -55,8 +56,12 @@ const AboutUsHero = () => {
         {/* Mission and Vision Cards - Positioned below main content */}
         <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 pb-10 md:pb-20 font-roboto w-full">
           <div className="p-6 md:p-10 border border-gray-700 space-y-4 bg-black/30">
-            <div className="text-pink-400">
-              <Brain size={40} className="size-20" />
+            <div>
+              <img
+                src={brain}
+                alt="Brain Icon"
+                className="w-20 h-20"
+              />
             </div>
             <h2 className="text-xl md:text-2xl xm:text-[15px] xl:text-[17px] font-bold uppercase tracking-wider">
               Our Mission - Empowering Innovation
@@ -71,7 +76,11 @@ const AboutUsHero = () => {
           </div>
           <div className="p-6 md:p-10 border border-gray-700 space-y-4 bg-black/30">
             <div className="text-pink-400">
-              <Disc size={40} className="size-20" />
+              <img
+                src={eye}
+                alt="eye Icon"
+                className="w-20 h-20"
+              />
             </div>
             <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wider">
               Our Vision - Shaping the Future
