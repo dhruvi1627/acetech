@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import UnsecureIcon from "../../assets/images/Talents/unsecure.png";
+import CloudIcon from "../../assets/images/Talents/cloud.png";
+import ExpertIcon from "../../assets/images/Talents/expert.png";
 
 export default function CollaborativeTalent() {
   const navigate = useNavigate();
@@ -14,7 +17,7 @@ export default function CollaborativeTalent() {
         "Benefits of Pair Programming",
         "Success Stories and Case Studies",
       ],
-      icon: "/pair.svg",
+      icon: UnsecureIcon,
       link: "/talent/pair-to-pair/",
     },
     {
@@ -22,7 +25,7 @@ export default function CollaborativeTalent() {
       title: "Dedicated Team",
       description: "A full team committed to comprehensive support.",
       points: ["Full-Service Development", "Team Composition and Expertise"],
-      icon: "/team.svg",
+      icon: CloudIcon,
       link: "/talent/dedicated-team/",
     },
     {
@@ -34,7 +37,7 @@ export default function CollaborativeTalent() {
         "Rapid Response Teams",
         "Critical Milestones and Launch Support",
       ],
-      icon: "/expert.svg",
+      icon: ExpertIcon,
       link: "/talent/task-force/",
     },
   ];

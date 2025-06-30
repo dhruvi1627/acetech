@@ -39,8 +39,8 @@ export default function TalentPage() {
         className="bg-no-repeat bg-transparent w-full h-auto flex flex-col items-center"
         style={{
           backgroundImage: `url(${bgCapsule}), url(${colorBgLeft})`,
-          backgroundPosition: `left -250px top 150px, left center`,
-          backgroundSize: `400px auto, 200 cover`,
+          backgroundPosition: `left -150px top 250px, left top -150px`,
+          backgroundSize: `600px auto, 200 cover`,
         }}
       >
         {/* COLLABORATIVE TALENT */}

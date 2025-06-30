@@ -1,24 +1,24 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import serviceImage from "../../assets/images/services/Services_ati.png";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Approach = () => {
   const navigate = useNavigate();
   return (
-    <section className="min-h-screen bg-black text-white relative overflow-hidden">
+    <section className="min-h-screen text-white relative overflow-hidden">
       {/* Main content container */}
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 relative z-10 lg:ml-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Left side - Image */}
           <div className="relative group">
-            <div className="relative overflow-hidden shadow-2xl transform transition-transform duration-700 rounded-xl">
+            <div className="relative overflow-hidden shadow-2xl transform transition-transform duration-700">
               {/* Main Image */}
               <div className="aspect-[4/3] relative">
                 <img
                   src={serviceImage}
                   alt="Digital creative workspace with futuristic elements"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
             </div>
@@ -51,7 +51,10 @@ const Approach = () => {
 
             {/* CTA Button */}
             <div className="pt-4 md:pt-6">
-              <button onClick={() => navigate(`/about-us`)} className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2.5 sm:py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg font-bebas tracking-wider rounded">
+              <button
+                onClick={() => navigate(`/about-us`)}
+                className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2.5 sm:py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg font-bebas tracking-wider rounded"
+              >
                 ABOUT US
                 <span className="hidden sm:inline">→</span>
               </button>
