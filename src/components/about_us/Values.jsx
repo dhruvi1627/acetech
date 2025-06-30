@@ -40,24 +40,24 @@ const Values = () => {
         </div>
 
         {/* Values Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-roboto w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 font-roboto w-full">
           {values.map((value, index) => (
             <div
               key={index}
-              className="border border-gray-700 p-6 sm:p-8 bg-black/30 rounded-lg flex flex-col h-full transition-colors duration-300"
+              className="border border-gray-700 p-6 sm:p-8 bg-black/30 flex flex-col h-full transition-colors duration-300"
             >
-              {/* Icon */}
-              <div className="mb-4 sm:mb-6 flex">{value.icon}</div>
-
-              {/* Title */}
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 uppercase tracking-wide">
-                {value.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                {value.description}
-              </p>
+              <div className="py-20">
+                {/* Icon */}
+                <div className="pb-8 sm:mb-6 flex">{value.icon}</div>
+                {/* Title */}
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 uppercase tracking-wide">
+                  {value.title}
+                </h3>
+                {/* Description */}
+                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                  {value.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
