@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 const ServiceHero = () => {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen text-white relative overflow-hidden mt-36">
-      <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
+    <div className="min-h-screen text-white relative overflow-hidden mt-36 lg:px-20 md:px-16 sm:px-4">
+      <div className="container mx-auto px-4 sm:px-6 py-12 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-start">
           {/* Left side - Main content */}
-          <div className="space-y-8 pl-0 sm:pl-10 md:pl-16 lg:pl-20 mt-10 sm:mt-16 md:mt-20">
+          <div className="space-y-8  mt-10 sm:mt-16 md:mt-20">
             <div className="space-y-6">
               <p className="text-lg sm:text-xl font-medium tracking-wider uppercase font-bebas">
                 All You Need
