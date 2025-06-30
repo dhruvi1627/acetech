@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"; // Add useEffect import
 import testimonials from "../assets/images/testimonials.png";
+import { Quote } from "lucide-react";
 
 const testimonialData = [
   {
@@ -49,7 +50,9 @@ export default function Testimonials() {
           </h2>
           <h1 className="text-5xl mb-16 font-bebas">SUCCESS STORIES</h1>
 
-          <div className="relative text-2xl mb-12">"</div>
+          <div className="relative text-2xl mb-12">
+            <Quote size={28} color="#ffffff" strokeWidth={0.5} fill="#ffffff"/>
+          </div>
 
           <div className="max-w-xl px-4">
             <blockquote className="mb-8">

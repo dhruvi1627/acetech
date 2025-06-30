@@ -1,6 +1,6 @@
-import { BookOpenText, House, IdCard, Users } from "lucide-react";
+import { BookOpenText, IdCard, Settings, Users } from "lucide-react";
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export default function BusinessSolutionsHero() {
   const navigate = useNavigate();
@@ -26,7 +26,10 @@ export default function BusinessSolutionsHero() {
             committed to providing the support you need to thrive in today's
             competitive landscape.
           </p>
-          <button onClick={() => navigate(`/contact-us`)} className="bg-[#de60ca] hover:bg-white hover:text-black px-8 py-3 transition-colors duration-300">
+          <button
+            onClick={() => navigate(`/contact-us`)}
+            className="bg-[#de60ca] hover:bg-white hover:text-black px-8 py-3 transition-colors duration-300"
+          >
             CONTACT US →
           </button>
         </div>
@@ -40,7 +43,7 @@ export default function BusinessSolutionsHero() {
                 <IdCard className="size-16 text-[#dd60c9] group-hover:text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">STARTUPS</h3>
+                <h3 className="text-xl  mb-2">STARTUPS</h3>
                 <p className="text-gray-400 group-hover:text-white">
                   Ignite Your Vision with Innovative Solutions and Strategies.
                 </p>
@@ -48,11 +51,11 @@ export default function BusinessSolutionsHero() {
             </div>
             <div className="bg-zinc-900 p-8 min-h-[310px] w-[300px] flex flex-col justify-between hover:bg-[#dd60c9] group transition-colors duration-300">
               <div className="flex mb-4">
-                <House className="size-16 text-[#dd60c9] group-hover:text-white" />
+                <Settings className="size-16 text-[#dd60c9] group-hover:text-white" />
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-2">SMES</h3>
+                <h3 className="text-xl  mb-2">SMES</h3>
                 <p className="text-gray-400 group-hover:text-white">
                   Elevate Your Growth with Tailored Solutions and Smart
                   Innovations.
@@ -68,7 +71,7 @@ export default function BusinessSolutionsHero() {
                 <Users className="size-16 text-[#dd60c9] group-hover:text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">ENTREPRENEUR</h3>
+                <h3 className="text-xl  mb-2">ENTREPRENEUR</h3>
                 <p className="text-gray-400 group-hover:text-white">
                   Empower Your Journey with Innovative Strategies and Unmatched
                   Resources.
@@ -80,9 +83,7 @@ export default function BusinessSolutionsHero() {
                 <BookOpenText className="size-16 text-[#dd60c9] group-hover:text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">
-                  INVESTOR AND PARTNERS
-                </h3>
+                <h3 className="text-xl  mb-2">INVESTOR AND PARTNERS</h3>
                 <p className="text-gray-400 group-hover:text-white">
                   Revolutionize Your Operations with Innovative Digital
                   Solutions.
