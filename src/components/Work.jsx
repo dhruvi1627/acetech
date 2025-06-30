@@ -96,7 +96,7 @@ function Work() {
                     <path
                       d="M-15315.315-17576.43c31.781-22.219,100.99,5.348,96.1,41.223s-33.781,69.844-71.955,60.957S-15347.095-17554.211-15315.315-17576.43Z"
                       transform="translate(15331.737 17584.408)"
-                      className="group-hover:fill-blue-500 transition-colors duration-300"
+                      className="fill-[#3e3e3e] group-hover:fill-blue-500 transition-colors duration-300"
                     />
                   </svg>
 
