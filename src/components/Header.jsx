@@ -44,7 +44,6 @@ export default function Header() {
               {[
                 { label: "HOME", href: "/" },
                 { label: "ABOUT US", href: "/about-us" },
-                { label: "CONTACT US", href: "/contact-us" },
               ].map((item) => (
                 <NavLink
                   key={item.label}
@@ -57,7 +56,6 @@ export default function Header() {
                 </NavLink>
               ))}
 
-              {/* Dropdowns */}
               <Dropdown
                 label="TALENT"
                 baseHref="/talent"
@@ -110,6 +108,16 @@ export default function Header() {
                 items={[{ label: "Blogs", href: "/blog" }]}
               />
 
+              {/* Moved CONTACT US here */}
+              <NavLink
+                to="/contact-us"
+                className={({ isActive }) =>
+                  `nav-link${isActive ? " active" : ""}`
+                }
+              >
+                CONTACT US
+              </NavLink>
+
               <button
                 onClick={toggleSidebar}
                 className="hover:text-gray-400 transition-colors duration-200"
@@ -132,9 +140,6 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden bg-black text-white px-6 py-4 space-y-2">
             {renderMobileLinks(toggleMobileDropdown, mobileDropdown)}
-            <a href="/contact-us" className="block hover:text-gray-400">
-              CONTACT US
-            </a>
             <button
               onClick={toggleSidebar}
               className="block hover:text-gray-400 text-left"
@@ -288,27 +293,36 @@ function renderMobileLinks(toggleDropdown, dropdownState) {
     resources: [{ label: "Blogs", href: "/blog" }],
   };
 
-  return Object.keys(dropdowns).map((key) => (
-    <div key={key}>
-      <button
-        className="block w-full text-left hover:text-gray-400"
-        onClick={() => toggleDropdown(key)}
-      >
-        {key.toUpperCase()}
-      </button>
-      {dropdownState[key] && (
-        <div className="pl-4 space-y-1">
-          {dropdowns[key].map(({ label, href }) => (
-            <NavLink
-              key={label}
-              to={href}
-              className="block hover:text-gray-400 text-sm"
-            >
-              {label}
-            </NavLink>
-          ))}
+  return (
+    <>
+      {Object.keys(dropdowns).map((key) => (
+        <div key={key}>
+          <button
+            className="block w-full text-left hover:text-gray-400"
+            onClick={() => toggleDropdown(key)}
+          >
+            {key.toUpperCase()}
+          </button>
+          {dropdownState[key] && (
+            <div className="pl-4 space-y-1">
+              {dropdowns[key].map(({ label, href }) => (
+                <NavLink
+                  key={label}
+                  to={href}
+                  className="block hover:text-gray-400 text-sm"
+                >
+                  {label}
+                </NavLink>
+              ))}
+            </div>
+          )}
         </div>
-      )}
-    </div>
-  ));
+      ))}
+
+      {/* CONTACT US moved here below RESOURCES */}
+      <NavLink to="/contact-us" className="block hover:text-gray-400">
+        CONTACT US
+      </NavLink>
+    </>
+  );
 }
