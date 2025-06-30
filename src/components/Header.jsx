@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Grip, Menu, X } from "lucide-react";
 import acetech from "../assets/images/ace_tech.png";
 import facebook from "../assets/images/facebook.png";
@@ -16,9 +17,7 @@ export default function Header() {
     resources: false,
   });
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   const toggleMobileDropdown = (key) => {
     setMobileDropdown((prev) => ({
@@ -31,16 +30,13 @@ export default function Header() {
     <>
       <header className="shadow-md text-white relative">
         <div className="container py-8 flex items-center justify-between px-20">
-          {/* Logo */}
-          <div className="flex">
-            <a href="/">
-              <img
-                src={acetech}
-                alt="Ace Tech Logo"
-                className="w-[200px] h-auto"
-              />
-            </a>
-          </div>
+          <a href="/">
+            <img
+              src={acetech}
+              alt="Ace Tech Logo"
+              className="w-[200px] h-auto"
+            />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="flex items-center">
@@ -50,13 +46,15 @@ export default function Header() {
                 { label: "ABOUT US", href: "/about-us" },
                 { label: "CONTACT US", href: "/contact-us" },
               ].map((item) => (
-                <a
+                <NavLink
                   key={item.label}
-                  href={item.href}
-                  className="relative px-2 text-white transition-all duration-200 hover:text-gray-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-[2px] after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                  to={item.href}
+                  className={({ isActive }) =>
+                    `nav-link${isActive ? " active" : ""}`
+                  }
                 >
                   {item.label}
-                </a>
+                </NavLink>
               ))}
 
               {/* Dropdowns */}
@@ -72,7 +70,7 @@ export default function Header() {
 
               <Dropdown
                 label="SERVICES"
-                baseHref="/service"
+                baseHref="/services"
                 items={[
                   {
                     label: "End To End Startup Support",
@@ -227,27 +225,28 @@ export default function Header() {
   );
 }
 
-// ----- Components -----
-
+// --- Dropdown Component ---
 function Dropdown({ label, baseHref, items }) {
   return (
     <div className="relative group">
-      <a
-        href={baseHref}
-        className="relative px-2 text-white transition-all duration-200 hover:text-gray-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-[2px] after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+      <NavLink
+        to={baseHref}
+        className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
       >
         {label}
-      </a>
+      </NavLink>
       <div className="absolute top-full left-0 mt-2 w-48 bg-[#1a1a2e] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
         <div className="py-3">
           {items.map(({ label, href }) => (
-            <a
+            <NavLink
               key={label}
-              href={href}
-              className="block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:right-6 after:h-0.5 after:bg-white after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+              to={href}
+              className={({ isActive }) =>
+                `dropdown-link${isActive ? " active" : ""}`
+              }
             >
               {label}
-            </a>
+            </NavLink>
           ))}
         </div>
       </div>
@@ -255,6 +254,7 @@ function Dropdown({ label, baseHref, items }) {
   );
 }
 
+// --- Mobile Nav Links ---
 function renderMobileLinks(toggleDropdown, dropdownState) {
   const dropdowns = {
     talent: [
@@ -299,13 +299,13 @@ function renderMobileLinks(toggleDropdown, dropdownState) {
       {dropdownState[key] && (
         <div className="pl-4 space-y-1">
           {dropdowns[key].map(({ label, href }) => (
-            <a
+            <NavLink
               key={label}
-              href={href}
+              to={href}
               className="block hover:text-gray-400 text-sm"
             >
               {label}
-            </a>
+            </NavLink>
           ))}
         </div>
       )}

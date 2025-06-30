@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add these base styles */
 html,
 body {
   overflow-x: hidden;
@@ -15,4 +14,49 @@ body {
   .hide-bg-sm {
     background-image: none !important;
   }
+}
+
+/* Top nav link underline */
+.nav-link {
+  @apply relative px-2 text-white transition-all duration-200 hover:text-gray-400;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* Dropdown link styling */
+.dropdown-link {
+  @apply relative block px-6 py-3 text-[#6a6a74] hover:text-white hover:bg-gradient-to-r transition-all duration-200 text-base w-fit;
+}
+
+.dropdown-link::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-link:hover::after,
+.dropdown-link.active::after {
+  transform: scaleX(1);
 }
