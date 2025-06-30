@@ -80,7 +80,7 @@ export default function CollaborativeTalent() {
                   onClick={() => navigate(link)}
                 >
                   {hoveredCard === id && (
-                    <span className="font-bebas text-xs sm:text-sm tracking-wider ">
+                    <span className="font-bebas text-xs sm:text-sm tracking-wider pt-2">
                       READ MORE
                     </span>
                   )}
