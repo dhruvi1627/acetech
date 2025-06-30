@@ -6,18 +6,16 @@ import acetech_worldwide from "../assets/images/acetech_worldwide.png";
 export default function Hero() {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-12 mx-auto text-white">
+    <div className="flex flex-col md:flex-row items-center justify-between px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 mx-auto text-white">
       {/* Left: Text Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-4 sm:space-y-6 font-bebas">
-        <p className="text-lg sm:text-xl md:text-2xl uppercase">
+        <p className="text-[19px] md:text-[18px] lg:text-[17px]">
           OPTIMIZE YOUR BUSINESS GROWTH
         </p>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-          LAUNCHING
-          <br />
-          YOUR STARTUP
-          <br />
-          JOURNEY
+        <h1 className="text-[77px] md:text-[66px] lg:text-[80px] leading-none">
+          <span className="block">LAUNCHING</span>
+          <span className="block">YOUR STARTUP</span>
+          <span className="block">JOURNEY</span>
         </h1>
 
         <button

@@ -3,7 +3,7 @@ import aboutUsImage from "../assets/images/Solving-Startup-Challenges-with-Exper
 
 export default function AboutUs() {
   return (
-    <div className="bg-[#0a0b13] text-white py-16 px-8">
+    <div className="text-white py-16 px-8">
       {/* Header Section */}
       <div className="mb-12">
         <span className="font-bebas text-sm tracking-wider">ABOUT US</span>
