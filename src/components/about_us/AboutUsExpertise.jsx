@@ -1,47 +1,70 @@
-import React from 'react';
+import React from "react";
 
 const AboutUsExpertise = () => {
   const expertises = [
     {
       icon: (
         <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-          <div className="w-12 h-12 rounded-full border-4 border-pink-500 relative">
-            <div className="absolute inset-0 rounded-full border-4 border-transparent border-l-pink-500 transform rotate-45"></div>
-          </div>
+          <svg
+            width="50"
+            height="65"
+            viewBox="0 0 50 65"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.6746 32.8898C16.6746 35.8389 17.3956 38.5472 18.8375 41.0148C20.2794 43.4884 22.2179 45.4715 24.6529 46.9641C27.088 48.4567 29.7684 49.2271 32.6941 49.2752V65.0016C28.3863 65.0437 24.2311 64.2523 20.2285 62.6273C16.2199 61.0023 12.675 58.6641 9.59374 55.6127C6.51848 52.5553 4.14921 49.0224 2.48594 45.0141C0.828645 41.0058 0 36.8349 0 32.5016C0 28.1683 0.828645 23.9974 2.48594 19.9891C4.14921 15.9808 6.51848 12.4479 9.59374 9.39049C12.675 6.3391 16.2199 4.0009 20.2285 2.3759C24.2311 0.750903 28.3863 -0.0405327 32.6941 0.00159697V16.5134C29.7684 16.5555 27.088 17.3229 24.6529 18.8155C22.2179 20.3141 20.2794 22.2972 18.8375 24.7648C17.3956 27.2384 16.6746 29.9467 16.6746 32.8898ZM49.629 32.8898C49.5871 35.881 48.8332 38.6345 47.3674 41.1502C45.9016 43.6599 43.9092 45.64 41.3904 47.0905C38.8715 48.547 36.1253 49.2752 33.1518 49.2752H32.6941V16.5134H33.1518C36.1253 16.5134 38.8715 17.2386 41.3904 18.6891C43.9092 20.1396 45.9016 22.1227 47.3674 24.6384C48.8332 27.1481 49.5871 29.8986 49.629 32.8898Z"
+              fill="#DE60CA"
+            />
+          </svg>
         </div>
       ),
       title: "TECHNOLOGY SOLUTIONS",
-      description: "ATI excels in integrating advanced technologies such as artificial intelligence, machine learning, blockchain, and IoT into businesses of all sizes. Our expertise in these areas allows us to create innovative solutions that enhance operational efficiency, improve customer experiences, and drive growth."
+      description:
+        "ATI excels in integrating advanced technologies such as artificial intelligence, machine learning, blockchain, and IoT into businesses of all sizes. Our expertise in these areas allows us to create innovative solutions that enhance operational efficiency, improve customer experiences, and drive growth.",
     },
     {
       icon: (
         <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-          <div className="flex flex-wrap gap-1 w-12">
-            <div className="w-5 h-5 rounded-full border-2 border-pink-500"></div>
-            <div className="w-5 h-5 rounded-full border-2 border-pink-500"></div>
-            <div className="w-5 h-5 rounded-full border-2 border-pink-500"></div>
-            <div className="w-5 h-5 rounded-full border-2 border-pink-500"></div>
-          </div>
+          <svg
+            width="60"
+            height="60"
+            viewBox="0 0 65 66"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50.1398 35.9381C49.9244 35.896 49.6223 35.8749 49.2334 35.8749C47.337 35.917 45.4735 35.6462 43.6429 35.0624C41.8122 34.4726 40.1222 33.636 38.5728 32.5527C42.0605 30.4763 45.8294 29.5254 49.8795 29.6999C51.2555 29.742 52.6344 29.5886 54.0164 29.2395C56.3854 28.5895 58.4403 27.4309 60.1812 25.7638C61.9281 24.0967 63.1784 22.1256 63.9322 19.8506C64.686 17.5756 64.8595 15.2254 64.4527 12.7999C64.0399 10.3684 63.0917 8.20175 61.608 6.2999C60.1184 4.39203 58.2758 2.95059 56.0803 1.97559C53.8847 1.00059 51.5696 0.609391 49.1347 0.801983C46.6999 1.00059 44.4714 1.75893 42.4494 3.07698C40.4273 4.40106 38.833 6.11333 37.6664 8.21379C36.5059 10.3143 35.9046 12.6013 35.8627 15.0749V15.2645C35.8627 17.1724 35.5606 19.0261 34.9564 20.8256C34.3522 22.6251 33.4698 24.2592 32.3092 25.7277C30.4546 22.3513 29.6141 18.7342 29.7876 14.8763C29.8295 13.4439 29.656 12.0566 29.2671 10.7145C28.621 8.33115 27.4694 6.26379 25.8123 4.5124C24.1552 2.75499 22.1959 1.49712 19.9346 0.738789C17.6732 -0.0195447 15.3371 -0.194082 12.9262 0.215178C10.5093 0.630455 8.35563 1.58439 6.46519 3.07698C4.56877 4.57559 3.13598 6.4293 2.16683 8.63809C1.19768 10.8469 0.808826 13.1761 1.00026 15.6256C1.19768 18.0751 1.95147 20.317 3.26161 22.3513C4.57774 24.3855 6.27974 25.9895 8.3676 27.1631C10.4555 28.3307 12.7288 28.9355 15.1875 28.9777H15.376C17.0989 28.9777 18.78 29.2274 20.4192 29.727C22.0524 30.2265 23.5809 30.9758 25.0047 31.9749C21.5588 33.9249 17.8557 34.9842 13.8953 35.1527C11.4784 35.2851 9.23804 35.9351 7.17411 37.1027C5.49305 38.0175 4.07223 39.2423 2.91164 40.777C1.74507 42.3177 0.946421 44.018 0.515688 45.8777C-0.214166 48.568 -0.169298 51.2552 0.650292 53.9395C1.4639 56.6298 2.9266 58.8837 5.03839 60.7013C7.15018 62.5189 9.57305 63.6443 12.307 64.0777C15.041 64.511 17.6912 64.165 20.2576 63.0395C22.8181 61.914 24.885 60.2018 26.4584 57.9027C28.0318 55.6096 28.8603 53.0548 28.9441 50.2381C28.986 50.0214 29.0069 49.7175 29.0069 49.3263C28.965 45.7754 29.8714 42.4832 31.7259 39.4499C33.8377 43.043 34.9773 46.9189 35.1449 51.0777C35.2765 53.5092 35.9226 55.7631 37.0832 57.8395C37.9925 59.5307 39.2099 60.9601 40.7354 62.1277C42.2669 63.3013 43.9569 64.1048 45.8055 64.5381C48.4796 65.2724 51.1508 65.2272 53.8189 64.4027C56.4931 63.5842 58.7335 62.1126 60.5402 59.9881C62.3469 57.8636 63.4656 55.4261 63.8963 52.6756C64.327 49.9251 63.983 47.2589 62.8643 44.677C61.7456 42.1011 60.0436 40.0217 57.7584 38.4388C55.4791 36.8559 52.9395 36.0224 50.1398 35.9381ZM49.1706 6.22768C51.067 5.96888 52.8767 6.25175 54.5996 7.07629C56.3226 7.90083 57.6686 9.13462 58.6378 10.7777C59.6069 12.4268 60.0376 14.2143 59.93 16.1402C59.8223 18.0721 59.1971 19.8055 58.0545 21.3402C56.9118 22.8809 55.4372 23.9643 53.6305 24.5902C51.8178 25.2221 49.9872 25.3004 48.1386 24.8249C46.2841 24.3434 44.7227 23.3895 43.4544 21.9631C42.1802 20.5307 41.4144 18.8605 41.1572 16.9527C40.8999 15.2675 41.0944 13.6425 41.7405 12.0777C42.3866 10.5189 43.3647 9.21888 44.6748 8.17768C45.991 7.14249 47.4896 6.49249 49.1706 6.22768ZM15.699 59.4645C13.8026 59.7233 11.9929 59.4434 10.27 58.6249C8.54707 57.8004 7.20103 56.5636 6.23188 54.9145C5.26273 53.2714 4.832 51.4839 4.93968 49.552C5.04736 47.6261 5.67252 45.8927 6.81516 44.352C7.9578 42.8173 9.43247 41.7339 11.2392 41.102C13.0518 40.4761 14.8824 40.4008 16.731 40.8763C18.5855 41.3518 20.147 42.3057 21.4152 43.7381C22.6895 45.1645 23.4552 46.8316 23.7125 48.7395C23.9697 50.4307 23.7753 52.0557 23.1292 53.6145C22.4831 55.1733 21.505 56.4733 20.1948 57.5145C18.8787 58.5557 17.3801 59.2057 15.699 59.4645ZM17.0541 23.6513C15.1636 23.9101 13.3569 23.6272 11.634 22.8027C9.91106 21.9842 8.56502 20.7504 7.59587 19.1013C6.62672 17.4522 6.19598 15.6647 6.30367 13.7388C6.41135 11.8129 7.03352 10.0795 8.17018 8.53879C9.31282 6.99805 10.7905 5.91471 12.6031 5.28879C14.4098 4.66286 16.2404 4.58763 18.095 5.06309C19.9436 5.53856 21.505 6.49249 22.7792 7.9249C24.0475 9.35129 24.8102 11.0184 25.0675 12.9263C25.3247 14.6175 25.1303 16.2425 24.4842 17.8013C23.8381 19.3601 22.86 20.6601 21.5498 21.7013C20.2337 22.7425 18.7351 23.3925 17.0541 23.6513ZM51.2974 59.9881C49.4069 60.2469 47.6002 59.964 45.8773 59.1395C44.1544 58.3149 42.8083 57.0812 41.8392 55.4381C40.87 53.789 40.4393 52.0015 40.547 50.0756C40.6547 48.1436 41.2768 46.4103 42.4135 44.8756C43.5561 43.3349 45.0338 42.2515 46.8464 41.6256C48.6531 40.9936 50.4837 40.9184 52.3383 41.3999C54.1869 41.8754 55.7483 42.8263 57.0225 44.2527C58.2908 45.6851 59.0535 47.3552 59.3108 49.2631C59.568 50.9543 59.3736 52.5793 58.7275 54.1381C58.0814 55.6969 57.1033 56.9969 55.7931 58.0381C54.477 59.0793 52.9784 59.7293 51.2974 59.9881Z"
+              fill="#DE60CA"
+            />
+          </svg>
         </div>
       ),
       title: "TALENT MANAGEMENT",
-      description: "Finding the right talent is crucial to the success of any project. ATI's talent services, including Pair-to-Pair, Dedicated Teams, and Task Forces, ensure that you have access to the best professionals in the industry, precisely matched to your project needs."
+      description:
+        "Finding the right talent is crucial to the success of any project. ATI's talent services, including Pair-to-Pair, Dedicated Teams, and Task Forces, ensure that you have access to the best professionals in the industry, precisely matched to your project needs.",
     },
     {
       icon: (
         <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-          <div className="w-12 h-12 rounded-full border-4 border-pink-500 relative flex items-center justify-center">
-            <div className="w-3 h-3 bg-pink-500 rounded-full"></div>
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-pink-500"></div>
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-pink-500"></div>
-            <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-pink-500"></div>
-            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-pink-500"></div>
-          </div>
+          <svg
+            width="63"
+            height="65"
+            viewBox="0 0 63 65"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M31.3323 63.8986H31.2695C31.2695 64.025 31.2904 64.1965 31.3323 64.4132V65V63.8986ZM31.2695 1.10139H31.3323V0C31.2904 0.258796 31.2695 0.625926 31.2695 1.10139ZM0.0628082 32.5H0C0 36.7491 0.819497 40.8236 2.45849 44.7236C4.04963 48.4912 6.2868 51.8164 9.16999 54.6993C12.0592 57.5822 15.376 59.8241 19.1206 61.425C22.9968 63.0741 27.0464 63.8986 31.2695 63.8986V63.4382C30.1509 57.2451 29.0084 52.5868 27.842 49.4632C26.5499 45.822 24.872 42.9843 22.8083 40.95C20.7387 38.9157 17.8525 37.2486 14.1498 35.9486C11.0034 34.8171 6.30773 33.6676 0.0628082 32.5ZM0 32.4368H0.52041C6.63374 31.3113 11.2636 30.1829 14.41 29.0514C18.023 27.7514 20.8523 26.0843 22.8981 24.05C24.9438 22.0157 26.6127 19.178 27.9048 15.5368C29.0293 12.4132 30.1509 7.77593 31.2695 1.625V1.10139C25.6287 1.10139 20.3738 2.5338 15.5046 5.39861C10.809 8.16713 7.08237 11.9137 4.32479 16.6382C1.48347 21.4951 0.0418721 26.7613 0 32.4368ZM62.6018 32.5C56.315 33.6676 51.5984 34.8171 48.452 35.9486C44.7493 37.2486 41.8631 38.9368 39.7935 41.0132C37.7298 43.0956 36.0519 45.9785 34.7598 49.6618C33.6353 52.8697 32.4928 57.6153 31.3323 63.8986C35.5554 63.8986 39.605 63.0741 43.4812 61.425C47.2258 59.8241 50.5396 57.5822 53.4228 54.6993C56.312 51.8164 58.5522 48.4912 60.1433 44.7236C61.7823 40.8236 62.6018 36.7491 62.6018 32.5ZM62.216 32.4368H62.6018C62.5599 26.7613 61.1153 21.4951 58.268 16.6382C55.5164 11.9137 51.7928 8.16713 47.0972 5.39861C42.228 2.5338 36.9731 1.10139 31.3323 1.10139V1.17361C32.4928 7.45694 33.6353 12.1785 34.7598 15.3382C36.0519 19.0215 37.7208 21.9044 39.7665 23.9868C41.8123 26.0632 44.6416 27.7514 48.2546 29.0514C51.401 30.1829 56.0548 31.3113 62.216 32.4368Z"
+              fill="#DE60CA"
+            />
+          </svg>
         </div>
       ),
       title: "PROJECT EXECUTION",
-      description: "Our project management teams are experts in agile methodologies, ensuring that your projects are delivered on time, within scope, and to the highest standards of quality. We focus on iterative development, continuous feedback, and collaboration to achieve outstanding results."
-    }
+      description:
+        "Our project management teams are experts in agile methodologies, ensuring that your projects are delivered on time, within scope, and to the highest standards of quality. We focus on iterative development, continuous feedback, and collaboration to achieve outstanding results.",
+    },
   ];
 
   return (
@@ -57,18 +80,15 @@ const AboutUsExpertise = () => {
         {/* Expertise Cards */}
         <div className="flex flex-col md:flex-row gap-8">
           {expertises.map((expertise, index) => (
-            <div 
-              key={index}
-              className="bg-[#242222] p-8 text-center flex-1"
-            >
+            <div key={index} className="bg-[#242222] p-8 text-center flex-1">
               {/* Icon */}
               {expertise.icon}
-              
+
               {/* Title */}
               <h3 className="text-xl font-bold text-white mb-6 tracking-wider font-bebas">
                 {expertise.title}
               </h3>
-              
+
               {/* Description */}
               <p className="text-gray-300 leading-relaxed text-sm font-roboto">
                 {expertise.description}
