@@ -1,14 +1,17 @@
-import React from 'react';
-import { Image, Users, Eye } from 'lucide-react';
-import thumbnail from '../../assets/images/about_us/video-thumbnails.jpg';
+import React from "react";
+import { Image, Users, Eye } from "lucide-react";
+import thumbnail from "../../assets/images/about_us/video-thumbnails.jpg";
+import images from "../../assets/images/about_us/images.png";
+import people from "../../assets/images/about_us/people.png";
+import gallery from "../../assets/images/about_us/gallery.png";
 
 const Journey = () => {
   return (
     <div className="min-h-screen text-white">
       {/* Hero Image Section */}
       <div className="relative h-96 overflow-hidden">
-        <img 
-          src={thumbnail} 
+        <img
+          src={thumbnail}
           alt="Futuristic cityscape with digital elements"
           className="w-full h-full object-cover"
         />
@@ -35,16 +38,23 @@ const Journey = () => {
               <div className="bg-[#242222] p-8 h-full">
                 <div className="mb-6">
                   <div className="w-16 h-16 mx-auto mb-4 bg-[#242222] rounded-lg flex items-center justify-center">
-                    <Image className="w-8 h-8 text-pink-500" />
+                    <img
+                      src={images}
+                      alt="founded on innovation"
+                      className="w-full h-auto object-cover"
+                    />
                   </div>
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-white mb-6 text-center tracking-wider font-bebas">
                   FOUNDED ON INNOVATION
                 </h3>
-                
+
                 <p className="text-gray-300 text-center leading-relaxed font-roboto">
-                  Since our inception, ATI has been dedicated to helping businesses harness the power of technology. Over the years, we have grown from a small startup into a leading tech company, serving clients across various industries and geographies.
+                  Since our inception, ATI has been dedicated to helping
+                  businesses harness the power of technology. Over the years, we
+                  have grown from a small startup into a leading tech company,
+                  serving clients across various industries and geographies.
                 </p>
               </div>
             </div>
@@ -54,16 +64,24 @@ const Journey = () => {
               <div className="bg-[#242222]  p-8 h-full">
                 <div className="mb-6">
                   <div className="w-16 h-16 mx-auto mb-4 bg-[#242222] rounded-lg flex items-center justify-center">
-                    <Users className="w-8 h-8 text-pink-500" />
+                    <img
+                      src={people}
+                      alt="founded on innovation"
+                      className="w-full h-auto object-cover"
+                    />
                   </div>
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-white mb-6 text-center tracking-wider font-bebas">
                   DRIVEN BY SUCCESS
                 </h3>
-                
+
                 <p className="text-gray-300 text-center leading-relaxed font-roboto">
-                  Our journey is marked by the success stories of the clients we have helped along the way. From startups that have scaled to global enterprises to organizations that have transformed their operations, ATI's impact is seen in the tangible results we deliver.
+                  Our journey is marked by the success stories of the clients we
+                  have helped along the way. From startups that have scaled to
+                  global enterprises to organizations that have transformed
+                  their operations, ATI's impact is seen in the tangible results
+                  we deliver.
                 </p>
               </div>
             </div>
@@ -73,16 +91,25 @@ const Journey = () => {
               <div className="bg-[#242222] p-8 h-full">
                 <div className="mb-6">
                   <div className="w-16 h-16 mx-auto mb-4 bg-[#242222] rounded-lg flex items-center justify-center">
-                    <Eye className="w-8 h-8 text-pink-500" />
+                    <img
+                      src={gallery}
+                      alt="founded on innovation"
+                      className="w-full h-auto object-cover"
+                    />
                   </div>
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-white mb-6 text-center tracking-wider font-bebas">
                   LOOKING TO THE FUTURE
                 </h3>
-                
+
                 <p className="text-gray-300 text-center leading-relaxed font-roboto">
-                  As we continue to grow, our focus remains on innovation, excellence, and client success. We are excited about the future and the new opportunities it brings, and we are committed to being at the forefront of the technological revolution, driving positive change for businesses and society.
+                  As we continue to grow, our focus remains on innovation,
+                  excellence, and client success. We are excited about the
+                  future and the new opportunities it brings, and we are
+                  committed to being at the forefront of the technological
+                  revolution, driving positive change for businesses and
+                  society.
                 </p>
               </div>
             </div>
