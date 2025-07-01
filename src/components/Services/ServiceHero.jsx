@@ -1,5 +1,6 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import service from "../../assets/images/services/svgviewer-png-output (1).png";
 
 const ServiceHero = () => {
   const navigate = useNavigate();
@@ -28,7 +29,10 @@ const ServiceHero = () => {
                 we're here to help you achieve your goals at every stage.
               </p>
             </div>
-            <button onClick={() => navigate(`/contact-us`)} className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2.5 sm:py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg rounded">
+            <button
+              onClick={() => navigate(`/contact-us`)}
+              className="bg-[#E156E6] hover:bg-white hover:text-black text-white font-medium px-6 sm:px-8 py-2.5 sm:py-3 text-base transition duration-300 inline-flex items-center gap-2 shadow-lg rounded"
+            >
               CONTACT US
               <span>→</span>
             </button>
@@ -48,21 +52,29 @@ const ServiceHero = () => {
               </p>
             </div>
             {/* Service 2 - Center Right (spans both rows vertically) */}
-            <div className="row-span-2 flex items-center justify-center ">
+            <div className="row-span-2 flex items-center justify-center">
               <div className="bg-gray-800 bg-opacity-60 backdrop-blur-sm p-6 transition-all duration-300 group w-full h-[300px] flex flex-col items-center justify-center text-center hover:bg-[#E156E6]">
                 <div className="mb-6">
-                  <div className="w-12 h-12 bg-[#E156E6] group-hover:bg-white flex items-center justify-center mb-4 mx-auto transition-colors duration-300">
-                    <div className="w-6 h-6 bg-gray-900 group-hover:bg-gray-900 rounded-sm transition-colors duration-300"></div>
-                  </div>
+                  <svg
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-16 sm:w-20 h-auto mx-auto transition-transform duration-300 group-hover:scale-110"
+                  >
+                    <path
+                      className="fill-[#e156e6] group-hover:fill-white transition-colors duration-300"
+                      d="M128 256c0-70.7 57.3-128 128-128s128 57.3 128 128v128c0 17.7-14.3 32-32 32s-32-14.3-32-32V256c0-35.3-28.7-64-64-64s-64 28.7-64 64v128c0 17.7-14.3 32-32 32s-32-14.3-32-32z"
+                    />
+                  </svg>
                 </div>
                 <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 transition-colors leading-tight">
                   NEXT-GEN TECH INTEGRATION
                 </h3>
-                <p className="text-gray-400 text-xs sm:text-sm">
+                <p className="text-gray-400 text-xs sm:text-sm group-hover:text-white">
                   Transform Your Business with Cutting-Edge Technologies
                 </p>
               </div>
             </div>
+
             {/* Service 3 - Bottom Left */}
             <div className="bg-gray-800 bg-opacity-60 backdrop-blur-sm p-4 sm:p-6 transition-all duration-300 group h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] flex flex-col items-center justify-center text-center hover:bg-[#E156E6]">
               <div className="mb-4 sm:mb-6">
