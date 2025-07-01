@@ -42,7 +42,19 @@ const ServiceHero = () => {
             {/* Service 1 - Top Left */}
             <div className="bg-gray-800 bg-opacity-60 backdrop-blur-sm p-4 sm:p-6 transition-all duration-300 group h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] flex flex-col items-center justify-center text-center hover:bg-[#E156E6]">
               <div className="mb-4 sm:mb-6">
-                <div className="w-10 sm:w-16 h-4 sm:h-8 bg-[#E156E6] group-hover:bg-white transform rotate-45 mb-2 sm:mb-4 mx-auto transition-colors duration-300"></div>
+                <svg
+                  width="64"
+                  height="65"
+                  viewBox="0 0 64 65"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="fill-[#E156E6] group-hover:fill-white transition-colors duration-300"
+                    d="M6.10338 4.88576C-3.60384 21.5267 -1.61039 40.5078 11.217 53.3352C24.6511 66.7693 45.7123 68.416 61.3998 57.2354L64 55.3286L36.8718 28.2004C21.8776 13.2062 9.3969 0.985537 9.05022 0.985537C8.70353 0.985537 7.40346 2.71897 6.10338 4.88576Z"
+                    fill="#EC6BC1"
+                  />
+                </svg>
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 transition-colors leading-tight">
                 END-TO-END STARTUP SUPPORT
@@ -78,7 +90,19 @@ const ServiceHero = () => {
             {/* Service 3 - Bottom Left */}
             <div className="bg-gray-800 bg-opacity-60 backdrop-blur-sm p-4 sm:p-6 transition-all duration-300 group h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px] flex flex-col items-center justify-center text-center hover:bg-[#E156E6]">
               <div className="mb-4 sm:mb-6">
-                <div className="w-10 sm:w-16 h-4 sm:h-8 bg-[#E156E6] group-hover:bg-white rounded-full mb-2 sm:mb-4 mx-auto transition-colors duration-300"></div>
+                <svg
+                  width="65"
+                  height="61"
+                  viewBox="0 0 65 61"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="fill-[#E156E6] group-hover:fill-white transition-colors duration-300"
+                    d="M0.256223 0.523022C10.1589 2.18667 19.392 9.45416 23.67 18.6439C25.4921 22.5257 25.8089 24.3478 25.8089 30.3687C25.8089 36.7064 25.5713 38.0532 23.2739 42.8064C18.9167 51.9962 10.5006 58.939 0.756348 60.5234C-2.17485 60.9988 8.30097 60.7105 32.1467 60.7105C51.7936 60.7105 65.9743 60.3936 63.7561 60.0768C48.3079 57.7793 37.1376 43.9155 38.2467 28.3089C39.2766 14.6036 50.0508 2.82045 63.7561 0.523022C66.5289 0.0476922 55.4378 0.0267906 32.1467 0.0267906C12.1828 0.0267906 -1.80354 0.206135 0.256223 0.523022Z"
+                    fill="#EC6BC1"
+                  />
+                </svg>
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 transition-colors leading-tight">
                 AGILE DEVELOPMENT SPRINT PACKAGES
